@@ -1,0 +1,670 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.13.2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="google-site-verification" content="ZrQwodBTb-yj0Q2Qw4-KxC8HN5x84J9tn1ZrY1zRFrU" />
+    <title>UCefView: SCefView::FArguments</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/CefView/UCefView" class="github-corner" title="View source on GitHub" target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <!-- do not remove this div, it is closed by doxygen! -->
+    <div id="top">
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">
+                                UCefView&#160;<span id="projectnumber">1.0.19</span>
+                                <span>
+                                    <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
+                                    <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
+                                        alt="Fab logo" style="width: 24px; width: 24px;">
+                                </span>
+                            </div>
+                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- Generated by Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_s_cef_view_1_1_f_arguments.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_s_cef_view_1_1_f_arguments-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">SCefView::FArguments</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents the construction arguments of <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a>.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;SCefView.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9dac0d23d1d505080396c798b580b008" id="r_a9dac0d23d1d505080396c798b580b008"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dac0d23d1d505080396c798b580b008">FArguments</a> ()</td></tr>
+<tr class="separator:a9dac0d23d1d505080396c798b580b008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab8ae2e09dc62445658527981427b8a00" id="r_ab8ae2e09dc62445658527981427b8a00"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8ae2e09dc62445658527981427b8a00">Url</a></td></tr>
+<tr class="memdesc:ab8ae2e09dc62445658527981427b8a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL.  <br /></td></tr>
+<tr class="separator:ab8ae2e09dc62445658527981427b8a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfff9ca32abed87570059c5798d1f90" id="r_abcfff9ca32abed87570059c5798d1f90"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcfff9ca32abed87570059c5798d1f90">FrameRate</a></td></tr>
+<tr class="separator:abcfff9ca32abed87570059c5798d1f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0db5d1e219802b202624ce8aea096e4" id="r_aa0db5d1e219802b202624ce8aea096e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0db5d1e219802b202624ce8aea096e4">bEnableContextMenu</a></td></tr>
+<tr class="separator:aa0db5d1e219802b202624ce8aea096e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02272151443c0ba62c04cf77b7b51dc1" id="r_a02272151443c0ba62c04cf77b7b51dc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02272151443c0ba62c04cf77b7b51dc1">bAcceptDrops</a></td></tr>
+<tr class="separator:a02272151443c0ba62c04cf77b7b51dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc3733884ef3cefd2feeb76f66239f8" id="r_a9dc3733884ef3cefd2feeb76f66239f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dc3733884ef3cefd2feeb76f66239f8">bAllowDrag</a></td></tr>
+<tr class="separator:a9dc3733884ef3cefd2feeb76f66239f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6374c3fee59722398e33db308be06b1" id="r_ae6374c3fee59722398e33db308be06b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_slate_cef_view_settings.html">FSlateCefViewSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6374c3fee59722398e33db308be06b1">Settings</a></td></tr>
+<tr class="memdesc:ae6374c3fee59722398e33db308be06b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Settings.  <br /></td></tr>
+<tr class="separator:ae6374c3fee59722398e33db308be06b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2165047e00532d0ff204045b55a6ae83" id="r_a2165047e00532d0ff204045b55a6ae83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a9e7858c0f47e3dc41a18dac3e984eb4a">FOnLoadStateChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2165047e00532d0ff204045b55a6ae83">OnLoadStateChanged</a></td></tr>
+<tr class="memdesc:a2165047e00532d0ff204045b55a6ae83"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnLoadStateChanged.  <br /></td></tr>
+<tr class="separator:a2165047e00532d0ff204045b55a6ae83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497947759b629ced3ffb7b08611a43dc" id="r_a497947759b629ced3ffb7b08611a43dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a4bf4bb2468dc6d25383eb63916e2a394">FOnLoadStartEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a497947759b629ced3ffb7b08611a43dc">OnLoadStart</a></td></tr>
+<tr class="memdesc:a497947759b629ced3ffb7b08611a43dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnLoadStart.  <br /></td></tr>
+<tr class="separator:a497947759b629ced3ffb7b08611a43dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30d10d06ff499b67ed4c0adece28c4d" id="r_af30d10d06ff499b67ed4c0adece28c4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#aba3f6d2076e3b8077f113ad0e33d5c22">FOnLoadEndEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af30d10d06ff499b67ed4c0adece28c4d">OnLoadEnd</a></td></tr>
+<tr class="memdesc:af30d10d06ff499b67ed4c0adece28c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnLoadEnd.  <br /></td></tr>
+<tr class="separator:af30d10d06ff499b67ed4c0adece28c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9595c457a0b4e4729544f861b7dfbc1" id="r_ab9595c457a0b4e4729544f861b7dfbc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a59ccfafa8048d326e74e738207917231">FOnLoadErrorEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9595c457a0b4e4729544f861b7dfbc1">OnLoadError</a></td></tr>
+<tr class="memdesc:ab9595c457a0b4e4729544f861b7dfbc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnLoadError.  <br /></td></tr>
+<tr class="separator:ab9595c457a0b4e4729544f861b7dfbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a1ea35897d70e50e3827d6c2a7f328" id="r_a56a1ea35897d70e50e3827d6c2a7f328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#affe8cf3475961d5d6d40af4c31a235a5">FOnDraggableRegionChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a1ea35897d70e50e3827d6c2a7f328">OnDraggableRegionChanged</a></td></tr>
+<tr class="memdesc:a56a1ea35897d70e50e3827d6c2a7f328"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnDraggableRegionChanged.  <br /></td></tr>
+<tr class="separator:a56a1ea35897d70e50e3827d6c2a7f328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f56024832765dcf2a7e416d9794a7c" id="r_a75f56024832765dcf2a7e416d9794a7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a2f9158a16f20d02b2170aa64e6b7e9c7">FOnAddressChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75f56024832765dcf2a7e416d9794a7c">OnAddressChanged</a></td></tr>
+<tr class="memdesc:a75f56024832765dcf2a7e416d9794a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnAddressChanged.  <br /></td></tr>
+<tr class="separator:a75f56024832765dcf2a7e416d9794a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf551e1c72e5617d7775919512196f00" id="r_aaf551e1c72e5617d7775919512196f00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a461a12a48adf3fd3c67fe6ac0055dbe2">FOnTitleChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf551e1c72e5617d7775919512196f00">OnTitleChanged</a></td></tr>
+<tr class="memdesc:aaf551e1c72e5617d7775919512196f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnTitleChanged.  <br /></td></tr>
+<tr class="separator:aaf551e1c72e5617d7775919512196f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416856edeca165dc23b0a0c5d7453716" id="r_a416856edeca165dc23b0a0c5d7453716"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a7a7c065f6a5402f80ec18096a699a805">FOnFaviconUrlChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a416856edeca165dc23b0a0c5d7453716">OnFaviconUrlChanged</a></td></tr>
+<tr class="memdesc:a416856edeca165dc23b0a0c5d7453716"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnFaviconUrlChanged.  <br /></td></tr>
+<tr class="separator:a416856edeca165dc23b0a0c5d7453716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c1e287cc464b72e83447da331db197" id="r_aa9c1e287cc464b72e83447da331db197"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#aa2d7b49df4bc8f3ea465e77567d3455f">FOnFullscreenModeChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9c1e287cc464b72e83447da331db197">OnFullscreenModeChanged</a></td></tr>
+<tr class="memdesc:aa9c1e287cc464b72e83447da331db197"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnFullscreenModeChanged.  <br /></td></tr>
+<tr class="separator:aa9c1e287cc464b72e83447da331db197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace25127babbedc8e2d7b6e8ffd2cf8be" id="r_ace25127babbedc8e2d7b6e8ffd2cf8be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a87839970562cc2bd4b3dc9ed1f0742e0">FOnStatusMessageEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace25127babbedc8e2d7b6e8ffd2cf8be">OnStatusMessage</a></td></tr>
+<tr class="memdesc:ace25127babbedc8e2d7b6e8ffd2cf8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnStatusMessage.  <br /></td></tr>
+<tr class="separator:ace25127babbedc8e2d7b6e8ffd2cf8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd060fe60a474a45f812dff119bb03b" id="r_a5cd060fe60a474a45f812dff119bb03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a250cc5b645e739fbd4aa3aac223ab6fe">FOnConsoleMessageEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cd060fe60a474a45f812dff119bb03b">OnConsoleMessage</a></td></tr>
+<tr class="memdesc:a5cd060fe60a474a45f812dff119bb03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnConsoleMessage.  <br /></td></tr>
+<tr class="separator:a5cd060fe60a474a45f812dff119bb03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171792003650454d534099c48160e38a" id="r_a171792003650454d534099c48160e38a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#af105a01d6337cdf5981cac2798e8eb82">FOnLoadingProgressChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a171792003650454d534099c48160e38a">OnLoadingProgressChanged</a></td></tr>
+<tr class="memdesc:a171792003650454d534099c48160e38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnLoadingProgressChanged.  <br /></td></tr>
+<tr class="separator:a171792003650454d534099c48160e38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f762a4561e729af0be337d2cf15991" id="r_a27f762a4561e729af0be337d2cf15991"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a8856ef8646d794fd106cb79592c1287e">FOnUrlRequestEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27f762a4561e729af0be337d2cf15991">OnUrlRequest</a></td></tr>
+<tr class="memdesc:a27f762a4561e729af0be337d2cf15991"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnUrlRequest.  <br /></td></tr>
+<tr class="separator:a27f762a4561e729af0be337d2cf15991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebc6f3047f20e0488de758d20f9b9a8" id="r_acebc6f3047f20e0488de758d20f9b9a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#ae51211daf438679d34780e3e418127b7">FOnQueryRequestEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acebc6f3047f20e0488de758d20f9b9a8">OnQueryRequest</a></td></tr>
+<tr class="memdesc:acebc6f3047f20e0488de758d20f9b9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnQueryRequest.  <br /></td></tr>
+<tr class="separator:acebc6f3047f20e0488de758d20f9b9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6528b125a0a964fcb59780ea7d903f02" id="r_a6528b125a0a964fcb59780ea7d903f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a2f3553ceb003c47bfb0eb168157fb164">FOnInvokeMethodEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6528b125a0a964fcb59780ea7d903f02">OnInvokeMethod</a></td></tr>
+<tr class="memdesc:a6528b125a0a964fcb59780ea7d903f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnInvokeMethod.  <br /></td></tr>
+<tr class="separator:a6528b125a0a964fcb59780ea7d903f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace098d504419224ca2661f7882929a7e" id="r_ace098d504419224ca2661f7882929a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a8df2e669a076cd9f135b0c19cff8ca4b">FOnReportJavascriptResultEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace098d504419224ca2661f7882929a7e">OnReportJavascriptResult</a></td></tr>
+<tr class="memdesc:ace098d504419224ca2661f7882929a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnReportJavascriptResult.  <br /></td></tr>
+<tr class="separator:ace098d504419224ca2661f7882929a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50955410863a6954e0a99d34929872c0" id="r_a50955410863a6954e0a99d34929872c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a7c4181b83290e111cf1c637b50f3df9b">FOnNativeBrowserCreatedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50955410863a6954e0a99d34929872c0">OnNativeBrowserCreated</a></td></tr>
+<tr class="memdesc:a50955410863a6954e0a99d34929872c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event handler of OnNativeBrowserCreated.  <br /></td></tr>
+<tr class="separator:a50955410863a6954e0a99d34929872c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe9699ca38d3e7ba4243eea3d4738e4" id="r_adfe9699ca38d3e7ba4243eea3d4738e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_cef_view.html#a67441478c9632c339235b57aa9598a3d">FOnCreateNewBrowserEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfe9699ca38d3e7ba4243eea3d4738e4">OnCreateNewBrowser</a></td></tr>
+<tr class="separator:adfe9699ca38d3e7ba4243eea3d4738e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents the construction arguments of <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9dac0d23d1d505080396c798b580b008" name="a9dac0d23d1d505080396c798b580b008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dac0d23d1d505080396c798b580b008">&#9670;&#160;</a></span>FArguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCefView::FArguments::FArguments </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a02272151443c0ba62c04cf77b7b51dc1" name="a02272151443c0ba62c04cf77b7b51dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02272151443c0ba62c04cf77b7b51dc1">&#9670;&#160;</a></span>bAcceptDrops</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SCefView::FArguments::bAcceptDrops</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dc3733884ef3cefd2feeb76f66239f8" name="a9dc3733884ef3cefd2feeb76f66239f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc3733884ef3cefd2feeb76f66239f8">&#9670;&#160;</a></span>bAllowDrag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SCefView::FArguments::bAllowDrag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0db5d1e219802b202624ce8aea096e4" name="aa0db5d1e219802b202624ce8aea096e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0db5d1e219802b202624ce8aea096e4">&#9670;&#160;</a></span>bEnableContextMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SCefView::FArguments::bEnableContextMenu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcfff9ca32abed87570059c5798d1f90" name="abcfff9ca32abed87570059c5798d1f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfff9ca32abed87570059c5798d1f90">&#9670;&#160;</a></span>FrameRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 SCefView::FArguments::FrameRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75f56024832765dcf2a7e416d9794a7c" name="a75f56024832765dcf2a7e416d9794a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f56024832765dcf2a7e416d9794a7c">&#9670;&#160;</a></span>OnAddressChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a2f9158a16f20d02b2170aa64e6b7e9c7">FOnAddressChangedEvent</a> SCefView::FArguments::OnAddressChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnAddressChanged. </p>
+
+</div>
+</div>
+<a id="a5cd060fe60a474a45f812dff119bb03b" name="a5cd060fe60a474a45f812dff119bb03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd060fe60a474a45f812dff119bb03b">&#9670;&#160;</a></span>OnConsoleMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a250cc5b645e739fbd4aa3aac223ab6fe">FOnConsoleMessageEvent</a> SCefView::FArguments::OnConsoleMessage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnConsoleMessage. </p>
+
+</div>
+</div>
+<a id="adfe9699ca38d3e7ba4243eea3d4738e4" name="adfe9699ca38d3e7ba4243eea3d4738e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe9699ca38d3e7ba4243eea3d4738e4">&#9670;&#160;</a></span>OnCreateNewBrowser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a67441478c9632c339235b57aa9598a3d">FOnCreateNewBrowserEvent</a> SCefView::FArguments::OnCreateNewBrowser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56a1ea35897d70e50e3827d6c2a7f328" name="a56a1ea35897d70e50e3827d6c2a7f328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a1ea35897d70e50e3827d6c2a7f328">&#9670;&#160;</a></span>OnDraggableRegionChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#affe8cf3475961d5d6d40af4c31a235a5">FOnDraggableRegionChangedEvent</a> SCefView::FArguments::OnDraggableRegionChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnDraggableRegionChanged. </p>
+
+</div>
+</div>
+<a id="a416856edeca165dc23b0a0c5d7453716" name="a416856edeca165dc23b0a0c5d7453716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a416856edeca165dc23b0a0c5d7453716">&#9670;&#160;</a></span>OnFaviconUrlChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a7a7c065f6a5402f80ec18096a699a805">FOnFaviconUrlChangedEvent</a> SCefView::FArguments::OnFaviconUrlChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnFaviconUrlChanged. </p>
+
+</div>
+</div>
+<a id="aa9c1e287cc464b72e83447da331db197" name="aa9c1e287cc464b72e83447da331db197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c1e287cc464b72e83447da331db197">&#9670;&#160;</a></span>OnFullscreenModeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#aa2d7b49df4bc8f3ea465e77567d3455f">FOnFullscreenModeChangedEvent</a> SCefView::FArguments::OnFullscreenModeChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnFullscreenModeChanged. </p>
+
+</div>
+</div>
+<a id="a6528b125a0a964fcb59780ea7d903f02" name="a6528b125a0a964fcb59780ea7d903f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6528b125a0a964fcb59780ea7d903f02">&#9670;&#160;</a></span>OnInvokeMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a2f3553ceb003c47bfb0eb168157fb164">FOnInvokeMethodEvent</a> SCefView::FArguments::OnInvokeMethod</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnInvokeMethod. </p>
+
+</div>
+</div>
+<a id="af30d10d06ff499b67ed4c0adece28c4d" name="af30d10d06ff499b67ed4c0adece28c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30d10d06ff499b67ed4c0adece28c4d">&#9670;&#160;</a></span>OnLoadEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#aba3f6d2076e3b8077f113ad0e33d5c22">FOnLoadEndEvent</a> SCefView::FArguments::OnLoadEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnLoadEnd. </p>
+
+</div>
+</div>
+<a id="ab9595c457a0b4e4729544f861b7dfbc1" name="ab9595c457a0b4e4729544f861b7dfbc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9595c457a0b4e4729544f861b7dfbc1">&#9670;&#160;</a></span>OnLoadError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a59ccfafa8048d326e74e738207917231">FOnLoadErrorEvent</a> SCefView::FArguments::OnLoadError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnLoadError. </p>
+
+</div>
+</div>
+<a id="a171792003650454d534099c48160e38a" name="a171792003650454d534099c48160e38a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171792003650454d534099c48160e38a">&#9670;&#160;</a></span>OnLoadingProgressChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#af105a01d6337cdf5981cac2798e8eb82">FOnLoadingProgressChangedEvent</a> SCefView::FArguments::OnLoadingProgressChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnLoadingProgressChanged. </p>
+
+</div>
+</div>
+<a id="a497947759b629ced3ffb7b08611a43dc" name="a497947759b629ced3ffb7b08611a43dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a497947759b629ced3ffb7b08611a43dc">&#9670;&#160;</a></span>OnLoadStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a4bf4bb2468dc6d25383eb63916e2a394">FOnLoadStartEvent</a> SCefView::FArguments::OnLoadStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnLoadStart. </p>
+
+</div>
+</div>
+<a id="a2165047e00532d0ff204045b55a6ae83" name="a2165047e00532d0ff204045b55a6ae83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2165047e00532d0ff204045b55a6ae83">&#9670;&#160;</a></span>OnLoadStateChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a9e7858c0f47e3dc41a18dac3e984eb4a">FOnLoadStateChangedEvent</a> SCefView::FArguments::OnLoadStateChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnLoadStateChanged. </p>
+
+</div>
+</div>
+<a id="a50955410863a6954e0a99d34929872c0" name="a50955410863a6954e0a99d34929872c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50955410863a6954e0a99d34929872c0">&#9670;&#160;</a></span>OnNativeBrowserCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a7c4181b83290e111cf1c637b50f3df9b">FOnNativeBrowserCreatedEvent</a> SCefView::FArguments::OnNativeBrowserCreated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnNativeBrowserCreated. </p>
+
+</div>
+</div>
+<a id="acebc6f3047f20e0488de758d20f9b9a8" name="acebc6f3047f20e0488de758d20f9b9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebc6f3047f20e0488de758d20f9b9a8">&#9670;&#160;</a></span>OnQueryRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#ae51211daf438679d34780e3e418127b7">FOnQueryRequestEvent</a> SCefView::FArguments::OnQueryRequest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnQueryRequest. </p>
+
+</div>
+</div>
+<a id="ace098d504419224ca2661f7882929a7e" name="ace098d504419224ca2661f7882929a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace098d504419224ca2661f7882929a7e">&#9670;&#160;</a></span>OnReportJavascriptResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a8df2e669a076cd9f135b0c19cff8ca4b">FOnReportJavascriptResultEvent</a> SCefView::FArguments::OnReportJavascriptResult</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnReportJavascriptResult. </p>
+
+</div>
+</div>
+<a id="ace25127babbedc8e2d7b6e8ffd2cf8be" name="ace25127babbedc8e2d7b6e8ffd2cf8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace25127babbedc8e2d7b6e8ffd2cf8be">&#9670;&#160;</a></span>OnStatusMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a87839970562cc2bd4b3dc9ed1f0742e0">FOnStatusMessageEvent</a> SCefView::FArguments::OnStatusMessage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnStatusMessage. </p>
+
+</div>
+</div>
+<a id="aaf551e1c72e5617d7775919512196f00" name="aaf551e1c72e5617d7775919512196f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf551e1c72e5617d7775919512196f00">&#9670;&#160;</a></span>OnTitleChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a461a12a48adf3fd3c67fe6ac0055dbe2">FOnTitleChangedEvent</a> SCefView::FArguments::OnTitleChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnTitleChanged. </p>
+
+</div>
+</div>
+<a id="a27f762a4561e729af0be337d2cf15991" name="a27f762a4561e729af0be337d2cf15991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f762a4561e729af0be337d2cf15991">&#9670;&#160;</a></span>OnUrlRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_cef_view.html#a8856ef8646d794fd106cb79592c1287e">FOnUrlRequestEvent</a> SCefView::FArguments::OnUrlRequest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The event handler of OnUrlRequest. </p>
+
+</div>
+</div>
+<a id="ae6374c3fee59722398e33db308be06b1" name="ae6374c3fee59722398e33db308be06b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6374c3fee59722398e33db308be06b1">&#9670;&#160;</a></span>Settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_slate_cef_view_settings.html">FSlateCefViewSettings</a> SCefView::FArguments::Settings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Settings. </p>
+
+</div>
+</div>
+<a id="ab8ae2e09dc62445658527981427b8a00" name="ab8ae2e09dc62445658527981427b8a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ae2e09dc62445658527981427b8a00">&#9670;&#160;</a></span>Url</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FString SCefView::FArguments::Url</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The URL. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_s_cef_view.html">SCefView</a></li><li class="navelem"><a class="el" href="struct_s_cef_view_1_1_f_arguments.html">FArguments</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
