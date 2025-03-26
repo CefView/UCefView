@@ -1,0 +1,70 @@
+html {
+    /* side nav width. MUST be = `TREEVIEW_WIDTH`.
+     * Make sure it is wide enough to contain the page title (logo + title + version)
+     */
+    --side-nav-fixed-width: 335px;
+    --menu-display: none;
+
+    --toc-sticky-top: -25px;
+    --toc-max-height: calc(100vh - 2 * var(--spacing-medium) - 25px);
+}
+
+#projectname {
+    white-space: nowrap;
+}
+
+
+@media screen and (min-width: 768px) {
+    html {
+        --searchbar-background: var(--page-background-color);
+    }
+
+    #side-nav {
+        min-width: var(--side-nav-fixed-width);
+        max-width: var(--side-nav-fixed-width);
+        overflow: visible;
+    }
+
+    #nav-tree {
+        padding: 0;
+    }
+
+    #top {
+        display: block;
+        overflow: hidden;
+        background: var(--side-nav-background);
+    }
+
+    .ui-resizable-handle {
+        cursor: default;
+        width: 1px !important;
+        background: var(--separator-color);
+    }
+
+    #nav-path {
+        position: fixed;
+        right: 0;
+        left: var(--side-nav-fixed-width);
+        bottom: 0;
+        width: auto;
+    }
+
+    #doc-content {
+        padding-bottom: calc(3 * var(--spacing-large));
+        box-sizing: border-box;
+        margin-left: var(--side-nav-fixed-width) !important;
+    }
+
+    #MSearchBox {
+        width: calc(var(--side-nav-fixed-width) - calc(2 * var(--spacing-medium)));
+    }
+
+    #MSearchField {
+        width: calc(var(--side-nav-fixed-width) - calc(2 * var(--spacing-medium)) - 65px);
+    }
+
+    #MSearchResultsWindow {
+        left: var(--spacing-medium) !important;
+        right: auto;
+    }
+}

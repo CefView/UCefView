@@ -1,0 +1,369 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="google-site-verification" content="ZrQwodBTb-yj0Q2Qw4-KxC8HN5x84J9tn1ZrY1zRFrU" />
+    <title>UCefView: Interoperability</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/CefView/UCefView" class="github-corner" title="View source on GitHub" target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <!-- do not remove this div, it is closed by doxygen! -->
+    <div id="top">
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">
+                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                <span>
+                                    <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
+                                    <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
+                                        alt="Fab logo" style="width: 24px; width: 24px;">
+                                </span>
+                            </div>
+                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('md__docs_204-_interoperability.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Interoperability</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul>
+  <li class="level1">
+    <a href="#autotoc_md24">The UCefViewBridge Object</a>
+    <ul>
+      <li class="level2">
+        <a href="#autotoc_md25">UCefViewBridge API</a>
+      </li>
+    </ul>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md26">C++ to JavaScript</a>
+    <ul>
+      <li class="level2">
+        <a href="#autotoc_md27">Executing JavaScript Directly</a>
+      </li>
+      <li class="level2">
+        <a href="#autotoc_md28">Event Triggering</a>
+      </li>
+    </ul>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md29">JavaScript -&gt; C++</a>
+    <ul>
+      <li class="level2">
+        <a href="#autotoc_md30">UCefViewBridge.invoke</a>
+      </li>
+      <li class="level2">
+        <a href="#autotoc_md31">window.cefViewQuery(query)</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+<div class="textblock"><p><a class="anchor" id="autotoc_md23"></a></p>
+<p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> provides robust interoperability between the native Unreal Engine context (C++/Blueprint) and the web context (JavaScript). This allows you to call JavaScript from C++ and vice-versa, enabling the creation of powerful hybrid applications.</p>
+<h1><a class="anchor" id="autotoc_md24"></a>
+The UCefViewBridge Object</h1>
+<p>To facilitate communication, <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> automatically injects a bridge object into the <code>window</code> object of the web context. This object provides the primary interface for web pages to interact with your Unreal application.</p>
+<p>The name of this bridge object can be configured in your project's Cef Settings via the <code>BridgeObjectName</code> field. The default name is <code>UCefViewBridge</code>.</p>
+<h2><a class="anchor" id="autotoc_md25"></a>
+UCefViewBridge API</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Method   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>addEventListener(eventName, listener)</code>   </td><td class="markdownTableBodyNone">Adds a listener function to be called when a specific event is triggered from C++.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>removeEventListener(eventName, listener)</code>   </td><td class="markdownTableBodyNone">Removes a previously registered event listener.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>invoke(methodName, ...args)</code>   </td><td class="markdownTableBodyNone">Invokes a native C++/Blueprint handler with the specified name and arguments.   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md26"></a>
+C++ to JavaScript</h1>
+<h2><a class="anchor" id="autotoc_md27"></a>
+Executing JavaScript Directly</h2>
+<p>You can execute arbitrary JavaScript code within the context of the WebView from C++.</p>
+<div class="fragment"><div class="line"><span class="comment">// Assume you have a pointer to a UCefView widget</span></div>
+<div class="line"><a class="code hl_class" href="class_u_cef_view.html">UCefView</a>* MyUCefView;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Execute a simple script in the main frame of the browser.</span></div>
+<div class="line">MyUCefView-&gt;<a class="code hl_function" href="class_u_cef_view.html#a3ebd2de48696802207f3356068f2a2e9">ExecuteJavascript</a>(</div>
+<div class="line">    <a class="code hl_variable" href="class_u_cef_view.html#a930f8c1710af58d7691eddc9013acc8e">UCefView::MainFrameID</a>,          <span class="comment">// The ID of the frame to execute in. MainFrameID targets the top-level frame.</span></div>
+<div class="line">    TEXT(<span class="stringliteral">&quot;alert(&#39;hello Unreal&#39;)&quot;</span>),  <span class="comment">// The JavaScript code to execute.</span></div>
+<div class="line">    TEXT(<span class="stringliteral">&quot;&quot;</span>)                        <span class="comment">// An optional URL parameter, not typically needed.</span></div>
+<div class="line">);</div>
+<div class="ttc" id="aclass_u_cef_view_html"><div class="ttname"><a href="class_u_cef_view.html">UCefView</a></div><div class="ttdoc">UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...</div><div class="ttdef"><b>Definition</b> CefView.h:43</div></div>
+<div class="ttc" id="aclass_u_cef_view_html_a3ebd2de48696802207f3356068f2a2e9"><div class="ttname"><a href="class_u_cef_view.html#a3ebd2de48696802207f3356068f2a2e9">UCefView::ExecuteJavascript</a></div><div class="ttdeci">bool ExecuteJavascript(const FCefFrameId &amp;InFrameId, const FString &amp;InJavascriptCode, const FString &amp;InTargetUrl)</div><div class="ttdoc">Executes JavaScript code in a specific frame of the CEF view.</div></div>
+<div class="ttc" id="aclass_u_cef_view_html_a930f8c1710af58d7691eddc9013acc8e"><div class="ttname"><a href="class_u_cef_view.html#a930f8c1710af58d7691eddc9013acc8e">UCefView::MainFrameID</a></div><div class="ttdeci">static const FCefFrameId MainFrameID</div><div class="ttdoc">The main frame identity, representing the primary document frame in the browser. Used for targeting m...</div><div class="ttdef"><b>Definition</b> CefView.h:51</div></div>
+</div><!-- fragment --><ul>
+<li><code><a class="el" href="class_u_cef_view.html#a3ebd2de48696802207f3356068f2a2e9" title="Executes JavaScript code in a specific frame of the CEF view.">UCefView::ExecuteJavascript</a></code></li>
+<li><code><a class="el" href="class_u_cef_view.html#a75cafd0355a28f0de9887dc6caab0092" title="Executes JavaScript code in a specific frame and returns the result asynchronously.">UCefView::ExecuteJavascriptWithResult</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#aaf4befed513c397d292455f6484094d5" title="Executes JavaScript code in a specific frame.">SCefView::ExecuteJavascript</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#abca004abb34f06115d7392c7c770fae2" title="Executes JavaScript code in a specific frame and returns the result.">SCefView::ExecuteJavascriptWithResult</a></code></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md28"></a>
+Event Triggering</h2>
+<p>You can register an event from javascript code and then trigger the event from C++ code or Blueprint.</p>
+<p><b>Register event handler in Javascript</b> </p><div class="fragment"><div class="line">function onLoad() {</div>
+<div class="line">  // Add a event listener to handle the event named &#39;colorChange&#39;</div>
+<div class="line">  Window.UCefViewBridge.addEventListener(</div>
+<div class="line">    // event name</div>
+<div class="line">    &quot;colorChange&quot;   </div>
+<div class="line">    // event handler</div>
+<div class="line">    function (color) {</div>
+<div class="line">      // change the background color</div>
+<div class="line">      document.getElementById(&quot;main&quot;).style.backgroundColor = color;</div>
+<div class="line">    }</div>
+<div class="line">  );</div>
+<div class="line">}</div>
+</div><!-- fragment --><p><b>Trigger the event from C++ or Blueprint</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_u_cef_view.html">UCefView</a>* MyUCefView;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// create event</span></div>
+<div class="line"><a class="code hl_class" href="class_u_cef_view_event.html">UCefViewEvent</a>* ColorChangeEvent = NewObject&lt;UCefViewEvent&gt;();</div>
+<div class="line"><span class="comment">// set event name</span></div>
+<div class="line">ColorChangeEvent-&gt;<a class="code hl_variable" href="class_u_cef_view_event.html#aa992130b4715c6039849b7917675d565">Name</a> = TEXT(<span class="stringliteral">&quot;colorChange&quot;</span>);</div>
+<div class="line"><span class="comment">// set event args with JSON string</span></div>
+<div class="line">ColorChangeEvent-&gt;<a class="code hl_function" href="class_u_cef_view_event.html#a2d0c0a7fa8fae3d728aec40f51528bf4">SetArguments</a>(TEXT(<span class="stringliteral">&quot;[red]&quot;</span>));</div>
+<div class="line"><span class="comment">// broadcast the event to all frames</span></div>
+<div class="line">MyUCefView-&gt;<a class="code hl_function" href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197">BroadcastEvent</a>(ColorChangeEvent);</div>
+<div class="ttc" id="aclass_u_cef_view_event_html"><div class="ttname"><a href="class_u_cef_view_event.html">UCefViewEvent</a></div><div class="ttdoc">Represents an event dispatched from the C++ code in native context to the Javascript code in web cont...</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:45</div></div>
+<div class="ttc" id="aclass_u_cef_view_event_html_a2d0c0a7fa8fae3d728aec40f51528bf4"><div class="ttname"><a href="class_u_cef_view_event.html#a2d0c0a7fa8fae3d728aec40f51528bf4">UCefViewEvent::SetArguments</a></div><div class="ttdeci">void SetArguments(const FString &amp;InArguments)</div><div class="ttdoc">Sets the arguments for this event using a JSON string.</div></div>
+<div class="ttc" id="aclass_u_cef_view_event_html_aa992130b4715c6039849b7917675d565"><div class="ttname"><a href="class_u_cef_view_event.html#aa992130b4715c6039849b7917675d565">UCefViewEvent::Name</a></div><div class="ttdeci">FString Name</div><div class="ttdoc">The name of the event as dispatched from the browser.</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:63</div></div>
+<div class="ttc" id="aclass_u_cef_view_html_a61eac5eebd77818af1a8adb1fa172197"><div class="ttname"><a href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197">UCefView::BroadcastEvent</a></div><div class="ttdeci">bool BroadcastEvent(const UCefViewEvent *InCefViewEvent)</div><div class="ttdoc">Broadcasts a custom event to all frames in the CEF view.</div></div>
+</div><!-- fragment --><ul>
+<li><code><a class="el" href="class_u_cef_view.html#a2280eb077a93f144b41e28150f6130e7" title="Triggers a custom event for a specific frame in the CEF view. Allows sending user-defined events to t...">UCefView::TriggerEventForFrame</a></code></li>
+<li><code><a class="el" href="class_u_cef_view.html#a308462bb9a935d14565e2b00808e9742" title="Triggers a custom event for the main frame in the CEF view.">UCefView::TriggerEventForMainFrame</a></code></li>
+<li><code><a class="el" href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197" title="Broadcasts a custom event to all frames in the CEF view.">UCefView::BroadcastEvent</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#a1ac9f11388aa90b12160d3d7e63b9a99" title="Triggers a custom event for a specific frame in the browser.">SCefView::TriggerEventForFrame</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#a9bf28c7fc1c3f0d0a14b94674a0c8b5e" title="Triggers a custom event for the main frame in the browser.">SCefView::TriggerEventForMainFrame</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#ad47aec37942530b01cfa76725aa07fb7" title="Broadcasts a custom event to all frames in the browser.">SCefView::BroadcastEvent</a></code></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md29"></a>
+JavaScript -&gt; C++</h1>
+<h2><a class="anchor" id="autotoc_md30"></a>
+UCefViewBridge.invoke</h2>
+<p>You can register an invoke handler from C++/Blueprint and then invoke the handler from Javascript.</p>
+<p><b>Register invoke handler in C++/Blueprint</b> </p><div class="fragment"><div class="line">UCLASS()</div>
+<div class="line">class UWebClient : public UObject</div>
+<div class="line">{</div>
+<div class="line">GENERATED_BODY()</div>
+<div class="line"> </div>
+<div class="line">public:</div>
+<div class="line"><span class="keywordtype">void</span> InvokeHandler(const int64&amp; InBrowserId,</div>
+<div class="line">                    const <a class="code hl_struct" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId,</div>
+<div class="line">                    const FString&amp; InMethod,</div>
+<div class="line">                    const FString&amp; InArguments)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (InMethod == <span class="stringliteral">&quot;HelloNative&quot;</span>) {</div>
+<div class="line">    <span class="comment">// InMethod: &quot;HelloNative&quot;</span></div>
+<div class="line">    <span class="comment">// InArguments: &quot;[1, &quot;2&quot;, true]&quot;</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// test code</span></div>
+<div class="line"><a class="code hl_class" href="class_u_cef_view.html">UCefView</a>* MyUCefView = NewObject&lt;UCefView&gt;();</div>
+<div class="line">UWebClient* MyWebClient = NewObject&lt;UWebClient&gt;();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// bind invoke handler</span></div>
+<div class="line">MyUCefView-&gt;<a class="code hl_variable" href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a>.AddDynamic(MyWebClient, &amp;UWebClient::InvokeHandler);</div>
+<div class="ttc" id="aclass_u_cef_view_html_ad34fb47c7fe923fbf826b6d89d52a79e"><div class="ttname"><a href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">UCefView::OnInvokeMethod</a></div><div class="ttdeci">FOnInvokeMethodEvent OnInvokeMethod</div><div class="ttdoc">Event triggered when a method is invoked from web content (JavaScript) via the bridge object....</div><div class="ttdef"><b>Definition</b> CefView.h:629</div></div>
+<div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:43</div></div>
+</div><!-- fragment --><p><b>Invoke native handler from Javascript</b> </p><div class="fragment"><div class="line">// invoke C++ code</div>
+<div class="line">window.UCefViewBridge.invoke(&quot;HelloNative&quot;, 1, &quot;2&quot;,  true);</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md31"></a>
+window.cefViewQuery(query)</h2>
+<p>you can register CefViewQuery handler to process the CefViewQuery request and reply with your response.</p>
+<p><b>Register CefViewQuery handler in C++/Blueprint</b> </p><div class="fragment"><div class="line">UCLASS()</div>
+<div class="line">class UWebClient : public UObject</div>
+<div class="line">{</div>
+<div class="line">GENERATED_BODY()</div>
+<div class="line"> </div>
+<div class="line">public:</div>
+<div class="line"><span class="keywordtype">void</span> CefViewQueryHanlder(const int64&amp; InBrowserId,     <span class="comment">//</span></div>
+<div class="line">                        const <a class="code hl_struct" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId, <span class="comment">//</span></div>
+<div class="line">                        <a class="code hl_class" href="class_u_cef_view_query.html">UCefViewQuery</a>* InQuery)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// read request data</span></div>
+<div class="line">    FString Request = InQuery-&gt;GetRequest();</div>
+<div class="line">    <span class="comment">// Request: &quot;hello from CefViewQuery&quot;</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// reply</span></div>
+<div class="line">    InQuery-&gt;ErrorCode = 0;</div>
+<div class="line">    InQuery-&gt;Response = TEXT(<span class="stringliteral">&quot;ok&quot;</span>);</div>
+<div class="line">    InQuery-&gt;IsSuccess = <span class="keyword">true</span>;</div>
+<div class="line">    InQuery-&gt;Reply();</div>
+<div class="line">}</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_class" href="class_u_cef_view.html">UCefView</a>* MyUCefView = NewObject&lt;UCefView&gt;();</div>
+<div class="line">UWebClient* MyWebClient = NewObject&lt;UWebClient&gt;();</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// bind CefViewQuery handler</span></div>
+<div class="line">MyUCefView-&gt;<a class="code hl_variable" href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a>.AddDynamic(MyWebClient, &amp;UWebClient::CefViewQueryHanlder);</div>
+<div class="ttc" id="aclass_u_cef_view_query_html"><div class="ttname"><a href="class_u_cef_view_query.html">UCefViewQuery</a></div><div class="ttdoc">Represents a query sent from the CEF (Chromium Embedded Framework) browser to the Unreal Engine....</div><div class="ttdef"><b>Definition</b> CefViewQuery.h:58</div></div>
+</div><!-- fragment --><p><b>Send CefViewQuery request from Javascript and process the response</b> </p><div class="fragment"><div class="line">var query = {</div>
+<div class="line">request: &quot;hello from CefViewQuery&quot;,</div>
+<div class="line">onSuccess: function (response) {</div>
+<div class="line">    alert(&quot;Success: &quot; + response);</div>
+<div class="line">},</div>
+<div class="line">onFailure: function (error_code, error_message) {</div>
+<div class="line">    alert(&quot;Failure: &quot; + error_message + &quot; (Error Code: &quot; + error_code + &quot;)&quot;);</div>
+<div class="line">},</div>
+<div class="line">};</div>
+<div class="line">// send the query</div>
+<div class="line">window.cefViewQuery(query);</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
