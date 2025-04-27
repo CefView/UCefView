@@ -199,7 +199,9 @@ Cef Settings</div></div>
 <li><b>Command Line Args:</b> Additional command-line arguments to pass to the CEF browser process.</li>
 <li><b>Builtin Scheme Name:</b> The scheme name for builtin resources.</li>
 <li><b>Bridge Object Name:</b> The name of the JavaScript object used for the C++ bridge.</li>
+<li><b>Disable Sandbox:</b> Whether to disable the sandbox for the UCefViewHelper processes.</li>
 </ul>
+<dl class="section note"><dt>Note</dt><dd>CEF doesn't support sandbox enable on main process, this means if you want to ship a game product with <a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> plugin, you need to disable the App Sandbox feature for your Unreal project in Xcode.</dd></dl>
 <p>for more details please refer to <code><a class="el" href="class_u_cef_settings.html" title="Represents the settings for CEF context initialization.">UCefSettings</a></code></p>
 <h1><a class="anchor" id="autotoc_md9"></a>
 3. Using SCefView (Slate)</h1>

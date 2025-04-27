@@ -7,6 +7,7 @@ var class_u_cef_settings =
     [ "BuiltinSchemeName", "class_u_cef_settings.html#aeacfe6da4182cf50544fe5c8a7f066d8", null ],
     [ "CommandLineArgs", "class_u_cef_settings.html#a3ec0635891a55df54b23a12dd4bba0cb", null ],
     [ "DisableCommandLineArgsPassthrough", "class_u_cef_settings.html#af0bd4334cd263642b155b6a861ed0c71", null ],
+    [ "DisableSandbox", "class_u_cef_settings.html#ae928842d0a2b3cf5e77c6b9a9080502d", null ],
     [ "Locale", "class_u_cef_settings.html#aad6e34844766eb31899dae9d4a748a69", null ],
     [ "LocalFolderResroucesMapping", "class_u_cef_settings.html#ae041216979af4b10856040a298d3d247", null ],
     [ "LogLevel", "class_u_cef_settings.html#a56c65044fe28f4e1031893f5345f90ed", null ],

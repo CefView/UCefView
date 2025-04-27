@@ -12,5 +12,6 @@ var searchData=
   ['disable_9',['Disable',['../_cef_settings_8h.html#a4c27b1d793d4fa4f189c3edd2c0878e5abcfaccebf745acfd5e75351095a5394a',1,'CefSettings.h']]],
   ['disablecommandlineargspassthrough_10',['DisableCommandLineArgsPassthrough',['../class_u_cef_settings.html#af0bd4334cd263642b155b6a861ed0c71',1,'UCefSettings']]],
   ['disabled_11',['Disabled',['../_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bbab9f5c797ebbf55adccdd8539a65a0241',1,'CefViewTypes.h']]],
-  ['documentation_12',['Support and Documentation',['../md__docs_201-_overview.html#autotoc_md5',1,'']]]
+  ['disablesandbox_12',['DisableSandbox',['../class_u_cef_settings.html#ae928842d0a2b3cf5e77c6b9a9080502d',1,'UCefSettings']]],
+  ['documentation_13',['Support and Documentation',['../md__docs_201-_overview.html#autotoc_md5',1,'']]]
 ];
