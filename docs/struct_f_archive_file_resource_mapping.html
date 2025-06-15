@@ -164,7 +164,7 @@ $(function(){initNavTree('struct_f_archive_file_resource_mapping.html',''); init
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a mapping from an archive file to a URL for resource loading.  
+<p>Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;CefViewTypes.h&gt;</code></p>
@@ -172,10 +172,10 @@ $(function(){initNavTree('struct_f_archive_file_resource_mapping.html',''); init
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a474ac7e111ed3830982f41a885746b61" id="r_a474ac7e111ed3830982f41a885746b61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474ac7e111ed3830982f41a885746b61">operator==</a> (const <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &amp;Other)</td></tr>
-<tr class="memdesc:a474ac7e111ed3830982f41a885746b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file to a URL for resource loading.">FArchiveFileResourceMapping</a> objects.  <br /></td></tr>
+<tr class="memdesc:a474ac7e111ed3830982f41a885746b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects.  <br /></td></tr>
 <tr class="separator:a474ac7e111ed3830982f41a885746b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18caa25da6386048be24ffaf39f8f804" id="r_a18caa25da6386048be24ffaf39f8f804"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18caa25da6386048be24ffaf39f8f804">operator!=</a> (const <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &amp;Other)</td></tr>
-<tr class="memdesc:a18caa25da6386048be24ffaf39f8f804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file to a URL for resource loading.">FArchiveFileResourceMapping</a> objects.  <br /></td></tr>
+<tr class="memdesc:a18caa25da6386048be24ffaf39f8f804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects.  <br /></td></tr>
 <tr class="separator:a18caa25da6386048be24ffaf39f8f804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -184,18 +184,29 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ae3116f4af3fa7c5dd95eca1d273465bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target URL to be mapped to.  <br /></td></tr>
 <tr class="separator:ae3116f4af3fa7c5dd95eca1d273465bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8ee5bda4788f2b5083ff99287b0eeb4" id="r_ac8ee5bda4788f2b5083ff99287b0eeb4"><td class="memItemLeft" align="right" valign="top">FFilePath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8ee5bda4788f2b5083ff99287b0eeb4">Path</a></td></tr>
-<tr class="memdesc:ac8ee5bda4788f2b5083ff99287b0eeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The zip format file contains the resources to be mapped with. The path value must be relative to game dir.  <br /></td></tr>
+<tr class="memdesc:ac8ee5bda4788f2b5083ff99287b0eeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The zip format file containing the resources to be mapped.  <br /></td></tr>
 <tr class="separator:ac8ee5bda4788f2b5083ff99287b0eeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2df90d84a014bbdb76e8f6164a8fff5" id="r_ad2df90d84a014bbdb76e8f6164a8fff5"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2df90d84a014bbdb76e8f6164a8fff5">Password</a></td></tr>
-<tr class="memdesc:ad2df90d84a014bbdb76e8f6164a8fff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The password for accessing the archive file.  <br /></td></tr>
+<tr class="memdesc:ad2df90d84a014bbdb76e8f6164a8fff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The password for accessing the archive file, if required.  <br /></td></tr>
 <tr class="separator:ad2df90d84a014bbdb76e8f6164a8fff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074360edf50340e470b6b8cd6b54cbc4" id="r_a074360edf50340e470b6b8cd6b54cbc4"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a074360edf50340e470b6b8cd6b54cbc4">Priority</a> = 0</td></tr>
 <tr class="memdesc:a074360edf50340e470b6b8cd6b54cbc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The priority of the mapping.  <br /></td></tr>
 <tr class="separator:a074360edf50340e470b6b8cd6b54cbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a mapping from an archive file to a URL for resource loading. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser. </p>
+<p>This struct allows you to serve web assets from a compressed archive file, making distribution and packaging easier. The browser can access files inside the archive as if they were hosted at the specified Url. </p>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> Mapping;</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#ae3116f4af3fa7c5dd95eca1d273465bd">Url</a> = TEXT(<span class="stringliteral">&quot;http://archive.local/&quot;</span>);</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#ac8ee5bda4788f2b5083ff99287b0eeb4">Path</a>.FilePath = TEXT(<span class="stringliteral">&quot;WebAssets.zip&quot;</span>);</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#ad2df90d84a014bbdb76e8f6164a8fff5">Password</a> = TEXT(<span class="stringliteral">&quot;secret&quot;</span>);</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#a074360edf50340e470b6b8cd6b54cbc4">Priority</a> = 2;</div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a></div><div class="ttdoc">Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:293</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_a074360edf50340e470b6b8cd6b54cbc4"><div class="ttname"><a href="#a074360edf50340e470b6b8cd6b54cbc4">FArchiveFileResourceMapping::Priority</a></div><div class="ttdeci">int32 Priority</div><div class="ttdoc">The priority of the mapping.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:345</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ac8ee5bda4788f2b5083ff99287b0eeb4"><div class="ttname"><a href="#ac8ee5bda4788f2b5083ff99287b0eeb4">FArchiveFileResourceMapping::Path</a></div><div class="ttdeci">FFilePath Path</div><div class="ttdoc">The zip format file containing the resources to be mapped.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:321</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ad2df90d84a014bbdb76e8f6164a8fff5"><div class="ttname"><a href="#ad2df90d84a014bbdb76e8f6164a8fff5">FArchiveFileResourceMapping::Password</a></div><div class="ttdeci">FString Password</div><div class="ttdoc">The password for accessing the archive file, if required.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:333</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ae3116f4af3fa7c5dd95eca1d273465bd"><div class="ttname"><a href="#ae3116f4af3fa7c5dd95eca1d273465bd">FArchiveFileResourceMapping::Url</a></div><div class="ttdeci">FString Url</div><div class="ttdoc">The target URL to be mapped to.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:307</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a18caa25da6386048be24ffaf39f8f804" name="a18caa25da6386048be24ffaf39f8f804"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18caa25da6386048be24ffaf39f8f804">&#9670;&#160;</a></span>operator!=()</h2>
 
@@ -219,7 +230,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Inequality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file to a URL for resource loading.">FArchiveFileResourceMapping</a> objects. </p>
+<p>Inequality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Other</td><td>The other mapping to compare with.</td></tr>
@@ -227,6 +238,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the mappings are not equal, false otherwise.</dd></dl>
+<p>Returns true if any of the Url, Path, Password, or Priority fields differ. </p>
 
 </div>
 </div>
@@ -253,7 +265,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Equality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file to a URL for resource loading.">FArchiveFileResourceMapping</a> objects. </p>
+<p>Equality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Other</td><td>The other mapping to compare with.</td></tr>
@@ -261,6 +273,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the mappings are equal, false otherwise.</dd></dl>
+<p>Two mappings are considered equal if their Url, Path, Password, and Priority are all identical. </p>
 
 </div>
 </div>
@@ -277,7 +290,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The password for accessing the archive file. </p>
+<p>The password for accessing the archive file, if required. </p>
+<p>Leave empty if the archive is not password-protected. </p>
 
 </div>
 </div>
@@ -293,7 +307,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The zip format file contains the resources to be mapped with. The path value must be relative to game dir. </p>
+<p>The zip format file containing the resources to be mapped. </p>
+<p>The path value must be relative to the game directory (e.g., "WebAssets.zip"). Only zip archives are supported. </p>
 
 </div>
 </div>
@@ -310,6 +325,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The priority of the mapping. </p>
+<p>Higher priority mappings take precedence when multiple mappings overlap. </p>
 
 </div>
 </div>
@@ -326,6 +342,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The target URL to be mapped to. </p>
+<p>This is the virtual URL that the browser will use to access resources from the specified archive file. Example: "http://archive.local/" </p>
 
 </div>
 </div>

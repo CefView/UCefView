@@ -164,7 +164,7 @@ $(function(){initNavTree('class_u_cef_view_event.html',''); initResizable(true);
 </div><!--header-->
 <div class="contents">
 
-<p>Represents an event dispatched from the CEF view.  
+<p>Represents an event dispatched from the CEF (Chromium Embedded Framework) view to the Unreal Engine environment.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;CefViewEvent.h&gt;</code></p>
@@ -172,24 +172,34 @@ $(function(){initNavTree('class_u_cef_view_event.html',''); initResizable(true);
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acc5fcb6a2829464eb042fa8d7144660c" id="r_acc5fcb6a2829464eb042fa8d7144660c"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc5fcb6a2829464eb042fa8d7144660c">GetArguments</a> () const</td></tr>
-<tr class="memdesc:acc5fcb6a2829464eb042fa8d7144660c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the arguments in JSON string format.  <br /></td></tr>
+<tr class="memdesc:acc5fcb6a2829464eb042fa8d7144660c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the arguments associated with this event in JSON string format.  <br /></td></tr>
 <tr class="separator:acc5fcb6a2829464eb042fa8d7144660c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d0c0a7fa8fae3d728aec40f51528bf4" id="r_a2d0c0a7fa8fae3d728aec40f51528bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d0c0a7fa8fae3d728aec40f51528bf4">SetArguments</a> (const FString &amp;InArguments)</td></tr>
-<tr class="memdesc:a2d0c0a7fa8fae3d728aec40f51528bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the arguments with JSON string.  <br /></td></tr>
+<tr class="memdesc:a2d0c0a7fa8fae3d728aec40f51528bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the arguments for this event using a JSON string.  <br /></td></tr>
 <tr class="separator:a2d0c0a7fa8fae3d728aec40f51528bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa992130b4715c6039849b7917675d565" id="r_aa992130b4715c6039849b7917675d565"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa992130b4715c6039849b7917675d565">Name</a></td></tr>
-<tr class="memdesc:aa992130b4715c6039849b7917675d565"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the event.  <br /></td></tr>
+<tr class="memdesc:aa992130b4715c6039849b7917675d565"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the event as dispatched from the browser.  <br /></td></tr>
 <tr class="separator:aa992130b4715c6039849b7917675d565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0cbee92c388da69b34eb888bdd3a5b7" id="r_ad0cbee92c388da69b34eb888bdd3a5b7"><td class="memItemLeft" align="right" valign="top">TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0cbee92c388da69b34eb888bdd3a5b7">Arguments</a></td></tr>
-<tr class="memdesc:ad0cbee92c388da69b34eb888bdd3a5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The arguments associated with the event.  <br /></td></tr>
+<tr class="memdesc:ad0cbee92c388da69b34eb888bdd3a5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parsed arguments associated with the event, represented as an array of JSON values.  <br /></td></tr>
 <tr class="separator:ad0cbee92c388da69b34eb888bdd3a5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents an event dispatched from the CEF view. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Represents an event dispatched from the CEF (Chromium Embedded Framework) view to the Unreal Engine environment. </p>
+<p><code><a class="el" href="class_u_cef_view_event.html" title="Represents an event dispatched from the CEF (Chromium Embedded Framework) view to the Unreal Engine e...">UCefViewEvent</a></code> encapsulates the name and arguments of an event sent from JavaScript running in a CEF browser instance to the Unreal Engine application. This enables seamless communication between web content and native game logic, allowing you to handle browser-originated events in both Blueprints and C++. </p>
+<p>Events are typically triggered from JavaScript using a bridge object, and received in Unreal as instances of this class. </p>
+<p>Example usage in Blueprint: </p><div class="fragment"><div class="line">Event OnCefViewEventReceived(<a class="code hl_class" href="class_u_cef_view_event.html">UCefViewEvent</a>* Event)</div>
+<div class="line">{</div>
+<div class="line">    PrintString(Event-&gt;<a class="code hl_variable" href="#aa992130b4715c6039849b7917675d565">Name</a>);</div>
+<div class="line">    PrintString(Event-&gt;<a class="code hl_function" href="#acc5fcb6a2829464eb042fa8d7144660c">GetArguments</a>());</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_u_cef_view_event_html"><div class="ttname"><a href="class_u_cef_view_event.html">UCefViewEvent</a></div><div class="ttdoc">Represents an event dispatched from the CEF (Chromium Embedded Framework) view to the Unreal Engine e...</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:50</div></div>
+<div class="ttc" id="aclass_u_cef_view_event_html_aa992130b4715c6039849b7917675d565"><div class="ttname"><a href="#aa992130b4715c6039849b7917675d565">UCefViewEvent::Name</a></div><div class="ttdeci">FString Name</div><div class="ttdoc">The name of the event as dispatched from the browser.</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:71</div></div>
+<div class="ttc" id="aclass_u_cef_view_event_html_acc5fcb6a2829464eb042fa8d7144660c"><div class="ttname"><a href="#acc5fcb6a2829464eb042fa8d7144660c">UCefViewEvent::GetArguments</a></div><div class="ttdeci">FString GetArguments() const</div><div class="ttdoc">Gets the arguments associated with this event in JSON string format.</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc5fcb6a2829464eb042fa8d7144660c" name="acc5fcb6a2829464eb042fa8d7144660c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc5fcb6a2829464eb042fa8d7144660c">&#9670;&#160;</a></span>GetArguments()</h2>
 
@@ -205,8 +215,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the arguments in JSON string format. </p>
-<dl class="section return"><dt>Returns</dt><dd>The string represents the arguments of a JSON list.</dd></dl>
+<p>Gets the arguments associated with this event in JSON string format. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the arguments as a JSON array (e.g., <code>[1, "foo", true]</code>). </dd></dl>
+<p>Use this method to retrieve the raw arguments as sent from the browser. The returned string is a JSON-encoded array, which can be parsed for further processing or inspection. </p>
+<p>For structured access to individual arguments, use the <a class="el" href="#ad0cbee92c388da69b34eb888bdd3a5b7" title="The parsed arguments associated with the event, represented as an array of JSON values.">Arguments</a> property. </p>
 
 </div>
 </div>
@@ -225,13 +237,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the arguments with JSON string. </p>
+<p>Sets the arguments for this event using a JSON string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">InArguments</td><td>The string represents the arguments of a JSON list.</td></tr>
+    <tr><td class="paramname">InArguments</td><td>A string representing the arguments as a JSON array (e.g., <code>[1, "foo", true]</code>).</td></tr>
   </table>
   </dd>
 </dl>
+<p>This method parses the provided JSON string and updates the <a class="el" href="#ad0cbee92c388da69b34eb888bdd3a5b7" title="The parsed arguments associated with the event, represented as an array of JSON values.">Arguments</a> property accordingly. The input must be a valid JSON array; otherwise, parsing will fail and the arguments will not be updated. </p>
+<p>Use this to populate the event with data received from the browser or to simulate events in tests. </p>
 
 </div>
 </div>
@@ -248,7 +262,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The arguments associated with the event. </p>
+<p>The parsed arguments associated with the event, represented as an array of JSON values. </p>
+<p>Each element in the array corresponds to an argument passed from the browser, and can be a number, string, boolean, object, or array, depending on the data sent from JavaScript. </p>
+<p>This property is automatically updated when <a class="el" href="#a2d0c0a7fa8fae3d728aec40f51528bf4" title="Sets the arguments for this event using a JSON string.">SetArguments</a> is called, and is used internally by <a class="el" href="#acc5fcb6a2829464eb042fa8d7144660c" title="Gets the arguments associated with this event in JSON string format.">GetArguments</a> to serialize the arguments back to a JSON string. </p>
+<p>Use this property for type-safe access to individual arguments in C++. </p>
 
 </div>
 </div>
@@ -264,7 +281,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The name of the event. </p>
+<p>The name of the event as dispatched from the browser. </p>
+<p>This string identifies the type or purpose of the event (e.g., "OnButtonClick", "DataReceived"). It is set by the JavaScript code in the web view and is used to route or handle events in Unreal. </p>
+<p>Typical values correspond to custom event names defined in your web application. </p>
 
 </div>
 </div>

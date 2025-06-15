@@ -5,6 +5,9 @@ var hierarchy =
     [ "FCefFrameId", "struct_f_cef_frame_id.html", null ],
     [ "FCefViewSettings", "struct_f_cef_view_settings.html", null ],
     [ "FLocalFolderResourceMapping", "struct_f_local_folder_resource_mapping.html", null ],
+    [ "FSlateCefContext", "class_f_slate_cef_context.html", null ],
+    [ "FSlateCefSettings", "struct_f_slate_cef_settings.html", null ],
+    [ "FSlateCefViewSettings", "struct_f_slate_cef_view_settings.html", null ],
     [ "SWidget", null, [
       [ "SCefView", "class_s_cef_view.html", null ]
     ] ],

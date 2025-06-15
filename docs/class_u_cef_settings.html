@@ -163,7 +163,7 @@ $(function(){initNavTree('class_u_cef_settings.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the settings for CEF context initialization.  
+<p>Represents the settings for CEF context initialization and configuration.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;CefSettings.h&gt;</code></p>
@@ -171,54 +171,59 @@ $(function(){initNavTree('class_u_cef_settings.html',''); initResizable(true); }
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5db1a07b57f1448f2b26c39b84a61e0d" id="r_a5db1a07b57f1448f2b26c39b84a61e0d"><td class="memItemLeft" align="right" valign="top">FName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5db1a07b57f1448f2b26c39b84a61e0d">BridgeObjectName</a> = TEXT(&quot;UCefViewBridge&quot;)</td></tr>
-<tr class="memdesc:a5db1a07b57f1448f2b26c39b84a61e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bridge object represents a Javascript object which will be inserted into all browser and frames. This object is designated for communicating between Javascript in web content and native context(C/C++) code. This object is set as a property of the window object. That means it can be obtained by calling window.bridgeObject in the Javascript code.  <br /></td></tr>
+<tr class="memdesc:a5db1a07b57f1448f2b26c39b84a61e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the bridge object injected into all browser frames. This object enables communication between JavaScript running in web content and native C++ code.  <br /></td></tr>
 <tr class="separator:a5db1a07b57f1448f2b26c39b84a61e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeacfe6da4182cf50544fe5c8a7f066d8" id="r_aeacfe6da4182cf50544fe5c8a7f066d8"><td class="memItemLeft" align="right" valign="top">FName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeacfe6da4182cf50544fe5c8a7f066d8">BuiltinSchemeName</a> = TEXT(&quot;UCefView&quot;)</td></tr>
-<tr class="memdesc:aeacfe6da4182cf50544fe5c8a7f066d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The built-in custom scheme name.  <br /></td></tr>
+<tr class="memdesc:aeacfe6da4182cf50544fe5c8a7f066d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the built-in custom URI scheme used by the CEF context.  <br /></td></tr>
 <tr class="separator:aeacfe6da4182cf50544fe5c8a7f066d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a901e02a1f0c28d510f70bb1a52a72930" id="r_a901e02a1f0c28d510f70bb1a52a72930"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901e02a1f0c28d510f70bb1a52a72930">UserAgent</a></td></tr>
-<tr class="memdesc:a901e02a1f0c28d510f70bb1a52a72930"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user agent string.  <br /></td></tr>
+<tr class="memdesc:a901e02a1f0c28d510f70bb1a52a72930"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user agent string sent by the browser to web servers.  <br /></td></tr>
 <tr class="separator:a901e02a1f0c28d510f70bb1a52a72930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753258ad225a3978a172a614e7c2307d" id="r_a753258ad225a3978a172a614e7c2307d"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a753258ad225a3978a172a614e7c2307d">ArchiveFileResourceMapping</a></td></tr>
-<tr class="memdesc:a753258ad225a3978a172a614e7c2307d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Archive file mappings (Only zip format is supported). The file path value must be relative to Game Dir.  <br /></td></tr>
+<tr class="memdesc:a753258ad225a3978a172a614e7c2307d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Archive file resource mappings for serving web content from .zip files. Only zip format is supported. Each mapping associates a virtual URL with a zip archive.  <br /></td></tr>
 <tr class="separator:a753258ad225a3978a172a614e7c2307d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae041216979af4b10856040a298d3d247" id="r_ae041216979af4b10856040a298d3d247"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae041216979af4b10856040a298d3d247">LocalFolderResroucesMapping</a></td></tr>
-<tr class="memdesc:ae041216979af4b10856040a298d3d247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local folder resource mappings. The folder path value must be relative to Game Content Dir.  <br /></td></tr>
+<tr class="memdesc:ae041216979af4b10856040a298d3d247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local folder resource mappings for serving web content from directories on disk.  <br /></td></tr>
 <tr class="separator:ae041216979af4b10856040a298d3d247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0440f79c00dd50126ff110e5ab9eeb10" id="r_a0440f79c00dd50126ff110e5ab9eeb10"><td class="memItemLeft" align="right" valign="top">FColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0440f79c00dd50126ff110e5ab9eeb10">BackgroundColor</a> = FColor::White</td></tr>
-<tr class="memdesc:a0440f79c00dd50126ff110e5ab9eeb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comma delimited ordered list of language codes without any whitespace that will be used in the "Accept-Language" HTTP header.  <br /></td></tr>
+<tr class="memdesc:a0440f79c00dd50126ff110e5ab9eeb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background color used for browser rendering.  <br /></td></tr>
 <tr class="separator:a0440f79c00dd50126ff110e5ab9eeb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad6e34844766eb31899dae9d4a748a69" id="r_aad6e34844766eb31899dae9d4a748a69"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad6e34844766eb31899dae9d4a748a69">Locale</a></td></tr>
-<tr class="memdesc:aad6e34844766eb31899dae9d4a748a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The locale to use. If empty, the default locale of "en-US" will be used. This value is ignored on Linux where locale is determined using environment variable parsing with the precedence order: LANGUAGE, LC_ALL, LC_MESSAGES, and LANG. Also configurable using the "lang" command-line switch.  <br /></td></tr>
+<tr class="memdesc:aad6e34844766eb31899dae9d4a748a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The locale to use for browser UI and web content.  <br /></td></tr>
 <tr class="separator:aad6e34844766eb31899dae9d4a748a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a131815bbe080ef6040d58a070a6cfbdf" id="r_a131815bbe080ef6040d58a070a6cfbdf"><td class="memItemLeft" align="right" valign="top">TArray&lt; FString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a131815bbe080ef6040d58a070a6cfbdf">AcceptLanguageList</a></td></tr>
-<tr class="memdesc:a131815bbe080ef6040d58a070a6cfbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comma delimited ordered list of language codes without any whitespace that will be used in the "Accept-Language" HTTP header.  <br /></td></tr>
+<tr class="memdesc:a131815bbe080ef6040d58a070a6cfbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of accepted languages for HTTP requests, used in the "Accept-Language" header.  <br /></td></tr>
 <tr class="separator:a131815bbe080ef6040d58a070a6cfbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab52785a4d9305e1fbe0881903df6d312" id="r_ab52785a4d9305e1fbe0881903df6d312"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab52785a4d9305e1fbe0881903df6d312">PersistSessionCookies</a> = true</td></tr>
-<tr class="memdesc:ab52785a4d9305e1fbe0881903df6d312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to persist session cookies.  <br /></td></tr>
+<tr class="memdesc:ab52785a4d9305e1fbe0881903df6d312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to persist session cookies across browser restarts.  <br /></td></tr>
 <tr class="separator:ab52785a4d9305e1fbe0881903df6d312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f14c8e3749294b9d3a2d94c03d2872" id="r_af1f14c8e3749294b9d3a2d94c03d2872"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f14c8e3749294b9d3a2d94c03d2872">PersistUserPreferences</a> = true</td></tr>
-<tr class="memdesc:af1f14c8e3749294b9d3a2d94c03d2872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to persist user preferences.  <br /></td></tr>
+<tr class="memdesc:af1f14c8e3749294b9d3a2d94c03d2872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to persist user preferences (such as autofill data, settings, etc.).  <br /></td></tr>
 <tr class="separator:af1f14c8e3749294b9d3a2d94c03d2872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56c65044fe28f4e1031893f5345f90ed" id="r_a56c65044fe28f4e1031893f5345f90ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_settings_8h.html#a4c27b1d793d4fa4f189c3edd2c0878e5">ECefLogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56c65044fe28f4e1031893f5345f90ed">LogLevel</a> = <a class="el" href="_cef_settings_8h.html#a4c27b1d793d4fa4f189c3edd2c0878e5a7a1920d61156abc05a60135aefe8bc67">ECefLogLevel::Default</a></td></tr>
-<tr class="memdesc:a56c65044fe28f4e1031893f5345f90ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The log level.  <br /></td></tr>
+<tr class="memdesc:a56c65044fe28f4e1031893f5345f90ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The log level for CEF diagnostic output.  <br /></td></tr>
 <tr class="separator:a56c65044fe28f4e1031893f5345f90ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b7dbc4c4e64f51b254770bfbde292c" id="r_ae6b7dbc4c4e64f51b254770bfbde292c"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b7dbc4c4e64f51b254770bfbde292c">RemoteDebuggingport</a> = 0</td></tr>
-<tr class="memdesc:ae6b7dbc4c4e64f51b254770bfbde292c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CEF supports remote debugging with Dev Tools in Chrome/Edge. If this value is set, then you can debug the web application by with Chrome/Edge.  <br /></td></tr>
+<tr class="memdesc:ae6b7dbc4c4e64f51b254770bfbde292c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The port number for remote debugging with Chrome/Edge Dev Tools.  <br /></td></tr>
 <tr class="separator:ae6b7dbc4c4e64f51b254770bfbde292c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0bd4334cd263642b155b6a861ed0c71" id="r_af0bd4334cd263642b155b6a861ed0c71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0bd4334cd263642b155b6a861ed0c71">DisableCommandLineArgsPassthrough</a> = false</td></tr>
-<tr class="memdesc:af0bd4334cd263642b155b6a861ed0c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to disable the application cmd line passthrough to CEF.  <br /></td></tr>
+<tr class="memdesc:af0bd4334cd263642b155b6a861ed0c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to disable passing the application command line arguments to CEF.  <br /></td></tr>
 <tr class="separator:af0bd4334cd263642b155b6a861ed0c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae928842d0a2b3cf5e77c6b9a9080502d" id="r_ae928842d0a2b3cf5e77c6b9a9080502d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae928842d0a2b3cf5e77c6b9a9080502d">DisableSandbox</a> = true</td></tr>
-<tr class="memdesc:ae928842d0a2b3cf5e77c6b9a9080502d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to disable the sandbox. (Only works on macOS platform)  <br /></td></tr>
+<tr class="memdesc:ae928842d0a2b3cf5e77c6b9a9080502d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to disable the Chromium sandbox. (Only applicable on macOS platform.)  <br /></td></tr>
 <tr class="separator:ae928842d0a2b3cf5e77c6b9a9080502d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec0635891a55df54b23a12dd4bba0cb" id="r_a3ec0635891a55df54b23a12dd4bba0cb"><td class="memItemLeft" align="right" valign="top">TMap&lt; FString, FString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec0635891a55df54b23a12dd4bba0cb">CommandLineArgs</a></td></tr>
-<tr class="memdesc:a3ec0635891a55df54b23a12dd4bba0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commandline arguments to be passed to CEF.  <br /></td></tr>
+<tr class="memdesc:a3ec0635891a55df54b23a12dd4bba0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional command line arguments to be passed to CEF.  <br /></td></tr>
 <tr class="separator:a3ec0635891a55df54b23a12dd4bba0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the settings for CEF context initialization. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<div class="textblock"><p>Represents the settings for CEF context initialization and configuration. </p>
+<p><a class="el" href="class_u_cef_settings.html" title="Represents the settings for CEF context initialization and configuration.">UCefSettings</a> allows you to customize the behavior of the embedded Chromium browser in your Unreal Engine project. These settings control aspects such as resource mapping, localization, logging, debugging, and browser interoperability. Changes to these settings should be made before any CEF browser instances are created. </p>
+<p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_u_cef_settings.html">UCefSettings</a>* CefSettings = GetMutableDefault&lt;UCefSettings&gt;();</div>
+<div class="line">CefSettings-&gt;<a class="code hl_variable" href="#a901e02a1f0c28d510f70bb1a52a72930">UserAgent</a> = TEXT(<span class="stringliteral">&quot;MyCustomUserAgent/1.0&quot;</span>);</div>
+<div class="ttc" id="aclass_u_cef_settings_html"><div class="ttname"><a href="class_u_cef_settings.html">UCefSettings</a></div><div class="ttdoc">Represents the settings for CEF context initialization and configuration.</div><div class="ttdef"><b>Definition</b> CefSettings.h:91</div></div>
+<div class="ttc" id="aclass_u_cef_settings_html_a901e02a1f0c28d510f70bb1a52a72930"><div class="ttname"><a href="#a901e02a1f0c28d510f70bb1a52a72930">UCefSettings::UserAgent</a></div><div class="ttdeci">FString UserAgent</div><div class="ttdoc">The user agent string sent by the browser to web servers.</div><div class="ttdef"><b>Definition</b> CefSettings.h:136</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a131815bbe080ef6040d58a070a6cfbdf" name="a131815bbe080ef6040d58a070a6cfbdf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a131815bbe080ef6040d58a070a6cfbdf">&#9670;&#160;</a></span>AcceptLanguageList</h2>
 
@@ -231,7 +236,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Comma delimited ordered list of language codes without any whitespace that will be used in the "Accept-Language" HTTP header. </p>
+<p>List of accepted languages for HTTP requests, used in the "Accept-Language" header. </p>
+<p>Provide a comma-delimited, ordered list of language codes (e.g., "en-US,fr,es"). This helps web servers deliver localized content. </p>
 
 </div>
 </div>
@@ -247,7 +253,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Archive file mappings (Only zip format is supported). The file path value must be relative to Game Dir. </p>
+<p>Archive file resource mappings for serving web content from .zip files. Only zip format is supported. Each mapping associates a virtual URL with a zip archive. </p>
+<p>The file path must be relative to the Game directory. This allows you to package web assets efficiently. </p>
 
 </div>
 </div>
@@ -263,7 +270,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Comma delimited ordered list of language codes without any whitespace that will be used in the "Accept-Language" HTTP header. </p>
+<p>The background color used for browser rendering. </p>
+<p>This color is used as the default background for web content. Adjust it to match your application's theme. </p>
 
 </div>
 </div>
@@ -279,7 +287,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The bridge object represents a Javascript object which will be inserted into all browser and frames. This object is designated for communicating between Javascript in web content and native context(C/C++) code. This object is set as a property of the window object. That means it can be obtained by calling window.bridgeObject in the Javascript code. </p>
+<p>The name of the bridge object injected into all browser frames. This object enables communication between JavaScript running in web content and native C++ code. </p>
+<p>The bridge object is accessible in JavaScript as a property of the window object (e.g., <code>window.bridgeObject</code>). Use this to expose native functions or data to your web UI. </p>
 
 </div>
 </div>
@@ -295,7 +304,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The built-in custom scheme name. </p>
+<p>The name of the built-in custom URI scheme used by the CEF context. </p>
+<p>This scheme is used for internal resource mapping and communication between the browser and the engine. </p>
 
 </div>
 </div>
@@ -315,7 +325,8 @@ Public Attributes</h2></td></tr>
 <div class="line">      { TEXT(<span class="stringliteral">&quot;remote-allow-origins&quot;</span>), TEXT(<span class="stringliteral">&quot;*&quot;</span>) },</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p>Commandline arguments to be passed to CEF. </p>
+<p>Additional command line arguments to be passed to CEF. </p>
+<p>Use this to enable or configure advanced CEF features. Each entry maps a switch name to its value. For example: { "remote-allow-origins", "*" } </p>
 
 </div>
 </div>
@@ -331,7 +342,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Whether to disable the application cmd line passthrough to CEF. </p>
+<p>Whether to disable passing the application command line arguments to CEF. </p>
+<p>Disabling this can help prevent conflicts or unintended behavior caused by command line switches. </p>
 
 </div>
 </div>
@@ -347,7 +359,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Whether to disable the sandbox. (Only works on macOS platform) </p>
+<p>Whether to disable the Chromium sandbox. (Only applicable on macOS platform.) </p>
+<p>Disabling the sandbox may be required for certain debugging or integration scenarios, but can reduce security. </p>
 
 </div>
 </div>
@@ -363,7 +376,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The locale to use. If empty, the default locale of "en-US" will be used. This value is ignored on Linux where locale is determined using environment variable parsing with the precedence order: LANGUAGE, LC_ALL, LC_MESSAGES, and LANG. Also configurable using the "lang" command-line switch. </p>
+<p>The locale to use for browser UI and web content. </p>
+<p>If empty, the default locale "en-US" is used. On Linux, this value is ignored and locale is determined by environment variables. You can also set the locale using the "lang" command-line switch. </p>
 
 </div>
 </div>
@@ -379,7 +393,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Local folder resource mappings. The folder path value must be relative to Game Content Dir. </p>
+<p>Local folder resource mappings for serving web content from directories on disk. </p>
+<p>The folder path must be relative to the Game Content directory. Use this to expose static assets (HTML, JS, CSS, etc.) to your CEF browser instances. </p>
 
 </div>
 </div>
@@ -395,7 +410,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The log level. </p>
+<p>The log level for CEF diagnostic output. </p>
+<p>Adjust this to control the verbosity of CEF logs. Higher verbosity can help with debugging but may impact performance. </p>
 
 </div>
 </div>
@@ -411,7 +427,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Whether to persist session cookies. </p>
+<p>Whether to persist session cookies across browser restarts. </p>
+<p>If true, session cookies will be saved and restored. If false, they will be cleared when the browser is closed. </p>
 
 </div>
 </div>
@@ -427,7 +444,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Whether to persist user preferences. </p>
+<p>Whether to persist user preferences (such as autofill data, settings, etc.). </p>
+<p>If true, user preferences will be saved and restored between sessions. </p>
 
 </div>
 </div>
@@ -443,7 +461,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>CEF supports remote debugging with Dev Tools in Chrome/Edge. If this value is set, then you can debug the web application by with Chrome/Edge. </p>
+<p>The port number for remote debugging with Chrome/Edge Dev Tools. </p>
+<p>If set to a non-zero value, you can connect to the browser for debugging using Chrome or Edge at "localhost:[port]". Useful for inspecting and debugging web content at runtime. </p>
 
 </div>
 </div>
@@ -459,7 +478,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The user agent string. </p>
+<p>The user agent string sent by the browser to web servers. </p>
+<p>If left empty, the default Chromium user agent will be used. You can override this to identify your application or enable/disable specific web features. </p>
 
 </div>
 </div>

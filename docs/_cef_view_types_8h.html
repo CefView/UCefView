@@ -163,32 +163,32 @@ $(function(){initNavTree('_cef_view_types_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Declares core types and structures used by the <a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> plugin.  
+<p>Declares core types and structures used by the <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> plugin.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for CEF frame id.  <a href="struct_f_cef_frame_id.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded Framework.  <a href="struct_f_cef_frame_id.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a mapping from a local folder to a URL for resource loading.  <a href="struct_f_local_folder_resource_mapping.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a mapping from a local folder to a URL for resource loading in the CEF browser.  <a href="struct_f_local_folder_resource_mapping.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a mapping from an archive file to a URL for resource loading.  <a href="struct_f_archive_file_resource_mapping.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.  <a href="struct_f_archive_file_resource_mapping.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:acffd5d1de03355db705ecf5af34698bb" id="r_acffd5d1de03355db705ecf5af34698bb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a> : uint8 </td></tr>
-<tr class="memdesc:acffd5d1de03355db705ecf5af34698bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the possible states of a CEF view.  <a href="#acffd5d1de03355db705ecf5af34698bb">More...</a><br /></td></tr>
+<tr class="memdesc:acffd5d1de03355db705ecf5af34698bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the possible states of a CEF view feature, such as enabling or disabling specific browser capabilities.  <a href="#acffd5d1de03355db705ecf5af34698bb">More...</a><br /></td></tr>
 <tr class="separator:acffd5d1de03355db705ecf5af34698bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45da43aebe00c3d3592b2ef4f10eb2ed" id="r_a45da43aebe00c3d3592b2ef4f10eb2ed"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a> : uint8 </td></tr>
-<tr class="memdesc:a45da43aebe00c3d3592b2ef4f10eb2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the CEF pop-up windows open disposition.  <a href="#a45da43aebe00c3d3592b2ef4f10eb2ed">More...</a><br /></td></tr>
+<tr class="memdesc:a45da43aebe00c3d3592b2ef4f10eb2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the CEF pop-up windows open disposition, determining how new windows or tabs are handled.  <a href="#a45da43aebe00c3d3592b2ef4f10eb2ed">More...</a><br /></td></tr>
 <tr class="separator:a45da43aebe00c3d3592b2ef4f10eb2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declares core types and structures used by the <a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> plugin. </p>
+<div class="textblock"><p>Declares core types and structures used by the <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> plugin. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="acffd5d1de03355db705ecf5af34698bb" name="acffd5d1de03355db705ecf5af34698bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acffd5d1de03355db705ecf5af34698bb">&#9670;&#160;</a></span>ECefViewFeatureState</h2>
@@ -210,13 +210,14 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Represents the possible states of a CEF view. </p>
+<p>Represents the possible states of a CEF view feature, such as enabling or disabling specific browser capabilities. </p>
+<p>Use this enum to control the activation state of features like JavaScript, plugins, or popups in the CEF view. </p>
 <table class="fieldtable">
-<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" name="acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67"></a>Default&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Default state. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" name="acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67"></a>Default&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Default state. The feature uses the default setting as determined by CEF or the application. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acffd5d1de03355db705ecf5af34698bba00d23a76e43b46dae9ec7aa9dcbebb32" name="acffd5d1de03355db705ecf5af34698bba00d23a76e43b46dae9ec7aa9dcbebb32"></a>Enabled&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Enabled state. </p>
+<tr><td class="fieldname"><a id="acffd5d1de03355db705ecf5af34698bba00d23a76e43b46dae9ec7aa9dcbebb32" name="acffd5d1de03355db705ecf5af34698bba00d23a76e43b46dae9ec7aa9dcbebb32"></a>Enabled&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Enabled state. The feature is explicitly enabled. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acffd5d1de03355db705ecf5af34698bbab9f5c797ebbf55adccdd8539a65a0241" name="acffd5d1de03355db705ecf5af34698bbab9f5c797ebbf55adccdd8539a65a0241"></a>Disabled&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>Disabled state. </p>
+<tr><td class="fieldname"><a id="acffd5d1de03355db705ecf5af34698bbab9f5c797ebbf55adccdd8539a65a0241" name="acffd5d1de03355db705ecf5af34698bbab9f5c797ebbf55adccdd8539a65a0241"></a>Disabled&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>Disabled state. The feature is explicitly disabled. </p>
 </td></tr>
 </table>
 
@@ -242,27 +243,28 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Represents the CEF pop-up windows open disposition. </p>
+<p>Represents the CEF pop-up windows open disposition, determining how new windows or tabs are handled. </p>
+<p>This enum is used to specify the target for content that requests to open in a new window or tab, such as from JavaScript window.open() calls or link targets. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda88183b946cc5f0e8c96b2e66e1c74a7e" name="a45da43aebe00c3d3592b2ef4f10eb2eda88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown disposition. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda88183b946cc5f0e8c96b2e66e1c74a7e" name="a45da43aebe00c3d3592b2ef4f10eb2eda88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown disposition. The target is not specified or cannot be determined. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda1f79f57f0879ac5738c4060ce9ff6244" name="a45da43aebe00c3d3592b2ef4f10eb2eda1f79f57f0879ac5738c4060ce9ff6244"></a>CurrentTab&#160;</td><td class="fielddoc"><p>Current Tab: Opens the content in the current tab or window. </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda1f79f57f0879ac5738c4060ce9ff6244" name="a45da43aebe00c3d3592b2ef4f10eb2eda1f79f57f0879ac5738c4060ce9ff6244"></a>CurrentTab&#160;</td><td class="fielddoc"><p>Current Tab: Opens the content in the current tab or window, replacing the existing content. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda98c881dff8dbd467958a98ffedbcbe98" name="a45da43aebe00c3d3592b2ef4f10eb2eda98c881dff8dbd467958a98ffedbcbe98"></a>SingletonTab&#160;</td><td class="fielddoc"><p>Singleton Tab: Opens the content in a singleton tab. </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda98c881dff8dbd467958a98ffedbcbe98" name="a45da43aebe00c3d3592b2ef4f10eb2eda98c881dff8dbd467958a98ffedbcbe98"></a>SingletonTab&#160;</td><td class="fielddoc"><p>Singleton Tab: Opens the content in a singleton tab, ensuring only one instance exists. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2edade2fb031840d04e0a66d8dc19e006075" name="a45da43aebe00c3d3592b2ef4f10eb2edade2fb031840d04e0a66d8dc19e006075"></a>NewForeGroundTab&#160;</td><td class="fielddoc"><p>New Foreground Tab: Opens the content in a new tab in the foreground. </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2edade2fb031840d04e0a66d8dc19e006075" name="a45da43aebe00c3d3592b2ef4f10eb2edade2fb031840d04e0a66d8dc19e006075"></a>NewForeGroundTab&#160;</td><td class="fielddoc"><p>New Foreground Tab: Opens the content in a new tab in the foreground, giving it focus. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda77f215a8283b40960a8fe2dc51589374" name="a45da43aebe00c3d3592b2ef4f10eb2eda77f215a8283b40960a8fe2dc51589374"></a>NewBackgroundTab&#160;</td><td class="fielddoc"><p>New Background Tab: Opens the content in a new tab in the background. </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda77f215a8283b40960a8fe2dc51589374" name="a45da43aebe00c3d3592b2ef4f10eb2eda77f215a8283b40960a8fe2dc51589374"></a>NewBackgroundTab&#160;</td><td class="fielddoc"><p>New Background Tab: Opens the content in a new tab in the background, without focus. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda41018e79e935a778dcbb49e78001baa5" name="a45da43aebe00c3d3592b2ef4f10eb2eda41018e79e935a778dcbb49e78001baa5"></a>NewPopup&#160;</td><td class="fielddoc"><p>New Popup: Opens the content in a new popup window. </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda41018e79e935a778dcbb49e78001baa5" name="a45da43aebe00c3d3592b2ef4f10eb2eda41018e79e935a778dcbb49e78001baa5"></a>NewPopup&#160;</td><td class="fielddoc"><p>New Popup: Opens the content in a new popup window, typically with limited UI. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2edabdc9ec125e7a3ade37130f80c1c59893" name="a45da43aebe00c3d3592b2ef4f10eb2edabdc9ec125e7a3ade37130f80c1c59893"></a>NewWindow&#160;</td><td class="fielddoc"><p>New Window: Opens the content in a new top-level window. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda0395c241775e1fdeed5c7d9000a33a8b" name="a45da43aebe00c3d3592b2ef4f10eb2eda0395c241775e1fdeed5c7d9000a33a8b"></a>SaveToDisk&#160;</td><td class="fielddoc"><p>Save To Disk: Downloads the content to disk. </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda0395c241775e1fdeed5c7d9000a33a8b" name="a45da43aebe00c3d3592b2ef4f10eb2eda0395c241775e1fdeed5c7d9000a33a8b"></a>SaveToDisk&#160;</td><td class="fielddoc"><p>Save To Disk: Downloads the content to disk instead of displaying it. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda5f2dc8020ed57aa5e67e3ab929716a4d" name="a45da43aebe00c3d3592b2ef4f10eb2eda5f2dc8020ed57aa5e67e3ab929716a4d"></a>OffTheRecord&#160;</td><td class="fielddoc"><p>Off The Record: Opens the content in off-the-record mode (incognito). </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2eda5f2dc8020ed57aa5e67e3ab929716a4d" name="a45da43aebe00c3d3592b2ef4f10eb2eda5f2dc8020ed57aa5e67e3ab929716a4d"></a>OffTheRecord&#160;</td><td class="fielddoc"><p>Off The Record: Opens the content in off-the-record mode (incognito/private browsing). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2edafffdd439dd20ad1a3fda9b8a0d3d5de2" name="a45da43aebe00c3d3592b2ef4f10eb2edafffdd439dd20ad1a3fda9b8a0d3d5de2"></a>IgnoreAction&#160;</td><td class="fielddoc"><p>Ignore Action: Ignores the open disposition. </p>
+<tr><td class="fieldname"><a id="a45da43aebe00c3d3592b2ef4f10eb2edafffdd439dd20ad1a3fda9b8a0d3d5de2" name="a45da43aebe00c3d3592b2ef4f10eb2edafffdd439dd20ad1a3fda9b8a0d3d5de2"></a>IgnoreAction&#160;</td><td class="fielddoc"><p>Ignore Action: Ignores the open disposition and prevents the action. </p>
 </td></tr>
 </table>
 

@@ -211,10 +211,10 @@ $(function(){initNavTree('md__docs_204-_interoperability.html',''); initResizabl
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="autotoc_md16"></a></p>
-<p><a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> provides the capabilities of interoperability between native context and web context, thus the developer can call Javascript from C++ code easily, vice versa. This allows you to create hybrid applications that combine the power of web technologies with the capabilities of native C++ code.</p>
+<p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> provides the capabilities of interoperability between native context and web context, thus the developer can call Javascript from C++ code easily, vice versa. This allows you to create hybrid applications that combine the power of web technologies with the capabilities of native C++ code.</p>
 <h1><a class="anchor" id="autotoc_md17"></a>
 UCefViewBridge</h1>
-<p><a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> inserts a bridge object into the web context displayed in all the frames and browsers managed by <a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a>. The bridge object provides methods for communicating with native code. The bridge object is mounted at window object, and the object name could be configured through the <code><a class="el" href="class_u_cef_settings.html#a5db1a07b57f1448f2b26c39b84a61e0d" title="The bridge object represents a Javascript object which will be inserted into all browser and frames....">UCefSettings::BridgeObjectName</a></code> field. The default name is <code>UCefViewBridge</code></p>
+<p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> inserts a bridge object into the web context displayed in all the frames and browsers managed by <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a>. The bridge object provides methods for communicating with native code. The bridge object is mounted at window object, and the object name could be configured through the <code><a class="el" href="class_u_cef_settings.html#a5db1a07b57f1448f2b26c39b84a61e0d" title="The name of the bridge object injected into all browser frames. This object enables communication bet...">UCefSettings::BridgeObjectName</a></code> field. The default name is <code>UCefViewBridge</code></p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Members   </th><th class="markdownTableHeadNone">Descriptions    </th></tr>
@@ -251,7 +251,7 @@ invoke</h2>
 <dl class="section note"><dt>Note</dt><dd>The Javascript method <code>invoke(name, ...args)</code> is <code>ASYNCHRONOUS</code> operation, that means the calling from Javascript returns immediately regardless the execution of C++ code.</dd></dl>
 <h1><a class="anchor" id="autotoc_md21"></a>
 CefViewQuery</h1>
-<p><a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> added some extra methods to the <code>window</code> object for all browsers frames, with these methods you can perform communication between native and web context</p>
+<p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> added some extra methods to the <code>window</code> object for all browsers frames, with these methods you can perform communication between native and web context</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Members   </th><th class="markdownTableHeadNone">Descriptions    </th></tr>
@@ -285,12 +285,12 @@ Execute Javascript</h2>
 <div class="line">    TEXT(<span class="stringliteral">&quot;alert(&#39;hello Unreal&#39;)&quot;</span>),  <span class="comment">//</span></div>
 <div class="line">    TEXT(<span class="stringliteral">&quot;&quot;</span>)                        <span class="comment">//</span></div>
 <div class="line">);</div>
-<div class="ttc" id="aclass_u_cef_view_html"><div class="ttname"><a href="class_u_cef_view.html">UCefView</a></div><div class="ttdoc">Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).</div><div class="ttdef"><b>Definition</b> CefView.h:39</div></div>
+<div class="ttc" id="aclass_u_cef_view_html"><div class="ttname"><a href="class_u_cef_view.html">UCefView</a></div><div class="ttdoc">UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...</div><div class="ttdef"><b>Definition</b> CefView.h:43</div></div>
 <div class="ttc" id="aclass_u_cef_view_html_a3ebd2de48696802207f3356068f2a2e9"><div class="ttname"><a href="class_u_cef_view.html#a3ebd2de48696802207f3356068f2a2e9">UCefView::ExecuteJavascript</a></div><div class="ttdeci">bool ExecuteJavascript(const FCefFrameId &amp;InFrameId, const FString &amp;InJavascriptCode, const FString &amp;InTargetUrl)</div><div class="ttdoc">Executes JavaScript code in a specific frame of the CEF view.</div></div>
-<div class="ttc" id="aclass_u_cef_view_html_a930f8c1710af58d7691eddc9013acc8e"><div class="ttname"><a href="class_u_cef_view.html#a930f8c1710af58d7691eddc9013acc8e">UCefView::MainFrameID</a></div><div class="ttdeci">static const FCefFrameId MainFrameID</div><div class="ttdoc">The main frame identity.</div><div class="ttdef"><b>Definition</b> CefView.h:46</div></div>
+<div class="ttc" id="aclass_u_cef_view_html_a930f8c1710af58d7691eddc9013acc8e"><div class="ttname"><a href="class_u_cef_view.html#a930f8c1710af58d7691eddc9013acc8e">UCefView::MainFrameID</a></div><div class="ttdeci">static const FCefFrameId MainFrameID</div><div class="ttdoc">The main frame identity, representing the primary document frame in the browser. Used for targeting m...</div><div class="ttdef"><b>Definition</b> CefView.h:51</div></div>
 </div><!-- fragment --><ul>
 <li><code><a class="el" href="class_u_cef_view.html#a3ebd2de48696802207f3356068f2a2e9" title="Executes JavaScript code in a specific frame of the CEF view.">UCefView::ExecuteJavascript</a></code></li>
-<li><code><a class="el" href="class_u_cef_view.html#a75cafd0355a28f0de9887dc6caab0092" title="Executes JavaScript code in a specific frame and returns the result.">UCefView::ExecuteJavascriptWithResult</a></code></li>
+<li><code><a class="el" href="class_u_cef_view.html#a75cafd0355a28f0de9887dc6caab0092" title="Executes JavaScript code in a specific frame and returns the result asynchronously.">UCefView::ExecuteJavascriptWithResult</a></code></li>
 <li><code><a class="el" href="class_s_cef_view.html#aaf4befed513c397d292455f6484094d5" title="Executes JavaScript code in a specific frame.">SCefView::ExecuteJavascript</a></code></li>
 <li><code><a class="el" href="class_s_cef_view.html#abca004abb34f06115d7392c7c770fae2" title="Executes JavaScript code in a specific frame and returns the result.">SCefView::ExecuteJavascriptWithResult</a></code></li>
 </ul>
@@ -319,17 +319,17 @@ Event Triggering</h2>
 <div class="line">ColorChangeEvent-&gt;<a class="code hl_function" href="class_u_cef_view_event.html#a2d0c0a7fa8fae3d728aec40f51528bf4">SetArguments</a>(TEXT(<span class="stringliteral">&quot;[red]&quot;</span>));</div>
 <div class="line"><span class="comment">// broadcast the event to all frames</span></div>
 <div class="line">MyUCefView-&gt;<a class="code hl_function" href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197">BroadcastEvent</a>(ColorChangeEvent);</div>
-<div class="ttc" id="aclass_u_cef_view_event_html"><div class="ttname"><a href="class_u_cef_view_event.html">UCefViewEvent</a></div><div class="ttdoc">Represents an event dispatched from the CEF view.</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:29</div></div>
-<div class="ttc" id="aclass_u_cef_view_event_html_a2d0c0a7fa8fae3d728aec40f51528bf4"><div class="ttname"><a href="class_u_cef_view_event.html#a2d0c0a7fa8fae3d728aec40f51528bf4">UCefViewEvent::SetArguments</a></div><div class="ttdeci">void SetArguments(const FString &amp;InArguments)</div><div class="ttdoc">Sets the arguments with JSON string.</div></div>
-<div class="ttc" id="aclass_u_cef_view_event_html_aa992130b4715c6039849b7917675d565"><div class="ttname"><a href="class_u_cef_view_event.html#aa992130b4715c6039849b7917675d565">UCefViewEvent::Name</a></div><div class="ttdeci">FString Name</div><div class="ttdoc">The name of the event.</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:37</div></div>
-<div class="ttc" id="aclass_u_cef_view_html_a61eac5eebd77818af1a8adb1fa172197"><div class="ttname"><a href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197">UCefView::BroadcastEvent</a></div><div class="ttdeci">bool BroadcastEvent(const UCefViewEvent *InCefViewEvent)</div><div class="ttdoc">Broadcasts an event to all frames in the CEF view.</div></div>
+<div class="ttc" id="aclass_u_cef_view_event_html"><div class="ttname"><a href="class_u_cef_view_event.html">UCefViewEvent</a></div><div class="ttdoc">Represents an event dispatched from the CEF (Chromium Embedded Framework) view to the Unreal Engine e...</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:50</div></div>
+<div class="ttc" id="aclass_u_cef_view_event_html_a2d0c0a7fa8fae3d728aec40f51528bf4"><div class="ttname"><a href="class_u_cef_view_event.html#a2d0c0a7fa8fae3d728aec40f51528bf4">UCefViewEvent::SetArguments</a></div><div class="ttdeci">void SetArguments(const FString &amp;InArguments)</div><div class="ttdoc">Sets the arguments for this event using a JSON string.</div></div>
+<div class="ttc" id="aclass_u_cef_view_event_html_aa992130b4715c6039849b7917675d565"><div class="ttname"><a href="class_u_cef_view_event.html#aa992130b4715c6039849b7917675d565">UCefViewEvent::Name</a></div><div class="ttdeci">FString Name</div><div class="ttdoc">The name of the event as dispatched from the browser.</div><div class="ttdef"><b>Definition</b> CefViewEvent.h:71</div></div>
+<div class="ttc" id="aclass_u_cef_view_html_a61eac5eebd77818af1a8adb1fa172197"><div class="ttname"><a href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197">UCefView::BroadcastEvent</a></div><div class="ttdeci">bool BroadcastEvent(const UCefViewEvent *InCefViewEvent)</div><div class="ttdoc">Broadcasts a custom event to all frames in the CEF view.</div></div>
 </div><!-- fragment --><ul>
-<li><code><a class="el" href="class_u_cef_view.html#a2280eb077a93f144b41e28150f6130e7" title="Triggers an event for a specific frame in the CEF view.">UCefView::TriggerEventForFrame</a></code></li>
-<li><code><a class="el" href="class_u_cef_view.html#a308462bb9a935d14565e2b00808e9742" title="Triggers an event for the main frame in the CEF view.">UCefView::TriggerEventForMainFrame</a></code></li>
-<li><code><a class="el" href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197" title="Broadcasts an event to all frames in the CEF view.">UCefView::BroadcastEvent</a></code></li>
-<li><code><a class="el" href="class_s_cef_view.html#a1ac9f11388aa90b12160d3d7e63b9a99" title="Triggers an event for a specific frame.">SCefView::TriggerEventForFrame</a></code></li>
-<li><code><a class="el" href="class_s_cef_view.html#a9bf28c7fc1c3f0d0a14b94674a0c8b5e" title="Triggers an event for the main frame.">SCefView::TriggerEventForMainFrame</a></code></li>
-<li><code><a class="el" href="class_s_cef_view.html#ad47aec37942530b01cfa76725aa07fb7" title="Broadcasts an event to all frames.">SCefView::BroadcastEvent</a></code></li>
+<li><code><a class="el" href="class_u_cef_view.html#a2280eb077a93f144b41e28150f6130e7" title="Triggers a custom event for a specific frame in the CEF view. Allows sending user-defined events to t...">UCefView::TriggerEventForFrame</a></code></li>
+<li><code><a class="el" href="class_u_cef_view.html#a308462bb9a935d14565e2b00808e9742" title="Triggers a custom event for the main frame in the CEF view.">UCefView::TriggerEventForMainFrame</a></code></li>
+<li><code><a class="el" href="class_u_cef_view.html#a61eac5eebd77818af1a8adb1fa172197" title="Broadcasts a custom event to all frames in the CEF view.">UCefView::BroadcastEvent</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#a1ac9f11388aa90b12160d3d7e63b9a99" title="Triggers a custom event for a specific frame in the browser.">SCefView::TriggerEventForFrame</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#a9bf28c7fc1c3f0d0a14b94674a0c8b5e" title="Triggers a custom event for the main frame in the browser.">SCefView::TriggerEventForMainFrame</a></code></li>
+<li><code><a class="el" href="class_s_cef_view.html#ad47aec37942530b01cfa76725aa07fb7" title="Broadcasts a custom event to all frames in the browser.">SCefView::BroadcastEvent</a></code></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md27"></a>
 JavaScript -&gt; C++</h1>
@@ -360,8 +360,8 @@ UCefViewBridge.invoke</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// bind invoke handler</span></div>
 <div class="line">MyUCefView-&gt;<a class="code hl_variable" href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a>.AddDynamic(MyWebClient, &amp;UWebClient::InvokeHandler);</div>
-<div class="ttc" id="aclass_u_cef_view_html_ad34fb47c7fe923fbf826b6d89d52a79e"><div class="ttname"><a href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">UCefView::OnInvokeMethod</a></div><div class="ttdeci">FOnInvokeMethodEvent OnInvokeMethod</div><div class="ttdef"><b>Definition</b> CefView.h:823</div></div>
-<div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:27</div></div>
+<div class="ttc" id="aclass_u_cef_view_html_ad34fb47c7fe923fbf826b6d89d52a79e"><div class="ttname"><a href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">UCefView::OnInvokeMethod</a></div><div class="ttdeci">FOnInvokeMethodEvent OnInvokeMethod</div><div class="ttdef"><b>Definition</b> CefView.h:625</div></div>
+<div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:43</div></div>
 </div><!-- fragment --><p><b>Invoke native handler from Javascript</b> </p><div class="fragment"><div class="line">// invoke C++ code</div>
 <div class="line">window.UCefViewBridge.invoke(&quot;HelloNative&quot;, 1, &quot;2&quot;,  true);</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md29"></a>
@@ -394,7 +394,7 @@ window.cefViewQuery(query)</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// bind CefViewQuery handler</span></div>
 <div class="line">MyUCefView-&gt;<a class="code hl_variable" href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a>.AddDynamic(MyWebClient, &amp;UWebClient::CefViewQueryHanlder);</div>
-<div class="ttc" id="aclass_u_cef_view_query_html"><div class="ttname"><a href="class_u_cef_view_query.html">UCefViewQuery</a></div><div class="ttdoc">Represents a query sent from the CEF (Chromium Embedded Framework) browser to the Unreal Engine....</div><div class="ttdef"><b>Definition</b> CefViewQuery.h:27</div></div>
+<div class="ttc" id="aclass_u_cef_view_query_html"><div class="ttname"><a href="class_u_cef_view_query.html">UCefViewQuery</a></div><div class="ttdoc">Represents a query sent from the CEF (Chromium Embedded Framework) browser to the Unreal Engine....</div><div class="ttdef"><b>Definition</b> CefViewQuery.h:58</div></div>
 </div><!-- fragment --><p><b>Send CefViewQuery request from Javascript and process the response</b> </p><div class="fragment"><div class="line">var query = {</div>
 <div class="line">request: &quot;hello from CefViewQuery&quot;,</div>
 <div class="line">onSuccess: function (response) {</div>

@@ -156,19 +156,51 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title"><a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> </div></div>
+  <div class="headertitle"><div class="title"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__docs_200-_main"></a></p>
-<p>Bring the power of Chromium Embedded Framework (CEF) to your Unreal Engine projects with <a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a>. This plugin provides a robust and performant WebView component, enabling you to seamlessly integrate web-based content into your games and applications. <a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a> offers both Slate (<a class="el" href="class_s_cef_view.html" title="Represents a Slate widget that hosts a CEF browser.">SCefView</a>) and UMG (<a class="el" href="class_u_cef_view.html" title="Represents a UMG widget contains a CEF browser view (wrapped by Slate Widget).">UCefView</a>) implementations, hardware-accelerated rendering, and a flexible JavaScript bridge for rich interactivity.</p>
+<p>Bring the power of Chromium Embedded Framework (CEF) to your Unreal Engine projects with <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a>. This plugin provides a robust and performant WebView component, enabling you to seamlessly integrate web-based content into your games and applications. <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> offers both Slate (<a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a>) and UMG (<a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a>) implementations, hardware-accelerated rendering, and a flexible JavaScript bridge for rich interactivity.</p>
+<ul>
+<li>Support Unreal Engine Version: <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">UE   </th><th class="markdownTableHeadNone"></th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">5.0    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">5.1    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">5.2    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">5.3    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">5.4    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">5.5   </td></tr>
+</table>
+</li>
+<li><p class="startli">Support Platform And RHI: </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">Platform   </th><th class="markdownTableHeadNone">Version   </th><th class="markdownTableHeadNone">RHI    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">Windows   </td><td class="markdownTableBodyNone">Windows 10(1703)+   </td><td class="markdownTableBodyNone">DirectX 11 &amp; 12    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">macOS   </td><td class="markdownTableBodyNone">Ventura 13.5+   </td><td class="markdownTableBodyNone">Metal    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">⚠️   </td><td class="markdownTableBodyNone">Linux   </td><td class="markdownTableBodyNone">Kernel 4.18+   </td><td class="markdownTableBodyNone">？   </td></tr>
+</table>
+<p class="startli">⚠️Linux Platform will be supported on demand.</p>
+</li>
+<li>CEF Version: 125+ (Hardware Acceleration is general available from this version)</li>
+</ul>
 <div class="image">
 <img src="browser-as-actors.png" alt=""/>
 <div class="caption">
-Browser As Actor</div></div>
+As Actor</div></div>
     <div class="image">
 <img src="browser-as-UI.png" alt=""/>
 <div class="caption">
-Browser As UI</div></div>
+As Menu UI</div></div>
     <div class="image">
 <img src="browser-jsdialog.png" alt=""/>
 <div class="caption">
@@ -176,7 +208,7 @@ Slate JSDialog</div></div>
     <div class="image">
 <img src="mac-shipping.png" alt=""/>
 <div class="caption">
-macOS Shipping Game</div></div>
+macOS Support</div></div>
      </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

@@ -1,7 +1,7 @@
 var class_u_cef_view_query =
 [
-    [ "GetId", "class_u_cef_view_query.html#a6e4009bba73f5e6a0ee17c7ab5f73e43", null ],
-    [ "GetRequest", "class_u_cef_view_query.html#abfa1ca5b330f6d1be50854b747dedd9a", null ],
+    [ "GetId", "class_u_cef_view_query.html#a231e15634a5f36fc83ae8b5bfbe4dcbc", null ],
+    [ "GetRequest", "class_u_cef_view_query.html#a8bdb4956b0ba5b13e7b74814bd069dc8", null ],
     [ "MarkAsReplied", "class_u_cef_view_query.html#a5a47672edc5ba44a6c94349c5f8dff8f", null ],
     [ "Reply", "class_u_cef_view_query.html#ac67b43593fbbde4c97eabb881de358b1", null ],
     [ "SetIdAndRequest", "class_u_cef_view_query.html#a83ad58b888ead9b1006cdf7210d17a2c", null ],

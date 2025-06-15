@@ -172,12 +172,12 @@ $(function(){initNavTree('class_u_cef_view_query.html',''); initResizable(true);
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e4009bba73f5e6a0ee17c7ab5f73e43" id="r_a6e4009bba73f5e6a0ee17c7ab5f73e43"><td class="memItemLeft" align="right" valign="top">const int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e4009bba73f5e6a0ee17c7ab5f73e43">GetId</a> () const</td></tr>
-<tr class="memdesc:a6e4009bba73f5e6a0ee17c7ab5f73e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the query id.  <br /></td></tr>
-<tr class="separator:a6e4009bba73f5e6a0ee17c7ab5f73e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa1ca5b330f6d1be50854b747dedd9a" id="r_abfa1ca5b330f6d1be50854b747dedd9a"><td class="memItemLeft" align="right" valign="top">const FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfa1ca5b330f6d1be50854b747dedd9a">GetRequest</a> () const</td></tr>
-<tr class="memdesc:abfa1ca5b330f6d1be50854b747dedd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the query content.  <br /></td></tr>
-<tr class="separator:abfa1ca5b330f6d1be50854b747dedd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231e15634a5f36fc83ae8b5bfbe4dcbc" id="r_a231e15634a5f36fc83ae8b5bfbe4dcbc"><td class="memItemLeft" align="right" valign="top">int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a231e15634a5f36fc83ae8b5bfbe4dcbc">GetId</a> () const</td></tr>
+<tr class="memdesc:a231e15634a5f36fc83ae8b5bfbe4dcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique identifier for this query.  <br /></td></tr>
+<tr class="separator:a231e15634a5f36fc83ae8b5bfbe4dcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdb4956b0ba5b13e7b74814bd069dc8" id="r_a8bdb4956b0ba5b13e7b74814bd069dc8"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bdb4956b0ba5b13e7b74814bd069dc8">GetRequest</a> () const</td></tr>
+<tr class="memdesc:a8bdb4956b0ba5b13e7b74814bd069dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the content of the query as sent from the browser.  <br /></td></tr>
+<tr class="separator:a8bdb4956b0ba5b13e7b74814bd069dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67b43593fbbde4c97eabb881de358b1" id="r_ac67b43593fbbde4c97eabb881de358b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac67b43593fbbde4c97eabb881de358b1">Reply</a> () const</td></tr>
 <tr class="memdesc:ac67b43593fbbde4c97eabb881de358b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replies to the query with the specified success status, response, and error code.  <br /></td></tr>
 <tr class="separator:ac67b43593fbbde4c97eabb881de358b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,15 +205,38 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a query sent from the CEF (Chromium Embedded Framework) browser to the Unreal Engine. This class encapsulates the query ID, request content, and methods for replying to the query. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6e4009bba73f5e6a0ee17c7ab5f73e43" name="a6e4009bba73f5e6a0ee17c7ab5f73e43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e4009bba73f5e6a0ee17c7ab5f73e43">&#9670;&#160;</a></span>GetId()</h2>
+<p><code><a class="el" href="class_u_cef_view_query.html" title="Represents a query sent from the CEF (Chromium Embedded Framework) browser to the Unreal Engine....">UCefViewQuery</a></code> is used to handle asynchronous communication from JavaScript running in a CEF browser instance to the Unreal Engine application. Each query is uniquely identified and can be replied to with a result or error. </p>
+<p>Queries are typically initiated from JavaScript using the CEF query API, and are received in Unreal as instances of this class. Use the provided methods and properties to inspect the query, process it, and send a response back to the browser. </p>
+<p>Example usage in Blueprint: </p><div class="fragment"><div class="line">Event OnCefViewQueryReceived(<a class="code hl_class" href="class_u_cef_view_query.html">UCefViewQuery</a>* Query)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (Query-&gt;<a class="code hl_function" href="#a8bdb4956b0ba5b13e7b74814bd069dc8">GetRequest</a>() == <span class="stringliteral">&quot;GetData&quot;</span>)</div>
+<div class="line">    {</div>
+<div class="line">        Query-&gt;<a class="code hl_variable" href="#aa89a757ecbf991d1472334fb4d2a19f4">IsSuccess</a> = <span class="keyword">true</span>;</div>
+<div class="line">        Query-&gt;<a class="code hl_variable" href="#a822489e2f9632c2dccaaad00110262c1">Response</a> = <span class="stringliteral">&quot;SomeData&quot;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        Query-&gt;<a class="code hl_variable" href="#aa89a757ecbf991d1472334fb4d2a19f4">IsSuccess</a> = <span class="keyword">false</span>;</div>
+<div class="line">        Query-&gt;<a class="code hl_variable" href="#a46f3b8a07467a8152228f8db9df49e45">ErrorCode</a> = 404;</div>
+<div class="line">        Query-&gt;<a class="code hl_variable" href="#a822489e2f9632c2dccaaad00110262c1">Response</a> = <span class="stringliteral">&quot;Not found&quot;</span>;</div>
+<div class="line">    }</div>
+<div class="line">    Query-&gt;<a class="code hl_function" href="#ac67b43593fbbde4c97eabb881de358b1">Reply</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_u_cef_view_query_html"><div class="ttname"><a href="class_u_cef_view_query.html">UCefViewQuery</a></div><div class="ttdoc">Represents a query sent from the CEF (Chromium Embedded Framework) browser to the Unreal Engine....</div><div class="ttdef"><b>Definition</b> CefViewQuery.h:58</div></div>
+<div class="ttc" id="aclass_u_cef_view_query_html_a46f3b8a07467a8152228f8db9df49e45"><div class="ttname"><a href="#a46f3b8a07467a8152228f8db9df49e45">UCefViewQuery::ErrorCode</a></div><div class="ttdeci">int32 ErrorCode</div><div class="ttdoc">Error code associated with the query, if any.</div><div class="ttdef"><b>Definition</b> CefViewQuery.h:92</div></div>
+<div class="ttc" id="aclass_u_cef_view_query_html_a822489e2f9632c2dccaaad00110262c1"><div class="ttname"><a href="#a822489e2f9632c2dccaaad00110262c1">UCefViewQuery::Response</a></div><div class="ttdeci">FString Response</div><div class="ttdoc">The response data for the query.</div><div class="ttdef"><b>Definition</b> CefViewQuery.h:108</div></div>
+<div class="ttc" id="aclass_u_cef_view_query_html_a8bdb4956b0ba5b13e7b74814bd069dc8"><div class="ttname"><a href="#a8bdb4956b0ba5b13e7b74814bd069dc8">UCefViewQuery::GetRequest</a></div><div class="ttdeci">FString GetRequest() const</div><div class="ttdoc">Gets the content of the query as sent from the browser.</div></div>
+<div class="ttc" id="aclass_u_cef_view_query_html_aa89a757ecbf991d1472334fb4d2a19f4"><div class="ttname"><a href="#aa89a757ecbf991d1472334fb4d2a19f4">UCefViewQuery::IsSuccess</a></div><div class="ttdeci">bool IsSuccess</div><div class="ttdoc">Indicates whether the query was processed successfully.</div><div class="ttdef"><b>Definition</b> CefViewQuery.h:76</div></div>
+<div class="ttc" id="aclass_u_cef_view_query_html_ac67b43593fbbde4c97eabb881de358b1"><div class="ttname"><a href="#ac67b43593fbbde4c97eabb881de358b1">UCefViewQuery::Reply</a></div><div class="ttdeci">void Reply() const</div><div class="ttdoc">Replies to the query with the specified success status, response, and error code.</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a231e15634a5f36fc83ae8b5bfbe4dcbc" name="a231e15634a5f36fc83ae8b5bfbe4dcbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231e15634a5f36fc83ae8b5bfbe4dcbc">&#9670;&#160;</a></span>GetId()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int64 UCefViewQuery::GetId </td>
+          <td class="memname">int64 UCefViewQuery::GetId </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -221,19 +244,20 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the query id. </p>
-<dl class="section return"><dt>Returns</dt><dd>The query id.</dd></dl>
+<p>Gets the unique identifier for this query. </p>
+<dl class="section return"><dt>Returns</dt><dd>The query id as a 64-bit integer.</dd></dl>
+<p>The query ID is assigned by the CEF framework and is used to match responses to their corresponding requests. </p>
 
 </div>
 </div>
-<a id="abfa1ca5b330f6d1be50854b747dedd9a" name="abfa1ca5b330f6d1be50854b747dedd9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfa1ca5b330f6d1be50854b747dedd9a">&#9670;&#160;</a></span>GetRequest()</h2>
+<a id="a8bdb4956b0ba5b13e7b74814bd069dc8" name="a8bdb4956b0ba5b13e7b74814bd069dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bdb4956b0ba5b13e7b74814bd069dc8">&#9670;&#160;</a></span>GetRequest()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const FString UCefViewQuery::GetRequest </td>
+          <td class="memname">FString UCefViewQuery::GetRequest </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -241,8 +265,9 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the query content. </p>
-<dl class="section return"><dt>Returns</dt><dd>The content string.</dd></dl>
+<p>Gets the content of the query as sent from the browser. </p>
+<dl class="section return"><dt>Returns</dt><dd>The request content string.</dd></dl>
+<p>This string contains the data or command sent from JavaScript. It is typically a JSON-encoded string or a command name. </p>
 
 </div>
 </div>
@@ -270,6 +295,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Marks the query as replied (for internal use only). </p>
+<p>This method is used internally to prevent multiple replies to the same query. </p>
 
 </div>
 </div>
@@ -289,6 +315,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Replies to the query with the specified success status, response, and error code. </p>
+<p>Call this method after setting <a class="el" href="#aa89a757ecbf991d1472334fb4d2a19f4" title="Indicates whether the query was processed successfully.">IsSuccess</a>, <a class="el" href="#a822489e2f9632c2dccaaad00110262c1" title="The response data for the query.">Response</a>, and <a class="el" href="#a46f3b8a07467a8152228f8db9df49e45" title="Error code associated with the query, if any.">ErrorCode</a> to send a response back to the browser. Once replied, the query cannot be replied to again. </p>
+<p>This method is typically called from Blueprint or C++ after processing the query. </p>
 
 </div>
 </div>
@@ -322,11 +350,12 @@ Protected Member Functions</h2></td></tr>
 <p>Sets the query ID and request content. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">InId</td><td>The query ID.</td></tr>
-    <tr><td class="paramname">InRequest</td><td>The request content.</td></tr>
+    <tr><td class="paramname">InId</td><td>The query ID assigned by CEF.</td></tr>
+    <tr><td class="paramname">InRequest</td><td>The request content string sent from the browser.</td></tr>
   </table>
   </dd>
 </dl>
+<p>This method is intended for internal use to initialize the query object with data from the browser. </p>
 
 </div>
 </div>
@@ -344,6 +373,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Error code associated with the query, if any. </p>
+<p>Set this property to a non-zero value to indicate an error. The meaning of the error code is application-specific. If <a class="el" href="#aa89a757ecbf991d1472334fb4d2a19f4" title="Indicates whether the query was processed successfully.">IsSuccess</a> is <code>true</code>, this value is typically ignored. </p>
 
 </div>
 </div>
@@ -360,6 +390,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether the query was processed successfully. </p>
+<p>Set this property to <code>true</code> if the query was handled successfully, or <code>false</code> if an error occurred. This value is sent back to the browser as part of the query response. </p>
 
 </div>
 </div>
@@ -376,6 +407,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The response data for the query. </p>
+<p>Set this property to the string data you wish to return to the browser as the result of the query. This can be any serializable data, such as JSON or plain text. </p>
 
 </div>
 </div>

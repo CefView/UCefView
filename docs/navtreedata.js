@@ -62,6 +62,10 @@ var NAVTREE =
         [ "window.cefViewQuery(query)", "md__docs_204-_interoperability.html#autotoc_md29", null ]
       ] ]
     ] ],
+    [ "Change CEF Version", "md__docs_205-_change_01_c_e_f_01_version.html", [
+      [ "Select CEF version", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md31", null ],
+      [ "Update script config file", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md32", null ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -86,7 +90,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_cef_context_8h.html",
-"class_u_cef_view.html#aa6981c1dbd338c9c8246dd88167b9634"
+"class_u_cef_view.html#a9668d013b216e2f4dc924274e4147732"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

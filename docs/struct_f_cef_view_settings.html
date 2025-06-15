@@ -157,179 +157,101 @@ $(function(){initNavTree('struct_f_cef_view_settings.html',''); initResizable(tr
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_f_cef_view_settings-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">FCefViewSettings</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the settings for per CefView instance.  
+<p><a class="el" href="struct_f_cef_view_settings.html" title="FCefViewSettings defines per-instance configuration for a CEF browser embedded in a UMG widget....">FCefViewSettings</a> defines per-instance configuration for a CEF browser embedded in a UMG widget. It allows fine-grained control over browser appearance, font preferences, encoding, language, and a wide range of browser features such as JavaScript, plugins, storage, and WebGL. Most settings are applied at browser creation and cannot be changed at runtime. Feature toggles use <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb" title="Represents the possible states of a CEF view feature, such as enabling or disabling specific browser ...">ECefViewFeatureState</a> to enable, disable, or inherit the global/default behavior. All these values are not changeable after one <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a> instance created.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;SCefViewSettings.h&gt;</code></p>
+<p><code>#include &lt;CefViewSettings.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b28770339f4ae67c70e63cbc8281fc6" id="r_a1b28770339f4ae67c70e63cbc8281fc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b28770339f4ae67c70e63cbc8281fc6">operator==</a> (const <a class="el" href="struct_f_cef_view_settings.html">FCefViewSettings</a> &amp;Other)</td></tr>
-<tr class="memdesc:a1b28770339f4ae67c70e63cbc8281fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator.  <br /></td></tr>
-<tr class="separator:a1b28770339f4ae67c70e63cbc8281fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2f7c29a7c85756c1730abdbd343ac1" id="r_a2c2f7c29a7c85756c1730abdbd343ac1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c2f7c29a7c85756c1730abdbd343ac1">operator!=</a> (const <a class="el" href="struct_f_cef_view_settings.html">FCefViewSettings</a> &amp;Other)</td></tr>
-<tr class="memdesc:a2c2f7c29a7c85756c1730abdbd343ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator.  <br /></td></tr>
-<tr class="separator:a2c2f7c29a7c85756c1730abdbd343ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a59e20c085a095e871e61c9e432b33350" id="r_a59e20c085a095e871e61c9e432b33350"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59e20c085a095e871e61c9e432b33350">EnableContextMenu</a> = true</td></tr>
-<tr class="memdesc:a59e20c085a095e871e61c9e432b33350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable context menu. Enabled by default.  <br /></td></tr>
-<tr class="separator:a59e20c085a095e871e61c9e432b33350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ccee269db00857f3bb966c61730376" id="r_a37ccee269db00857f3bb966c61730376"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37ccee269db00857f3bb966c61730376">EnableDragAndDrop</a> = false</td></tr>
-<tr class="memdesc:a37ccee269db00857f3bb966c61730376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable drag and drop. Disabled by default.  <br /></td></tr>
-<tr class="separator:a37ccee269db00857f3bb966c61730376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62720062b3dde2db50bf265d947ada97" id="r_a62720062b3dde2db50bf265d947ada97"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62720062b3dde2db50bf265d947ada97">FrameRate</a> = 60</td></tr>
-<tr class="memdesc:a62720062b3dde2db50bf265d947ada97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame rate. 60 by default.  <br /></td></tr>
-<tr class="separator:a62720062b3dde2db50bf265d947ada97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9079319acc86f02c074903a63675a774" id="r_a9079319acc86f02c074903a63675a774"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9079319acc86f02c074903a63675a774">DefaultFontSize</a></td></tr>
-<tr class="memdesc:a9079319acc86f02c074903a63675a774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default font size.  <br /></td></tr>
-<tr class="separator:a9079319acc86f02c074903a63675a774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae26d4dbf725dbc98665d62555c3e12b8" id="r_ae26d4dbf725dbc98665d62555c3e12b8"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae26d4dbf725dbc98665d62555c3e12b8">DefaultFixedFontSize</a></td></tr>
-<tr class="memdesc:ae26d4dbf725dbc98665d62555c3e12b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default fixed font size.  <br /></td></tr>
-<tr class="separator:ae26d4dbf725dbc98665d62555c3e12b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9b40637d787cd989ca4e26fe05ce45b" id="r_aa9b40637d787cd989ca4e26fe05ce45b"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9b40637d787cd989ca4e26fe05ce45b">MinimumFontSize</a></td></tr>
-<tr class="memdesc:aa9b40637d787cd989ca4e26fe05ce45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum font size.  <br /></td></tr>
-<tr class="separator:aa9b40637d787cd989ca4e26fe05ce45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6388b5ab68466996da058acc2ea85564" id="r_a6388b5ab68466996da058acc2ea85564"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6388b5ab68466996da058acc2ea85564">MinimumLogicalFontSize</a></td></tr>
-<tr class="memdesc:a6388b5ab68466996da058acc2ea85564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum logical font size.  <br /></td></tr>
-<tr class="separator:a6388b5ab68466996da058acc2ea85564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6372c81ab42e79a9c6491807d6360598" id="r_a6372c81ab42e79a9c6491807d6360598"><td class="memItemLeft" align="right" valign="top">FColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6372c81ab42e79a9c6491807d6360598">BackgroundColor</a> = FColor::White</td></tr>
-<tr class="memdesc:a6372c81ab42e79a9c6491807d6360598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Background color. White by default.  <br /></td></tr>
+<tr class="memdesc:a6372c81ab42e79a9c6491807d6360598"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background color of the CEF browser viewport. Used when no web content is loaded or as the default background. Default: FColor::White.  <br /></td></tr>
 <tr class="separator:a6372c81ab42e79a9c6491807d6360598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d32e24dba62548b481bd8b99d472ccb" id="r_a7d32e24dba62548b481bd8b99d472ccb"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d32e24dba62548b481bd8b99d472ccb">StandardFontFamily</a></td></tr>
-<tr class="memdesc:a7d32e24dba62548b481bd8b99d472ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard font family.  <br /></td></tr>
+<tr class="memdesc:a7d32e24dba62548b481bd8b99d472ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font family name used as the standard (proportional) font for web content. Example: "Arial", "Times New Roman".  <br /></td></tr>
 <tr class="separator:a7d32e24dba62548b481bd8b99d472ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60b36460fda27d60ad9abc95703f017" id="r_ad60b36460fda27d60ad9abc95703f017"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad60b36460fda27d60ad9abc95703f017">FixedFontFamily</a></td></tr>
-<tr class="memdesc:ad60b36460fda27d60ad9abc95703f017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed font family.  <br /></td></tr>
+<tr class="memdesc:ad60b36460fda27d60ad9abc95703f017"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font family name used for fixed-width (monospace) text. Example: "Courier New", "Consolas".  <br /></td></tr>
 <tr class="separator:ad60b36460fda27d60ad9abc95703f017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac620c50737952d15d0a0e8881c73e5b0" id="r_ac620c50737952d15d0a0e8881c73e5b0"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac620c50737952d15d0a0e8881c73e5b0">SerifFontFamily</a></td></tr>
-<tr class="memdesc:ac620c50737952d15d0a0e8881c73e5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serif font family.  <br /></td></tr>
+<tr class="memdesc:ac620c50737952d15d0a0e8881c73e5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font family name used for serif text. Example: "Times New Roman".  <br /></td></tr>
 <tr class="separator:ac620c50737952d15d0a0e8881c73e5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb7c89c8ccc955f2f3acfd0b07ee42c" id="r_acfb7c89c8ccc955f2f3acfd0b07ee42c"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb7c89c8ccc955f2f3acfd0b07ee42c">SansSerifFontFamily</a></td></tr>
-<tr class="memdesc:acfb7c89c8ccc955f2f3acfd0b07ee42c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sans-serif font family.  <br /></td></tr>
+<tr class="memdesc:acfb7c89c8ccc955f2f3acfd0b07ee42c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font family name used for sans-serif text. Example: "Arial", "Helvetica".  <br /></td></tr>
 <tr class="separator:acfb7c89c8ccc955f2f3acfd0b07ee42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225d15bf4cf92ff4f7497d1950a93673" id="r_a225d15bf4cf92ff4f7497d1950a93673"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225d15bf4cf92ff4f7497d1950a93673">CursiveFontFamily</a></td></tr>
-<tr class="memdesc:a225d15bf4cf92ff4f7497d1950a93673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursive font family.  <br /></td></tr>
+<tr class="memdesc:a225d15bf4cf92ff4f7497d1950a93673"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font family name used for cursive text. Example: "Comic Sans MS".  <br /></td></tr>
 <tr class="separator:a225d15bf4cf92ff4f7497d1950a93673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccffa8904ac9d3e1bc3727c1f79aec9" id="r_adccffa8904ac9d3e1bc3727c1f79aec9"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adccffa8904ac9d3e1bc3727c1f79aec9">FantasyFontFamily</a></td></tr>
-<tr class="memdesc:adccffa8904ac9d3e1bc3727c1f79aec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fantasy font family.  <br /></td></tr>
+<tr class="memdesc:adccffa8904ac9d3e1bc3727c1f79aec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The font family name used for fantasy text. Example: "Impact".  <br /></td></tr>
 <tr class="separator:adccffa8904ac9d3e1bc3727c1f79aec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9079319acc86f02c074903a63675a774" id="r_a9079319acc86f02c074903a63675a774"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9079319acc86f02c074903a63675a774">DefaultFontSize</a> = 0</td></tr>
+<tr class="memdesc:a9079319acc86f02c074903a63675a774"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default font size (in pixels) for proportional fonts in web content. Determines the base size for most text.  <br /></td></tr>
+<tr class="separator:a9079319acc86f02c074903a63675a774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26d4dbf725dbc98665d62555c3e12b8" id="r_ae26d4dbf725dbc98665d62555c3e12b8"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae26d4dbf725dbc98665d62555c3e12b8">DefaultFixedFontSize</a> = 0</td></tr>
+<tr class="memdesc:ae26d4dbf725dbc98665d62555c3e12b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default font size (in pixels) for fixed-width (monospace) fonts. Used for code blocks and preformatted text.  <br /></td></tr>
+<tr class="separator:ae26d4dbf725dbc98665d62555c3e12b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b40637d787cd989ca4e26fe05ce45b" id="r_aa9b40637d787cd989ca4e26fe05ce45b"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9b40637d787cd989ca4e26fe05ce45b">MinimumFontSize</a> = 0</td></tr>
+<tr class="memdesc:aa9b40637d787cd989ca4e26fe05ce45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum font size (in pixels) allowed for any text. Ensures text remains legible even if web content requests smaller sizes.  <br /></td></tr>
+<tr class="separator:aa9b40637d787cd989ca4e26fe05ce45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6388b5ab68466996da058acc2ea85564" id="r_a6388b5ab68466996da058acc2ea85564"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6388b5ab68466996da058acc2ea85564">MinimumLogicalFontSize</a> = 0</td></tr>
+<tr class="memdesc:a6388b5ab68466996da058acc2ea85564"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum logical font size (in pixels) allowed for proportional fonts. Logical font size may differ from physical font size depending on scaling.  <br /></td></tr>
+<tr class="separator:a6388b5ab68466996da058acc2ea85564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99fb5118edf618da2f1a3c66bec0190d" id="r_a99fb5118edf618da2f1a3c66bec0190d"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99fb5118edf618da2f1a3c66bec0190d">DefaultEncoding</a></td></tr>
-<tr class="memdesc:a99fb5118edf618da2f1a3c66bec0190d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default encoding.  <br /></td></tr>
+<tr class="memdesc:a99fb5118edf618da2f1a3c66bec0190d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default text encoding for web content. Example: "UTF-8".  <br /></td></tr>
 <tr class="separator:a99fb5118edf618da2f1a3c66bec0190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c1764177be2c81584e255219208b5c" id="r_a90c1764177be2c81584e255219208b5c"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c1764177be2c81584e255219208b5c">AcceptLanguageList</a></td></tr>
-<tr class="memdesc:a90c1764177be2c81584e255219208b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept language list.  <br /></td></tr>
+<tr class="memdesc:a90c1764177be2c81584e255219208b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A comma-separated list of language codes (e.g., "en-US,fr,de") used for the "Accept-Language" HTTP header. Specifies the preferred languages for web content.  <br /></td></tr>
 <tr class="separator:a90c1764177be2c81584e255219208b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfab62460670e02bfe7d109276074ac8" id="r_acfab62460670e02bfe7d109276074ac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfab62460670e02bfe7d109276074ac8">RemoteFonts</a></td></tr>
-<tr class="memdesc:acfab62460670e02bfe7d109276074ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote fonts state.  <br /></td></tr>
+<tr class="memdesc:acfab62460670e02bfe7d109276074ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether remote web fonts (such as Google Fonts) are enabled or disabled. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:acfab62460670e02bfe7d109276074ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88a36a4dd792141d19e3dfbbec007e2" id="r_ab88a36a4dd792141d19e3dfbbec007e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab88a36a4dd792141d19e3dfbbec007e2">Javascript</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:ab88a36a4dd792141d19e3dfbbec007e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Javascript state. Default by default.  <br /></td></tr>
+<tr class="memdesc:ab88a36a4dd792141d19e3dfbbec007e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether JavaScript execution is enabled in the browser. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:ab88a36a4dd792141d19e3dfbbec007e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8020aff5a87e18cebd546028bea52714" id="r_a8020aff5a87e18cebd546028bea52714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8020aff5a87e18cebd546028bea52714">AllowJavascriptCloseWindows</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a8020aff5a87e18cebd546028bea52714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow javascript close windows state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a8020aff5a87e18cebd546028bea52714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether JavaScript is allowed to close browser windows (e.g., via window.close()). <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a8020aff5a87e18cebd546028bea52714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b41dcbbdc157b6f2f02f7a2c58b337" id="r_a05b41dcbbdc157b6f2f02f7a2c58b337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05b41dcbbdc157b6f2f02f7a2c58b337">AllowJavascriptAccessClipboard</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a05b41dcbbdc157b6f2f02f7a2c58b337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow javascript access clipboard state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a05b41dcbbdc157b6f2f02f7a2c58b337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether JavaScript is allowed to access the system clipboard. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a05b41dcbbdc157b6f2f02f7a2c58b337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a689083768ff268695d560944359ed114" id="r_a689083768ff268695d560944359ed114"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689083768ff268695d560944359ed114">AllowJavascriptDomPaste</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a689083768ff268695d560944359ed114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow javascript DOM paste state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a689083768ff268695d560944359ed114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether JavaScript is allowed to perform DOM paste operations. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a689083768ff268695d560944359ed114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c50a10dc054978ee160227ba3b3c3fd" id="r_a8c50a10dc054978ee160227ba3b3c3fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c50a10dc054978ee160227ba3b3c3fd">Plugins</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a8c50a10dc054978ee160227ba3b3c3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugins state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a8c50a10dc054978ee160227ba3b3c3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether browser plugins (such as Flash, PDF viewers) are enabled. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a8c50a10dc054978ee160227ba3b3c3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59cdd2e04438d83347816cb5ece928b" id="r_ad59cdd2e04438d83347816cb5ece928b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad59cdd2e04438d83347816cb5ece928b">ImageLoading</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:ad59cdd2e04438d83347816cb5ece928b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image loading state. Default by default.  <br /></td></tr>
+<tr class="memdesc:ad59cdd2e04438d83347816cb5ece928b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether images are loaded automatically in web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:ad59cdd2e04438d83347816cb5ece928b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c469ad47cacd7a3898df1769ed3a2d6" id="r_a7c469ad47cacd7a3898df1769ed3a2d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c469ad47cacd7a3898df1769ed3a2d6">ImageShrinkStandaloneToFit</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a7c469ad47cacd7a3898df1769ed3a2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image shrink standalone to fit state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a7c469ad47cacd7a3898df1769ed3a2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether standalone images are automatically shrunk to fit the view. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a7c469ad47cacd7a3898df1769ed3a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eb3f100b3e99e4f8d47fe880628da5e" id="r_a5eb3f100b3e99e4f8d47fe880628da5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eb3f100b3e99e4f8d47fe880628da5e">TextAreaResize</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a5eb3f100b3e99e4f8d47fe880628da5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text area resize state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a5eb3f100b3e99e4f8d47fe880628da5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether text areas in web content can be resized by the user. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a5eb3f100b3e99e4f8d47fe880628da5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c9181db5a30d567499e8ff70b87ef1" id="r_a20c9181db5a30d567499e8ff70b87ef1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20c9181db5a30d567499e8ff70b87ef1">TabToLinks</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a20c9181db5a30d567499e8ff70b87ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tab to links state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a20c9181db5a30d567499e8ff70b87ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether the Tab key can be used to navigate to links in web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a20c9181db5a30d567499e8ff70b87ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a357c456301feec9693362b2447dc54" id="r_a8a357c456301feec9693362b2447dc54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a357c456301feec9693362b2447dc54">LocalStorage</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a8a357c456301feec9693362b2447dc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local storage state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a8a357c456301feec9693362b2447dc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether HTML5 local storage is enabled for web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a8a357c456301feec9693362b2447dc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e4bd7bd37167f3e143200b945a704ba" id="r_a1e4bd7bd37167f3e143200b945a704ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e4bd7bd37167f3e143200b945a704ba">Databases</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:a1e4bd7bd37167f3e143200b945a704ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Databases state. Default by default.  <br /></td></tr>
+<tr class="memdesc:a1e4bd7bd37167f3e143200b945a704ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether HTML5 databases (WebSQL, IndexedDB) are enabled for web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:a1e4bd7bd37167f3e143200b945a704ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1a0b9855950f9782b59277c17eeb710" id="r_aa1a0b9855950f9782b59277c17eeb710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb">ECefViewFeatureState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a0b9855950f9782b59277c17eeb710">WebGL</a> = <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67">ECefViewFeatureState::Default</a></td></tr>
-<tr class="memdesc:aa1a0b9855950f9782b59277c17eeb710"><td class="mdescLeft">&#160;</td><td class="mdescRight">WebGL state. Default by default.  <br /></td></tr>
+<tr class="memdesc:aa1a0b9855950f9782b59277c17eeb710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls whether WebGL (hardware-accelerated 3D graphics) is enabled for web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default.  <br /></td></tr>
 <tr class="separator:aa1a0b9855950f9782b59277c17eeb710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5090525a598ee7c6ee41e23bc8ac8f42" id="r_a5090525a598ee7c6ee41e23bc8ac8f42"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5090525a598ee7c6ee41e23bc8ac8f42">LocalFolderResroucesMapping</a></td></tr>
-<tr class="memdesc:a5090525a598ee7c6ee41e23bc8ac8f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local folder resources mapping.  <br /></td></tr>
-<tr class="separator:a5090525a598ee7c6ee41e23bc8ac8f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab3d1181e3100a0ec0ee08be1d5dd8ee" id="r_aab3d1181e3100a0ec0ee08be1d5dd8ee"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab3d1181e3100a0ec0ee08be1d5dd8ee">ArchiveFileResourceMapping</a></td></tr>
-<tr class="memdesc:aab3d1181e3100a0ec0ee08be1d5dd8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Archive file resource mapping.  <br /></td></tr>
-<tr class="separator:aab3d1181e3100a0ec0ee08be1d5dd8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the settings for per CefView instance. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2c2f7c29a7c85756c1730abdbd343ac1" name="a2c2f7c29a7c85756c1730abdbd343ac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c2f7c29a7c85756c1730abdbd343ac1">&#9670;&#160;</a></span>operator!=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FCefViewSettings::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_f_cef_view_settings.html">FCefViewSettings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Inequality operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Other</td><td>The other settings to compare.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the settings are not equal, false otherwise.</dd></dl>
-
-</div>
-</div>
-<a id="a1b28770339f4ae67c70e63cbc8281fc6" name="a1b28770339f4ae67c70e63cbc8281fc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b28770339f4ae67c70e63cbc8281fc6">&#9670;&#160;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FCefViewSettings::operator== </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_f_cef_view_settings.html">FCefViewSettings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Equality operator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Other</td><td>The other settings to compare.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the settings are equal, false otherwise.</dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
+<div class="textblock"><p><a class="el" href="struct_f_cef_view_settings.html" title="FCefViewSettings defines per-instance configuration for a CEF browser embedded in a UMG widget....">FCefViewSettings</a> defines per-instance configuration for a CEF browser embedded in a UMG widget. It allows fine-grained control over browser appearance, font preferences, encoding, language, and a wide range of browser features such as JavaScript, plugins, storage, and WebGL. Most settings are applied at browser creation and cannot be changed at runtime. Feature toggles use <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bb" title="Represents the possible states of a CEF view feature, such as enabling or disabling specific browser ...">ECefViewFeatureState</a> to enable, disable, or inherit the global/default behavior. All these values are not changeable after one <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a> instance created. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a90c1764177be2c81584e255219208b5c" name="a90c1764177be2c81584e255219208b5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90c1764177be2c81584e255219208b5c">&#9670;&#160;</a></span>AcceptLanguageList</h2>
 
@@ -342,7 +264,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Accept language list. </p>
+<p>A comma-separated list of language codes (e.g., "en-US,fr,de") used for the "Accept-Language" HTTP header. Specifies the preferred languages for web content. </p>
 
 </div>
 </div>
@@ -358,7 +280,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allow javascript access clipboard state. Default by default. </p>
+<p>Controls whether JavaScript is allowed to access the system clipboard. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -374,7 +296,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allow javascript close windows state. Default by default. </p>
+<p>Controls whether JavaScript is allowed to close browser windows (e.g., via window.close()). <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -390,23 +312,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allow javascript DOM paste state. Default by default. </p>
-
-</div>
-</div>
-<a id="aab3d1181e3100a0ec0ee08be1d5dd8ee" name="aab3d1181e3100a0ec0ee08be1d5dd8ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab3d1181e3100a0ec0ee08be1d5dd8ee">&#9670;&#160;</a></span>ArchiveFileResourceMapping</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;<a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a>&gt; FCefViewSettings::ArchiveFileResourceMapping</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Archive file resource mapping. </p>
+<p>Controls whether JavaScript is allowed to perform DOM paste operations. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -422,7 +328,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Background color. White by default. </p>
+<p>The background color of the CEF browser viewport. Used when no web content is loaded or as the default background. Default: FColor::White. </p>
 
 </div>
 </div>
@@ -438,7 +344,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cursive font family. </p>
+<p>The font family name used for cursive text. Example: "Comic Sans MS". </p>
 
 </div>
 </div>
@@ -454,7 +360,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Databases state. Default by default. </p>
+<p>Controls whether HTML5 databases (WebSQL, IndexedDB) are enabled for web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -470,7 +376,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default encoding. </p>
+<p>The default text encoding for web content. Example: "UTF-8". </p>
 
 </div>
 </div>
@@ -481,12 +387,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 FCefViewSettings::DefaultFixedFontSize</td>
+          <td class="memname">int32 FCefViewSettings::DefaultFixedFontSize = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default fixed font size. </p>
+<p>The default font size (in pixels) for fixed-width (monospace) fonts. Used for code blocks and preformatted text. </p>
 
 </div>
 </div>
@@ -497,44 +403,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 FCefViewSettings::DefaultFontSize</td>
+          <td class="memname">int32 FCefViewSettings::DefaultFontSize = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default font size. </p>
-
-</div>
-</div>
-<a id="a59e20c085a095e871e61c9e432b33350" name="a59e20c085a095e871e61c9e432b33350"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59e20c085a095e871e61c9e432b33350">&#9670;&#160;</a></span>EnableContextMenu</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FCefViewSettings::EnableContextMenu = true</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enable/disable context menu. Enabled by default. </p>
-
-</div>
-</div>
-<a id="a37ccee269db00857f3bb966c61730376" name="a37ccee269db00857f3bb966c61730376"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37ccee269db00857f3bb966c61730376">&#9670;&#160;</a></span>EnableDragAndDrop</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FCefViewSettings::EnableDragAndDrop = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enable/disable drag and drop. Disabled by default. </p>
+<p>The default font size (in pixels) for proportional fonts in web content. Determines the base size for most text. </p>
 
 </div>
 </div>
@@ -550,7 +424,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fantasy font family. </p>
+<p>The font family name used for fantasy text. Example: "Impact". </p>
 
 </div>
 </div>
@@ -566,23 +440,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fixed font family. </p>
-
-</div>
-</div>
-<a id="a62720062b3dde2db50bf265d947ada97" name="a62720062b3dde2db50bf265d947ada97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62720062b3dde2db50bf265d947ada97">&#9670;&#160;</a></span>FrameRate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32 FCefViewSettings::FrameRate = 60</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Frame rate. 60 by default. </p>
+<p>The font family name used for fixed-width (monospace) text. Example: "Courier New", "Consolas". </p>
 
 </div>
 </div>
@@ -598,7 +456,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Image loading state. Default by default. </p>
+<p>Controls whether images are loaded automatically in web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -614,7 +472,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Image shrink standalone to fit state. Default by default. </p>
+<p>Controls whether standalone images are automatically shrunk to fit the view. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -630,23 +488,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Javascript state. Default by default. </p>
-
-</div>
-</div>
-<a id="a5090525a598ee7c6ee41e23bc8ac8f42" name="a5090525a598ee7c6ee41e23bc8ac8f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5090525a598ee7c6ee41e23bc8ac8f42">&#9670;&#160;</a></span>LocalFolderResroucesMapping</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;<a class="el" href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a>&gt; FCefViewSettings::LocalFolderResroucesMapping</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Local folder resources mapping. </p>
+<p>Controls whether JavaScript execution is enabled in the browser. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -662,7 +504,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Local storage state. Default by default. </p>
+<p>Controls whether HTML5 local storage is enabled for web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -673,12 +515,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 FCefViewSettings::MinimumFontSize</td>
+          <td class="memname">int32 FCefViewSettings::MinimumFontSize = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Minimum font size. </p>
+<p>The minimum font size (in pixels) allowed for any text. Ensures text remains legible even if web content requests smaller sizes. </p>
 
 </div>
 </div>
@@ -689,12 +531,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 FCefViewSettings::MinimumLogicalFontSize</td>
+          <td class="memname">int32 FCefViewSettings::MinimumLogicalFontSize = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Minimum logical font size. </p>
+<p>The minimum logical font size (in pixels) allowed for proportional fonts. Logical font size may differ from physical font size depending on scaling. </p>
 
 </div>
 </div>
@@ -710,7 +552,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Plugins state. Default by default. </p>
+<p>Controls whether browser plugins (such as Flash, PDF viewers) are enabled. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -726,7 +568,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remote fonts state. </p>
+<p>Controls whether remote web fonts (such as Google Fonts) are enabled or disabled. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -742,7 +584,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sans-serif font family. </p>
+<p>The font family name used for sans-serif text. Example: "Arial", "Helvetica". </p>
 
 </div>
 </div>
@@ -758,7 +600,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Serif font family. </p>
+<p>The font family name used for serif text. Example: "Times New Roman". </p>
 
 </div>
 </div>
@@ -774,7 +616,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Standard font family. </p>
+<p>The font family name used as the standard (proportional) font for web content. Example: "Arial", "Times New Roman". </p>
 
 </div>
 </div>
@@ -790,7 +632,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Tab to links state. Default by default. </p>
+<p>Controls whether the Tab key can be used to navigate to links in web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -806,7 +648,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Text area resize state. Default by default. </p>
+<p>Controls whether text areas in web content can be resized by the user. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>
@@ -822,7 +664,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>WebGL state. Default by default. </p>
+<p>Controls whether WebGL (hardware-accelerated 3D graphics) is enabled for web content. <a class="el" href="_cef_view_types_8h.html#acffd5d1de03355db705ecf5af34698bba7a1920d61156abc05a60135aefe8bc67" title="Default state. The feature uses the default setting as determined by CEF or the application.">ECefViewFeatureState::Default</a> inherits the global or engine default. </p>
 
 </div>
 </div>

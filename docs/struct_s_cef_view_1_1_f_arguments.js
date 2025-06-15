@@ -1,6 +1,10 @@
 var struct_s_cef_view_1_1_f_arguments =
 [
     [ "FArguments", "struct_s_cef_view_1_1_f_arguments.html#a9dac0d23d1d505080396c798b580b008", null ],
+    [ "bAcceptDrops", "struct_s_cef_view_1_1_f_arguments.html#a02272151443c0ba62c04cf77b7b51dc1", null ],
+    [ "bAllowDrag", "struct_s_cef_view_1_1_f_arguments.html#a9dc3733884ef3cefd2feeb76f66239f8", null ],
+    [ "bEnableContextMenu", "struct_s_cef_view_1_1_f_arguments.html#aa0db5d1e219802b202624ce8aea096e4", null ],
+    [ "FrameRate", "struct_s_cef_view_1_1_f_arguments.html#abcfff9ca32abed87570059c5798d1f90", null ],
     [ "OnAddressChanged", "struct_s_cef_view_1_1_f_arguments.html#a75f56024832765dcf2a7e416d9794a7c", null ],
     [ "OnConsoleMessage", "struct_s_cef_view_1_1_f_arguments.html#a5cd060fe60a474a45f812dff119bb03b", null ],
     [ "OnDraggableRegionChanged", "struct_s_cef_view_1_1_f_arguments.html#a56a1ea35897d70e50e3827d6c2a7f328", null ],
@@ -18,6 +22,6 @@ var struct_s_cef_view_1_1_f_arguments =
     [ "OnStatusMessage", "struct_s_cef_view_1_1_f_arguments.html#ace25127babbedc8e2d7b6e8ffd2cf8be", null ],
     [ "OnTitleChanged", "struct_s_cef_view_1_1_f_arguments.html#aaf551e1c72e5617d7775919512196f00", null ],
     [ "OnUrlRequest", "struct_s_cef_view_1_1_f_arguments.html#a27f762a4561e729af0be337d2cf15991", null ],
-    [ "Settings", "struct_s_cef_view_1_1_f_arguments.html#ab2a21a3c494ebabd77f03284bf4e9d3b", null ],
+    [ "Settings", "struct_s_cef_view_1_1_f_arguments.html#ae6374c3fee59722398e33db308be06b1", null ],
     [ "Url", "struct_s_cef_view_1_1_f_arguments.html#ab8ae2e09dc62445658527981427b8a00", null ]
 ];

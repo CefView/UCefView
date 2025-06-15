@@ -159,38 +159,27 @@ $(function(){initNavTree('class_u_cef_context.html',''); initResizable(true); })
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_u_cef_context-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">UCefContext</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the CEF context. This class provides access to CEF functionality within Unreal Engine.  
+<p>Represents the Chromium Embedded Framework (CEF) context within Unreal Engine. This class acts as a subsystem, providing centralized access to CEF features such as resource mapping, cookie management, and cross-origin resource sharing (CORS) configuration. All browser instances created after modifying this context will inherit its settings and mappings.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;CefContext.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c68ab4f57531c03d27bf4d739bf0ef2" id="r_a7c68ab4f57531c03d27bf4d739bf0ef2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c68ab4f57531c03d27bf4d739bf0ef2">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
-<tr class="memdesc:a7c68ab4f57531c03d27bf4d739bf0ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the engine is initialized.  <br /></td></tr>
-<tr class="separator:a7c68ab4f57531c03d27bf4d739bf0ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78fac0e4d8d19adf5d44fbec9401a17d" id="r_a78fac0e4d8d19adf5d44fbec9401a17d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78fac0e4d8d19adf5d44fbec9401a17d">Deinitialize</a> () override</td></tr>
-<tr class="memdesc:a78fac0e4d8d19adf5d44fbec9401a17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the engine is deinitialized.  <br /></td></tr>
-<tr class="separator:a78fac0e4d8d19adf5d44fbec9401a17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8433703323d79467557f28c6d4dea103" id="r_a8433703323d79467557f28c6d4dea103"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8433703323d79467557f28c6d4dea103">InitializeCef</a> ()</td></tr>
-<tr class="memdesc:a8433703323d79467557f28c6d4dea103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes CEF.  <br /></td></tr>
-<tr class="separator:a8433703323d79467557f28c6d4dea103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d84775d287b9181dee74663de926ea" id="r_a29d84775d287b9181dee74663de926ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29d84775d287b9181dee74663de926ea">ShutdownCef</a> ()</td></tr>
-<tr class="memdesc:a29d84775d287b9181dee74663de926ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down CEF.  <br /></td></tr>
-<tr class="separator:a29d84775d287b9181dee74663de926ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ce9811590635d346f078b990b94403" id="r_a99ce9811590635d346f078b990b94403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ce9811590635d346f078b990b94403">bIsCefInitialized</a> () const</td></tr>
-<tr class="memdesc:a99ce9811590635d346f078b990b94403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if CEF is initialized.  <br /></td></tr>
+<tr class="memdesc:a99ce9811590635d346f078b990b94403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the CEF context has been successfully initialized and is ready for use.  <br /></td></tr>
 <tr class="separator:a99ce9811590635d346f078b990b94403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99904727ddd5a5c0817009b29bd512fc" id="r_a99904727ddd5a5c0817009b29bd512fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99904727ddd5a5c0817009b29bd512fc">AddLocalFolderResource</a> (const FString &amp;InPath, const FString &amp;InUrl, int32 InPriority=0)</td></tr>
-<tr class="memdesc:a99904727ddd5a5c0817009b29bd512fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a url mapping item with local web resource directory. This works for all QCefView instances created subsequently.  <br /></td></tr>
+<tr class="memdesc:a99904727ddd5a5c0817009b29bd512fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a local folder as a web resource directory, mapping it to a specified URL. All browser instances created after this call will be able to access the folder's contents via the mapped URL.  <br /></td></tr>
 <tr class="separator:a99904727ddd5a5c0817009b29bd512fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93559daff416e8653705f60721f2c232" id="r_a93559daff416e8653705f60721f2c232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93559daff416e8653705f60721f2c232">AddArchiveFileResource</a> (const FString &amp;pInPathath, const FString &amp;InUrl, const FString &amp;InPassword, int32 InPriority=0)</td></tr>
-<tr class="memdesc:a93559daff416e8653705f60721f2c232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a url mapping item with local archive (.zip) file which contains the web resource. This works for all QCefView instances created subsequently.  <br /></td></tr>
+<tr class="memdesc:a93559daff416e8653705f60721f2c232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a local archive file (such as a .zip) as a web resource, mapping its contents to a specified URL. All browser instances created after this call will be able to access the archive's contents via the mapped URL.  <br /></td></tr>
 <tr class="separator:a93559daff416e8653705f60721f2c232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58359329bc940e8b7ef5e0f43c2d42d9" id="r_a58359329bc940e8b7ef5e0f43c2d42d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58359329bc940e8b7ef5e0f43c2d42d9">AddCookie</a> (const FString &amp;InName, const FString &amp;InValue, const FString &amp;InDomain, const FString &amp;InUrl)</td></tr>
 <tr class="memdesc:a58359329bc940e8b7ef5e0f43c2d42d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a cookie to the CEF context, this cookie is accessible from all browsers created with this context.  <br /></td></tr>
@@ -199,23 +188,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a60d29fa9044ee6b46200427722c96856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all cookies from the CEF context.  <br /></td></tr>
 <tr class="separator:a60d29fa9044ee6b46200427722c96856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2afd1a7b42d7ab16465e008f060de81d" id="r_a2afd1a7b42d7ab16465e008f060de81d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2afd1a7b42d7ab16465e008f060de81d">AddCrossOriginWhitelistEntry</a> (const FString &amp;InSourceOrigin, const FString &amp;InTargetSchema, const FString &amp;InTargetDomain, bool InAllowTargetSubdomains)</td></tr>
-<tr class="memdesc:a2afd1a7b42d7ab16465e008f060de81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an entry to the cross-origin access whitelist. For details please refer to: <a href="https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L81C23-L81C23">https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L81C23-L81C23</a>.  <br /></td></tr>
+<tr class="memdesc:a2afd1a7b42d7ab16465e008f060de81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an entry to the cross-origin access whitelist for the CEF context, allowing specific cross-origin requests from a given source origin to a target schema and domain. This enables controlled CORS (Cross-Origin Resource Sharing) behavior for browser instances managed by this context.  <br /></td></tr>
 <tr class="separator:a2afd1a7b42d7ab16465e008f060de81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a975965be4ac18b586ef752736e0d3232" id="r_a975965be4ac18b586ef752736e0d3232"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a975965be4ac18b586ef752736e0d3232">RemoveCrossOriginWhitelistEntry</a> (const FString &amp;InSourceOrigin, const FString &amp;InTargetSchema, const FString &amp;InTargetDomain, bool InAllowTargetSubdomains)</td></tr>
-<tr class="memdesc:a975965be4ac18b586ef752736e0d3232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an entry from the cross-origin access whitelist. For details please refer to: <a href="https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L91C12-L91C12">https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L91C12-L91C12</a>.  <br /></td></tr>
+<tr class="memdesc:a975965be4ac18b586ef752736e0d3232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a specific entry from the cross-origin access whitelist for the CEF context. This revokes previously granted cross-origin permissions for the specified source and target combination, enforcing the default CORS policy for affected requests.  <br /></td></tr>
 <tr class="separator:a975965be4ac18b586ef752736e0d3232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80cde9d4650f8e40c18b8b3b2cfb2e06" id="r_a80cde9d4650f8e40c18b8b3b2cfb2e06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80cde9d4650f8e40c18b8b3b2cfb2e06">ClearCrossOriginWhitelistEntry</a> ()</td></tr>
-<tr class="memdesc:a80cde9d4650f8e40c18b8b3b2cfb2e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all entries from the cross-origin access whitelist.  <br /></td></tr>
-<tr class="separator:a80cde9d4650f8e40c18b8b3b2cfb2e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0744530728a2084fec63e1a0334add45" id="r_a0744530728a2084fec63e1a0334add45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0744530728a2084fec63e1a0334add45">ClearCrossOriginWhitelistEntry</a> ()</td></tr>
+<tr class="memdesc:a0744530728a2084fec63e1a0334add45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all entries from the cross-origin access whitelist for the CEF context. This action revokes any previously granted cross-origin permissions, restoring the default CORS policy.  <br /></td></tr>
+<tr class="separator:a0744530728a2084fec63e1a0334add45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac0dc1b7eebc0e5b1a357071e8f12a6fb" id="r_ac0dc1b7eebc0e5b1a357071e8f12a6fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_cef_settings.html">UCefSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0dc1b7eebc0e5b1a357071e8f12a6fb">Settings</a> = GetMutableDefault&lt;<a class="el" href="class_u_cef_settings.html">UCefSettings</a>&gt;()</td></tr>
-<tr class="memdesc:ac0dc1b7eebc0e5b1a357071e8f12a6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The settings for the CEF context.  <br /></td></tr>
+<tr class="memdesc:ac0dc1b7eebc0e5b1a357071e8f12a6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The settings object containing configuration parameters for the CEF context. This includes options such as cache path, user agent, and other browser-related settings.  <br /></td></tr>
 <tr class="separator:ac0dc1b7eebc0e5b1a357071e8f12a6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7c68ab4f57531c03d27bf4d739bf0ef2" id="r_a7c68ab4f57531c03d27bf4d739bf0ef2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c68ab4f57531c03d27bf4d739bf0ef2">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="memdesc:a7c68ab4f57531c03d27bf4d739bf0ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the engine subsystem is initialized. This method sets up the CEF context and prepares it for use by browser instances.  <br /></td></tr>
+<tr class="separator:a7c68ab4f57531c03d27bf4d739bf0ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fac0e4d8d19adf5d44fbec9401a17d" id="r_a78fac0e4d8d19adf5d44fbec9401a17d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78fac0e4d8d19adf5d44fbec9401a17d">Deinitialize</a> () override</td></tr>
+<tr class="memdesc:a78fac0e4d8d19adf5d44fbec9401a17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the engine subsystem is deinitialized. This method releases all CEF resources and performs necessary cleanup.  <br /></td></tr>
+<tr class="separator:a78fac0e4d8d19adf5d44fbec9401a17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the CEF context. This class provides access to CEF functionality within Unreal Engine. </p>
+<div class="textblock"><p>Represents the Chromium Embedded Framework (CEF) context within Unreal Engine. This class acts as a subsystem, providing centralized access to CEF features such as resource mapping, cookie management, and cross-origin resource sharing (CORS) configuration. All browser instances created after modifying this context will inherit its settings and mappings. </p>
+<p><a class="el" href="class_u_cef_context.html" title="Represents the Chromium Embedded Framework (CEF) context within Unreal Engine. This class acts as a s...">UCefContext</a> should be accessed via the engine subsystem interface. It is responsible for initializing and deinitializing CEF resources, and exposes Blueprint-callable methods for common browser integration tasks. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a93559daff416e8653705f60721f2c232" name="a93559daff416e8653705f60721f2c232"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93559daff416e8653705f60721f2c232">&#9670;&#160;</a></span>AddArchiveFileResource()</h2>
@@ -246,16 +245,17 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a url mapping item with local archive (.zip) file which contains the web resource. This works for all QCefView instances created subsequently. </p>
+<p>Registers a local archive file (such as a .zip) as a web resource, mapping its contents to a specified URL. All browser instances created after this call will be able to access the archive's contents via the mapped URL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pInPathath</td><td>The path to the local archive file.</td></tr>
-    <tr><td class="paramname">InUrl</td><td>The url to be mapped to.</td></tr>
-    <tr><td class="paramname">InPassword</td><td>The password of the archive.</td></tr>
-    <tr><td class="paramname">InPriority</td><td>The priority.</td></tr>
+    <tr><td class="paramname">pInPathath</td><td>Absolute or relative path to the local archive file (e.g., .zip).</td></tr>
+    <tr><td class="paramname">InUrl</td><td>The virtual URL to which the archive will be mapped.</td></tr>
+    <tr><td class="paramname">InPassword</td><td>Password for the archive, if required. Pass an empty string if not needed.</td></tr>
+    <tr><td class="paramname">InPriority</td><td>The priority of the mapping. Higher values take precedence.</td></tr>
   </table>
   </dd>
 </dl>
+<p>This is useful for distributing web assets in a compressed format. The archive is mounted read-only. </p>
 
 </div>
 </div>
@@ -331,17 +331,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds an entry to the cross-origin access whitelist. For details please refer to: <a href="https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L81C23-L81C23">https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L81C23-L81C23</a>. </p>
+<p>Adds an entry to the cross-origin access whitelist for the CEF context, allowing specific cross-origin requests from a given source origin to a target schema and domain. This enables controlled CORS (Cross-Origin Resource Sharing) behavior for browser instances managed by this context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">InSourceOrigin</td><td>The source origin.</td></tr>
-    <tr><td class="paramname">InTargetSchema</td><td>The target schema.</td></tr>
-    <tr><td class="paramname">InTargetDomain</td><td>The target domain.</td></tr>
-    <tr><td class="paramname">InAllowTargetSubdomains</td><td>Whether to allow subdomain or not.</td></tr>
+    <tr><td class="paramname">InSourceOrigin</td><td>The source origin (e.g., "http://myapp.local") from which cross-origin requests will be allowed. </td></tr>
+    <tr><td class="paramname">InTargetSchema</td><td>The target schema (e.g., "https") to which cross-origin requests are permitted. </td></tr>
+    <tr><td class="paramname">InTargetDomain</td><td>The target domain (e.g., "example.com") that will accept cross-origin requests from the source origin. </td></tr>
+    <tr><td class="paramname">InAllowTargetSubdomains</td><td>If <code>true</code>, subdomains of the target domain are also allowed for cross-origin access. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success; otherwise false.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the whitelist entry was successfully added; otherwise, <code>false</code>. </dd></dl>
+<p>Use this method to enable communication between web content hosted in different origins, such as when embedding local or remote web applications that require access to resources across domains. This is particularly useful for scenarios involving authentication, APIs, or integration with third-party services. </p>
+<p>Be cautious when granting cross-origin permissions, as this can have security implications. Only allow trusted origins and domains as needed by your application. </p>
+<p>If the entry already exists, this method will not add a duplicate. The changes apply to all browser instances created after the entry is added. </p>
+<p>For more information, see the CEF documentation: <a href="https://github.com/chromiumembedded/cef/blob/master/include/cef_origin_whitelist.h">https://github.com/chromiumembedded/cef/blob/master/include/cef_origin_whitelist.h</a> </p>
 
 </div>
 </div>
@@ -369,15 +373,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a url mapping item with local web resource directory. This works for all QCefView instances created subsequently. </p>
+<p>Registers a local folder as a web resource directory, mapping it to a specified URL. All browser instances created after this call will be able to access the folder's contents via the mapped URL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">InPath</td><td>The path to the local resource directory.</td></tr>
-    <tr><td class="paramname">InUrl</td><td>The url to be mapped to.</td></tr>
-    <tr><td class="paramname">InPriority</td><td>The priority.</td></tr>
+    <tr><td class="paramname">InPath</td><td>Absolute or relative path to the local resource directory.</td></tr>
+    <tr><td class="paramname">InUrl</td><td>The virtual URL to which the directory will be mapped (e.g., "http://myapp.local/").</td></tr>
+    <tr><td class="paramname">InPriority</td><td>The priority of the mapping. Higher values take precedence when resolving resources.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Use this method to serve static assets (HTML, JS, CSS, etc.) from the local filesystem to CEF browsers. </p>
 
 </div>
 </div>
@@ -396,19 +401,20 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks if CEF is initialized. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if CEF is initialized; otherwise, false.</dd></dl>
+<p>Checks whether the CEF context has been successfully initialized and is ready for use. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the CEF context is initialized and operational; otherwise, <code>false</code>. </dd></dl>
+<p>This method can be used to verify that CEF is available before attempting browser operations. </p>
 
 </div>
 </div>
-<a id="a80cde9d4650f8e40c18b8b3b2cfb2e06" name="a80cde9d4650f8e40c18b8b3b2cfb2e06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80cde9d4650f8e40c18b8b3b2cfb2e06">&#9670;&#160;</a></span>ClearCrossOriginWhitelistEntry()</h2>
+<a id="a0744530728a2084fec63e1a0334add45" name="a0744530728a2084fec63e1a0334add45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0744530728a2084fec63e1a0334add45">&#9670;&#160;</a></span>ClearCrossOriginWhitelistEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool UCefContext::ClearCrossOriginWhitelistEntry </td>
+          <td class="memname">void UCefContext::ClearCrossOriginWhitelistEntry </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -416,7 +422,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes all entries from the cross-origin access whitelist. </p>
+<p>Removes all entries from the cross-origin access whitelist for the CEF context. This action revokes any previously granted cross-origin permissions, restoring the default CORS policy. </p>
+<p>Use this method to reset the CORS configuration for all browser instances managed by this context. After calling this, any custom cross-origin access rules added via <a class="el" href="#a2afd1a7b42d7ab16465e008f060de81d" title="Adds an entry to the cross-origin access whitelist for the CEF context, allowing specific cross-origi...">AddCrossOriginWhitelistEntry</a> will be removed, and only the default CEF cross-origin policy will apply. </p>
+<p>This is useful when you need to ensure a clean security state or when dynamically changing the set of allowed origins. </p>
+<p>For more information, see the CEF documentation: <a href="https://github.com/chromiumembedded/cef/blob/master/include/cef_origin_whitelist.h">https://github.com/chromiumembedded/cef/blob/master/include/cef_origin_whitelist.h</a> </p>
 
 </div>
 </div>
@@ -438,12 +447,12 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when the engine is deinitialized. </p>
+<p>Called when the engine subsystem is deinitialized. This method releases all CEF resources and performs necessary cleanup. </p>
 
 </div>
 </div>
@@ -485,32 +494,18 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when the engine is initialized. </p>
-
-</div>
-</div>
-<a id="a8433703323d79467557f28c6d4dea103" name="a8433703323d79467557f28c6d4dea103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8433703323d79467557f28c6d4dea103">&#9670;&#160;</a></span>InitializeCef()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool UCefContext::InitializeCef </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes CEF. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if CEF was initialized successfully; otherwise, false.</dd></dl>
+<p>Called when the engine subsystem is initialized. This method sets up the CEF context and prepares it for use by browser instances. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Collection</td><td>The subsystem collection used for initialization.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -543,36 +538,20 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes an entry from the cross-origin access whitelist. For details please refer to: <a href="https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L91C12-L91C12">https://github.com/chromiumembedded/cef/blob/605c2bac86415dcec1e2902cdc46dc11c1ad026a/include/cef_origin_whitelist.h#L91C12-L91C12</a>. </p>
+<p>Removes a specific entry from the cross-origin access whitelist for the CEF context. This revokes previously granted cross-origin permissions for the specified source and target combination, enforcing the default CORS policy for affected requests. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">InSourceOrigin</td><td>The source origin.</td></tr>
-    <tr><td class="paramname">InTargetSchema</td><td>The target schema.</td></tr>
-    <tr><td class="paramname">InTargetDomain</td><td>The target domain.</td></tr>
-    <tr><td class="paramname">InAllowTargetSubdomains</td><td>Whether to allow subdomain or not.</td></tr>
+    <tr><td class="paramname">InSourceOrigin</td><td>The source origin (e.g., "http://myapp.local") for which the whitelist entry was added.</td></tr>
+    <tr><td class="paramname">InTargetSchema</td><td>The target schema (e.g., "https") that was allowed for cross-origin access.</td></tr>
+    <tr><td class="paramname">InTargetDomain</td><td>The target domain (e.g., "example.com") that was allowed for cross-origin access.</td></tr>
+    <tr><td class="paramname">InAllowTargetSubdomains</td><td>Whether subdomains of the target domain were included in the whitelist entry.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success; otherwise false.</dd></dl>
-
-</div>
-</div>
-<a id="a29d84775d287b9181dee74663de926ea" name="a29d84775d287b9181dee74663de926ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29d84775d287b9181dee74663de926ea">&#9670;&#160;</a></span>ShutdownCef()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UCefContext::ShutdownCef </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shuts down CEF. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the whitelist entry was successfully removed; otherwise, <code>false</code>. </dd></dl>
+<p>Use this method to dynamically revoke cross-origin permissions previously granted via <a class="el" href="#a2afd1a7b42d7ab16465e008f060de81d" title="Adds an entry to the cross-origin access whitelist for the CEF context, allowing specific cross-origi...">AddCrossOriginWhitelistEntry</a>. This is useful for tightening security or responding to changes in application policy at runtime. </p>
+<p>If the specified entry does not exist, the method returns <code>false</code> and no changes are made. </p>
+<p>For more information, see the CEF documentation: <a href="https://github.com/chromiumembedded/cef/blob/master/include/cef_origin_whitelist.h">https://github.com/chromiumembedded/cef/blob/master/include/cef_origin_whitelist.h</a> </p>
 
 </div>
 </div>
@@ -589,7 +568,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The settings for the CEF context. </p>
+<p>The settings object containing configuration parameters for the CEF context. This includes options such as cache path, user agent, and other browser-related settings. </p>
+<p>The Settings property is initialized with the project's mutable default <a class="el" href="class_u_cef_settings.html" title="Represents the settings for CEF context initialization and configuration.">UCefSettings</a> instance. Modifying these settings affects all subsequently created browser instances. </p>
 
 </div>
 </div>
