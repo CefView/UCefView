@@ -328,10 +328,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad77afb3caff4b2b0ea87a04467e1fb02" id="r_ad77afb3caff4b2b0ea87a04467e1fb02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad77afb3caff4b2b0ea87a04467e1fb02">bEnableContextMenu</a> = true</td></tr>
 <tr class="memdesc:ad77afb3caff4b2b0ea87a04467e1fb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the context menu in the CEF browser. If true, right-click context menus are shown; if false, they are suppressed. Default: true.  <br /></td></tr>
 <tr class="separator:ad77afb3caff4b2b0ea87a04467e1fb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450dd76b3453b94c6ad10be5ebc0d27a" id="r_a450dd76b3453b94c6ad10be5ebc0d27a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450dd76b3453b94c6ad10be5ebc0d27a">bAcceptDrops</a> = false</td></tr>
+<tr class="memitem:a450dd76b3453b94c6ad10be5ebc0d27a" id="r_a450dd76b3453b94c6ad10be5ebc0d27a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450dd76b3453b94c6ad10be5ebc0d27a">bAcceptDrops</a> = true</td></tr>
 <tr class="memdesc:a450dd76b3453b94c6ad10be5ebc0d27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables accepting drag-and-drop operations from external sources (e.g., files from OS). If true, the browser can accept drops; if false, drops are ignored. Default: false.  <br /></td></tr>
 <tr class="separator:a450dd76b3453b94c6ad10be5ebc0d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a80de76c7df7047d5617ddb6ac3a4bf" id="r_a5a80de76c7df7047d5617ddb6ac3a4bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a80de76c7df7047d5617ddb6ac3a4bf">bAllowDrag</a> = false</td></tr>
+<tr class="memitem:a5a80de76c7df7047d5617ddb6ac3a4bf" id="r_a5a80de76c7df7047d5617ddb6ac3a4bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a80de76c7df7047d5617ddb6ac3a4bf">bAllowDrag</a> = true</td></tr>
 <tr class="memdesc:a5a80de76c7df7047d5617ddb6ac3a4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables allowing the browser content to be dragged (initiating drag operations). If true, users can drag content from the browser; if false, dragging is disabled. Default: false.  <br /></td></tr>
 <tr class="separator:a5a80de76c7df7047d5617ddb6ac3a4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17fa451ce83b767ebaf22a7beb2798f" id="r_ae17fa451ce83b767ebaf22a7beb2798f"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae17fa451ce83b767ebaf22a7beb2798f">LocalFolderResroucesMapping</a></td></tr>
@@ -2545,7 +2545,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool UCefView::bAcceptDrops = false</td>
+          <td class="memname">bool UCefView::bAcceptDrops = true</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2561,7 +2561,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool UCefView::bAllowDrag = false</td>
+          <td class="memname">bool UCefView::bAllowDrag = true</td>
         </tr>
       </table>
 </div><div class="memdoc">

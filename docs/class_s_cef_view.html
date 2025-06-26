@@ -184,9 +184,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a9e7858c0f47e3dc41a18dac3e984eb4a" id="r_a9e7858c0f47e3dc41a18dac3e984eb4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e7858c0f47e3dc41a18dac3e984eb4a">FOnLoadStateChangedEvent</a> = (*)( const int64&amp; InBrowserId , bool bInIsLoading , bool bInCanGoBack , bool bInCanGoForward )</td></tr>
 <tr class="memdesc:a9e7858c0f47e3dc41a18dac3e984eb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback type of loading state changed.  <br /></td></tr>
 <tr class="separator:a9e7858c0f47e3dc41a18dac3e984eb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af408611bb3d92fda09d936a72b169ea5" id="r_af408611bb3d92fda09d936a72b169ea5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af408611bb3d92fda09d936a72b169ea5">FOnLoadStartEvent</a> = (*)( const int64&amp; , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; , bool , int )</td></tr>
-<tr class="memdesc:af408611bb3d92fda09d936a72b169ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback type of loading starts.  <br /></td></tr>
-<tr class="separator:af408611bb3d92fda09d936a72b169ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf4bb2468dc6d25383eb63916e2a394" id="r_a4bf4bb2468dc6d25383eb63916e2a394"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bf4bb2468dc6d25383eb63916e2a394">FOnLoadStartEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InTransitionType )</td></tr>
+<tr class="memdesc:a4bf4bb2468dc6d25383eb63916e2a394"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback type of loading starts.  <br /></td></tr>
+<tr class="separator:a4bf4bb2468dc6d25383eb63916e2a394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba3f6d2076e3b8077f113ad0e33d5c22" id="r_aba3f6d2076e3b8077f113ad0e33d5c22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba3f6d2076e3b8077f113ad0e33d5c22">FOnLoadEndEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InHttpStatusCode )</td></tr>
 <tr class="memdesc:aba3f6d2076e3b8077f113ad0e33d5c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback type of loading ends.  <br /></td></tr>
 <tr class="separator:aba3f6d2076e3b8077f113ad0e33d5c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -439,13 +439,23 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aecf3c45c66b48eb467b444920cb85d92" id="r_aecf3c45c66b48eb467b444920cb85d92"><td class="memItemLeft" align="right" valign="top">FReply&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecf3c45c66b48eb467b444920cb85d92">OnKeyUp</a> (const FGeometry &amp;InGeometry, const FKeyEvent &amp;InKeyEvent) override</td></tr>
 <tr class="memdesc:aecf3c45c66b48eb467b444920cb85d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnKeyUp function.  <br /></td></tr>
 <tr class="separator:aecf3c45c66b48eb467b444920cb85d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4753cb8b548e1251d8c850f64a91f75" id="r_ad4753cb8b548e1251d8c850f64a91f75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4753cb8b548e1251d8c850f64a91f75">OnDragEnter</a> (const FGeometry &amp;InGeometry, const FDragDropEvent &amp;InDragDropEvent) override</td></tr>
+<tr class="separator:ad4753cb8b548e1251d8c850f64a91f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e171ce27a8642ffe9eedac79edcf41" id="r_ae1e171ce27a8642ffe9eedac79edcf41"><td class="memItemLeft" align="right" valign="top">FReply&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e171ce27a8642ffe9eedac79edcf41">OnDragOver</a> (const FGeometry &amp;InGeometry, const FDragDropEvent &amp;InDragDropEvent) override</td></tr>
+<tr class="separator:ae1e171ce27a8642ffe9eedac79edcf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a159aecbde3b2abd85d32627e6e64d0" id="r_a5a159aecbde3b2abd85d32627e6e64d0"><td class="memItemLeft" align="right" valign="top">FReply&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a159aecbde3b2abd85d32627e6e64d0">OnDrop</a> (const FGeometry &amp;InGeometry, const FDragDropEvent &amp;InDragDropEvent) override</td></tr>
+<tr class="separator:a5a159aecbde3b2abd85d32627e6e64d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38c163a565a9d0e71066a99c04c07cf" id="r_ac38c163a565a9d0e71066a99c04c07cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac38c163a565a9d0e71066a99c04c07cf">OnDragLeave</a> (const FDragDropEvent &amp;DragDropEvent) override</td></tr>
+<tr class="separator:ac38c163a565a9d0e71066a99c04c07cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b0f08f9c35ced56a4f97e8326d19cb" id="r_a73b0f08f9c35ced56a4f97e8326d19cb"><td class="memItemLeft" align="right" valign="top">FReply&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73b0f08f9c35ced56a4f97e8326d19cb">OnDragDetected</a> (const FGeometry &amp;InGeometry, const FPointerEvent &amp;InMouseEvent) override</td></tr>
+<tr class="separator:a73b0f08f9c35ced56a4f97e8326d19cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aefe974dd05fb1ecd510e21b4a4a2d812" id="r_aefe974dd05fb1ecd510e21b4a4a2d812"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a9e7858c0f47e3dc41a18dac3e984eb4a">FOnLoadStateChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe974dd05fb1ecd510e21b4a4a2d812">OnLoadStateChanged</a></td></tr>
 <tr class="memdesc:aefe974dd05fb1ecd510e21b4a4a2d812"><td class="mdescLeft">&#160;</td><td class="mdescRight">On load state changed event.  <br /></td></tr>
 <tr class="separator:aefe974dd05fb1ecd510e21b4a4a2d812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a800c3c161b729d76db8fce7cbb592b6d" id="r_a800c3c161b729d76db8fce7cbb592b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af408611bb3d92fda09d936a72b169ea5">FOnLoadStartEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800c3c161b729d76db8fce7cbb592b6d">OnLoadStart</a></td></tr>
+<tr class="memitem:a800c3c161b729d76db8fce7cbb592b6d" id="r_a800c3c161b729d76db8fce7cbb592b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4bf4bb2468dc6d25383eb63916e2a394">FOnLoadStartEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800c3c161b729d76db8fce7cbb592b6d">OnLoadStart</a></td></tr>
 <tr class="memdesc:a800c3c161b729d76db8fce7cbb592b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On load start event.  <br /></td></tr>
 <tr class="separator:a800c3c161b729d76db8fce7cbb592b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf64b268746a15188ddb2ecedaa7e03" id="r_a4bf64b268746a15188ddb2ecedaa7e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aba3f6d2076e3b8077f113ad0e33d5c22">FOnLoadEndEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bf64b268746a15188ddb2ecedaa7e03">OnLoadEnd</a></td></tr>
@@ -711,14 +721,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af408611bb3d92fda09d936a72b169ea5" name="af408611bb3d92fda09d936a72b169ea5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af408611bb3d92fda09d936a72b169ea5">&#9670;&#160;</a></span>FOnLoadStartEvent</h2>
+<a id="a4bf4bb2468dc6d25383eb63916e2a394" name="a4bf4bb2468dc6d25383eb63916e2a394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf4bb2468dc6d25383eb63916e2a394">&#9670;&#160;</a></span>FOnLoadStartEvent</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#af408611bb3d92fda09d936a72b169ea5">SCefView::FOnLoadStartEvent</a> = (*)( const int64&amp; , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; , bool , int )</td>
+          <td class="memname">using <a class="el" href="#a4bf4bb2468dc6d25383eb63916e2a394">SCefView::FOnLoadStartEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InTransitionType )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1646,6 +1656,147 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a73b0f08f9c35ced56a4f97e8326d19cb" name="a73b0f08f9c35ced56a4f97e8326d19cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b0f08f9c35ced56a4f97e8326d19cb">&#9670;&#160;</a></span>OnDragDetected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FReply SCefView::OnDragDetected </td>
+          <td>(</td>
+          <td class="paramtype">const FGeometry &amp;</td>          <td class="paramname"><span class="paramname"><em>InGeometry</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FPointerEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>InMouseEvent</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4753cb8b548e1251d8c850f64a91f75" name="ad4753cb8b548e1251d8c850f64a91f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4753cb8b548e1251d8c850f64a91f75">&#9670;&#160;</a></span>OnDragEnter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SCefView::OnDragEnter </td>
+          <td>(</td>
+          <td class="paramtype">const FGeometry &amp;</td>          <td class="paramname"><span class="paramname"><em>InGeometry</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FDragDropEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>InDragDropEvent</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac38c163a565a9d0e71066a99c04c07cf" name="ac38c163a565a9d0e71066a99c04c07cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38c163a565a9d0e71066a99c04c07cf">&#9670;&#160;</a></span>OnDragLeave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SCefView::OnDragLeave </td>
+          <td>(</td>
+          <td class="paramtype">const FDragDropEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>DragDropEvent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1e171ce27a8642ffe9eedac79edcf41" name="ae1e171ce27a8642ffe9eedac79edcf41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e171ce27a8642ffe9eedac79edcf41">&#9670;&#160;</a></span>OnDragOver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FReply SCefView::OnDragOver </td>
+          <td>(</td>
+          <td class="paramtype">const FGeometry &amp;</td>          <td class="paramname"><span class="paramname"><em>InGeometry</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FDragDropEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>InDragDropEvent</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a159aecbde3b2abd85d32627e6e64d0" name="a5a159aecbde3b2abd85d32627e6e64d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a159aecbde3b2abd85d32627e6e64d0">&#9670;&#160;</a></span>OnDrop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FReply SCefView::OnDrop </td>
+          <td>(</td>
+          <td class="paramtype">const FGeometry &amp;</td>          <td class="paramname"><span class="paramname"><em>InGeometry</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FDragDropEvent &amp;</td>          <td class="paramname"><span class="paramname"><em>InDragDropEvent</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3174,7 +3325,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af408611bb3d92fda09d936a72b169ea5">FOnLoadStartEvent</a> SCefView::OnLoadStart</td>
+          <td class="memname"><a class="el" href="#a4bf4bb2468dc6d25383eb63916e2a394">FOnLoadStartEvent</a> SCefView::OnLoadStart</td>
         </tr>
       </table>
   </td>
