@@ -26,45 +26,50 @@ var NAVTREE =
 [
   [ "UCefView", "index.html", [
     [ "Overview", "md__docs_201-_overview.html", [
-      [ "Key Features", "md__docs_201-_overview.html#autotoc_md8", null ],
-      [ "Why UCefView?", "md__docs_201-_overview.html#autotoc_md9", null ],
-      [ "Example Use Cases", "md__docs_201-_overview.html#autotoc_md10", null ],
-      [ "Support and Documentation", "md__docs_201-_overview.html#autotoc_md11", null ]
+      [ "Key Features", "md__docs_201-_overview.html#autotoc_md4", null ],
+      [ "Why UCefView?", "md__docs_201-_overview.html#autotoc_md5", null ],
+      [ "Example Use Cases", "md__docs_201-_overview.html#autotoc_md6", null ],
+      [ "Support and Documentation", "md__docs_201-_overview.html#autotoc_md7", null ]
     ] ],
     [ "Getting Started", "md__docs_202-_getting_01_started.html", [
-      [ "Installation", "md__docs_202-_getting_01_started.html#autotoc_md13", null ],
-      [ "Configuration Project Settings", "md__docs_202-_getting_01_started.html#autotoc_md14", null ],
-      [ "Using SCefView (Slate)", "md__docs_202-_getting_01_started.html#autotoc_md15", null ],
-      [ "Using UCefView (UMG)", "md__docs_202-_getting_01_started.html#autotoc_md16", null ],
-      [ "Using Blueprint", "md__docs_202-_getting_01_started.html#autotoc_md17", null ]
+      [ "Installation", "md__docs_202-_getting_01_started.html#autotoc_md9", null ],
+      [ "Configuration Project Settings", "md__docs_202-_getting_01_started.html#autotoc_md10", null ],
+      [ "Using SCefView (Slate)", "md__docs_202-_getting_01_started.html#autotoc_md11", null ],
+      [ "Using UCefView (UMG)", "md__docs_202-_getting_01_started.html#autotoc_md12", null ],
+      [ "Using Blueprint", "md__docs_202-_getting_01_started.html#autotoc_md13", null ]
     ] ],
     [ "Resource Mapping", "md__docs_203-_resource_01_mapping.html", [
-      [ "Archive File Mapping", "md__docs_203-_resource_01_mapping.html#autotoc_md19", null ],
-      [ "Local Folder Mapping", "md__docs_203-_resource_01_mapping.html#autotoc_md20", null ],
-      [ "Reference", "md__docs_203-_resource_01_mapping.html#autotoc_md21", null ]
+      [ "Global vs. Per-Instance Mapping", "md__docs_203-_resource_01_mapping.html#autotoc_md15", null ],
+      [ "Mapping Types", "md__docs_203-_resource_01_mapping.html#autotoc_md16", [
+        [ "Archive File Mapping", "md__docs_203-_resource_01_mapping.html#autotoc_md17", null ],
+        [ "Local Folder Mapping", "md__docs_203-_resource_01_mapping.html#autotoc_md18", null ]
+      ] ],
+      [ "How to Use", "md__docs_203-_resource_01_mapping.html#autotoc_md19", [
+        [ "C++ Example (Per-Instance)", "md__docs_203-_resource_01_mapping.html#autotoc_md20", null ],
+        [ "Blueprint Example (Per-Instance)", "md__docs_203-_resource_01_mapping.html#autotoc_md21", null ]
+      ] ],
+      [ "API Reference", "md__docs_203-_resource_01_mapping.html#autotoc_md22", null ]
     ] ],
     [ "Interoperability", "md__docs_204-_interoperability.html", [
-      [ "UCefViewBridge", "md__docs_204-_interoperability.html#autotoc_md23", [
-        [ "addEventListener", "md__docs_204-_interoperability.html#autotoc_md24", null ],
-        [ "removeEventListener", "md__docs_204-_interoperability.html#autotoc_md25", null ],
-        [ "invoke", "md__docs_204-_interoperability.html#autotoc_md26", null ]
+      [ "The UCefViewBridge Object", "md__docs_204-_interoperability.html#autotoc_md24", [
+        [ "UCefViewBridge API", "md__docs_204-_interoperability.html#autotoc_md25", null ]
       ] ],
-      [ "CefViewQuery", "md__docs_204-_interoperability.html#autotoc_md27", [
-        [ "cefViewQuery(query)", "md__docs_204-_interoperability.html#autotoc_md28", null ],
-        [ "cefViewQueryCancel", "md__docs_204-_interoperability.html#autotoc_md29", null ]
+      [ "C++ to JavaScript", "md__docs_204-_interoperability.html#autotoc_md26", [
+        [ "Executing JavaScript Directly", "md__docs_204-_interoperability.html#autotoc_md27", null ],
+        [ "Event Triggering", "md__docs_204-_interoperability.html#autotoc_md28", null ]
       ] ],
-      [ "C++ -> JavaScript", "md__docs_204-_interoperability.html#autotoc_md30", [
-        [ "Execute Javascript", "md__docs_204-_interoperability.html#autotoc_md31", null ],
-        [ "Event Triggering", "md__docs_204-_interoperability.html#autotoc_md32", null ]
-      ] ],
-      [ "JavaScript -> C++", "md__docs_204-_interoperability.html#autotoc_md33", [
-        [ "UCefViewBridge.invoke", "md__docs_204-_interoperability.html#autotoc_md34", null ],
-        [ "window.cefViewQuery(query)", "md__docs_204-_interoperability.html#autotoc_md35", null ]
+      [ "JavaScript -> C++", "md__docs_204-_interoperability.html#autotoc_md29", [
+        [ "UCefViewBridge.invoke", "md__docs_204-_interoperability.html#autotoc_md30", null ],
+        [ "window.cefViewQuery(query)", "md__docs_204-_interoperability.html#autotoc_md31", null ]
       ] ]
     ] ],
     [ "Change CEF Version", "md__docs_205-_change_01_c_e_f_01_version.html", [
-      [ "Select CEF version", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md37", null ],
-      [ "Update script config file", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md38", null ]
+      [ "Select a CEF Version", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md33", null ],
+      [ "Update the Script Configuration File", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md34", null ],
+      [ "Run the Update Script", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md35", [
+        [ "Verify the Update", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md38", null ],
+        [ "Troubleshooting", "md__docs_205-_change_01_c_e_f_01_version.html#autotoc_md39", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -93,5 +98,5 @@ var NAVTREEINDEX =
 "class_u_cef_view.html#a7135dd91ac599c7030f79b9db91733a9"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
