@@ -73,7 +73,6 @@ var class_u_cef_view =
     [ "bAcceptDrops", "class_u_cef_view.html#a450dd76b3453b94c6ad10be5ebc0d27a", null ],
     [ "bAllowDrag", "class_u_cef_view.html#a5a80de76c7df7047d5617ddb6ac3a4bf", null ],
     [ "bEnableContextMenu", "class_u_cef_view.html#ad77afb3caff4b2b0ea87a04467e1fb02", null ],
-    [ "FrameRate", "class_u_cef_view.html#a1c066d6fd5c9ed341daef48b8f892e72", null ],
     [ "LocalFolderResourceMapping", "class_u_cef_view.html#a19953926accaa7a55239fb0a3d47b796", null ],
     [ "OnAddressChanged", "class_u_cef_view.html#a54f014a579cb22fe930daad2c0c87365", null ],
     [ "OnConsoleMessage", "class_u_cef_view.html#af44199c4a83f2c52d6fe42d41b23300b", null ],

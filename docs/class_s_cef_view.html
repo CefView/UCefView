@@ -91,7 +91,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                UCefView&#160;<span id="projectnumber">1.0.23</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -263,12 +263,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c982f492789e687412d9c6553c4d51a" id="r_a4c982f492789e687412d9c6553c4d51a"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c982f492789e687412d9c6553c4d51a">GetUrl</a> () const</td></tr>
 <tr class="memdesc:a4c982f492789e687412d9c6553c4d51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current URL loaded in the browser.  <br /></td></tr>
 <tr class="separator:a4c982f492789e687412d9c6553c4d51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8394bc7b311c52bab7ca7534a3f677" id="r_acd8394bc7b311c52bab7ca7534a3f677"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd8394bc7b311c52bab7ca7534a3f677">SetFrameRate</a> (int32 InFrameRate)</td></tr>
-<tr class="memdesc:acd8394bc7b311c52bab7ca7534a3f677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the frame rate for browser rendering. When set to 0, <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a> will use the current engine frame rate limit retrieved from the Console Variable <em><b>t.MaxFPS</b></em> as the target frame rate and <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a> also install a listener on this value to sync the frame rate limit anytime it changes Set to other positive value rather than 0 to specified the fixed target frame limit.  <br /></td></tr>
-<tr class="separator:acd8394bc7b311c52bab7ca7534a3f677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed221bd89767e2494cad4a14892e1e8d" id="r_aed221bd89767e2494cad4a14892e1e8d"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed221bd89767e2494cad4a14892e1e8d">GetFrameRate</a> () const</td></tr>
-<tr class="memdesc:aed221bd89767e2494cad4a14892e1e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current frame rate for browser rendering.  <br /></td></tr>
-<tr class="separator:aed221bd89767e2494cad4a14892e1e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f612421aebd441056df0a13cb5785db" id="r_a7f612421aebd441056df0a13cb5785db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f612421aebd441056df0a13cb5785db">SetEnableContextMenu</a> (bool bInEnableContextMenu)</td></tr>
 <tr class="memdesc:a7f612421aebd441056df0a13cb5785db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the context menu in the browser.  <br /></td></tr>
 <tr class="separator:a7f612421aebd441056df0a13cb5785db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1487,26 +1481,6 @@ Protected Attributes</h2></td></tr>
 
 <p>GetChildren function. </p>
 <dl class="section return"><dt>Returns</dt><dd>The children.</dd></dl>
-
-</div>
-</div>
-<a id="aed221bd89767e2494cad4a14892e1e8d" name="aed221bd89767e2494cad4a14892e1e8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed221bd89767e2494cad4a14892e1e8d">&#9670;&#160;</a></span>GetFrameRate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32 SCefView::GetFrameRate </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the current frame rate for browser rendering. </p>
-<dl class="section return"><dt>Returns</dt><dd>The frame rate.</dd></dl>
 
 </div>
 </div>
@@ -3078,31 +3052,6 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bInEnableContextMenu</td><td>True to enable, false to disable.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="acd8394bc7b311c52bab7ca7534a3f677" name="acd8394bc7b311c52bab7ca7534a3f677"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd8394bc7b311c52bab7ca7534a3f677">&#9670;&#160;</a></span>SetFrameRate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SCefView::SetFrameRate </td>
-          <td>(</td>
-          <td class="paramtype">int32</td>          <td class="paramname"><span class="paramname"><em>InFrameRate</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the frame rate for browser rendering. When set to 0, <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a> will use the current engine frame rate limit retrieved from the Console Variable <em><b>t.MaxFPS</b></em> as the target frame rate and <a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a> also install a listener on this value to sync the frame rate limit anytime it changes Set to other positive value rather than 0 to specified the fixed target frame limit. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">InFrameRate</td><td>The desired frame rate.</td></tr>
   </table>
   </dd>
 </dl>

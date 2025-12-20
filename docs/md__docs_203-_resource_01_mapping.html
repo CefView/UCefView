@@ -91,7 +91,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                UCefView&#160;<span id="projectnumber">1.0.23</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -216,9 +216,12 @@ Global vs. Per-Instance Mapping</h1>
 <li><b>Global Mapping:</b><ul>
 <li>Configured in <b>Project Settings</b> -&gt; <b>Cef Settings</b>.</li>
 <li>These mappings are loaded at application startup and apply to <b>all</b> <code><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></code> and <code><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></code> instances in your project.</li>
-<li>Ideal for general-purpose web applications that need to be accessible throughout your project.</li>
+<li>Ideal for general-purpose web applications that need to be accessible throughout your project. <br  />
+ <img src="resource-mapping-global.png" alt="" class="inline" title="Blueprint Resource Mapping Global"/>    </li>
 </ul>
 </li>
+</ul>
+<ul>
 <li><b>Per-Instance Mapping:</b><ul>
 <li>Added dynamically via C++ or Blueprint to a single <code><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></code> or <code><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></code> instance.</li>
 <li>The mapping only affects the <b>specific</b> WebView instance it's added to.</li>
@@ -283,8 +286,11 @@ C++ Example (Per-Instance)</h2>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
 Blueprint Example (Per-Instance)</h2>
 <p>You can also dynamically add resource mappings to a <code><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></code> widget in Blueprints.</p>
-<p>!Blueprint Resource Mapping</p>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<div class="image">
+<img src="resource-mapping-instance.png" alt=""/>
+<div class="caption">
+Blueprint Resource Mapping</div></div>
+    <h1><a class="anchor" id="autotoc_md22"></a>
 API Reference</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">

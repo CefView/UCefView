@@ -1,0 +1,3061 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="google-site-verification" content="ZrQwodBTb-yj0Q2Qw4-KxC8HN5x84J9tn1ZrY1zRFrU" />
+    <title>UCefView: UCefView</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/CefView/UCefView" class="github-corner" title="View source on GitHub" target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <!-- do not remove this div, it is closed by doxygen! -->
+    <div id="top">
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">
+                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                <span>
+                                    <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
+                                    <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
+                                        alt="Fab logo" style="width: 24px; width: 24px;">
+                                </span>
+                            </div>
+                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_u_cef_view.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="class_u_cef_view-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">UCefView</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal Engine UI. It provides a rich set of browser features, event hooks, and resource mapping capabilities, allowing seamless integration of web content into Unreal Engine applications. The widget supports navigation, JavaScript execution, event broadcasting, and advanced customization through settings and resource mappings. It is suitable for both in-game and editor use, and exposes a comprehensive set of Blueprint-callable methods and events for interaction.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;CefView.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae592da3e285ef0ed04e9f2fb963750e8" id="r_ae592da3e285ef0ed04e9f2fb963750e8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae592da3e285ef0ed04e9f2fb963750e8">FOnLoadStateChangedEvent</a> = (*)( const int64&amp; InBrowserId , bool bInIsLoading , bool bInCanGoBack , bool bInCanGoForward )</td></tr>
+<tr class="separator:ae592da3e285ef0ed04e9f2fb963750e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10c5cf228cac397ebc10c542bf5edd3" id="r_af10c5cf228cac397ebc10c542bf5edd3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af10c5cf228cac397ebc10c542bf5edd3">FOnLoadStartEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InTransitionType )</td></tr>
+<tr class="separator:af10c5cf228cac397ebc10c542bf5edd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5ab6cf5bcadc8cecbda7fe376327c5" id="r_a5a5ab6cf5bcadc8cecbda7fe376327c5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a5ab6cf5bcadc8cecbda7fe376327c5">FOnLoadEndEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InHttpStatusCode )</td></tr>
+<tr class="separator:a5a5ab6cf5bcadc8cecbda7fe376327c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d8248f5937e8bc93fc3459cde3c2ce" id="r_af1d8248f5937e8bc93fc3459cde3c2ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1d8248f5937e8bc93fc3459cde3c2ce">FOnLoadErrorEvent</a> = void(*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InErrorCode , const FString&amp; InErrorMsg , const FString&amp; InFailedUrl )</td></tr>
+<tr class="separator:af1d8248f5937e8bc93fc3459cde3c2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886cc30c6c0abeb5664206718c1c06ea" id="r_a886cc30c6c0abeb5664206718c1c06ea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a886cc30c6c0abeb5664206718c1c06ea">FOnDraggableRegionChangedEvent</a> = void(*)( const FVector4&amp; InDraggableRegion , const FVector4&amp; InNonDraggableRegion )</td></tr>
+<tr class="separator:a886cc30c6c0abeb5664206718c1c06ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997666e194762198bb3bcedf0772d7c7" id="r_a997666e194762198bb3bcedf0772d7c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a997666e194762198bb3bcedf0772d7c7">FOnAddressChangedEvent</a> = void(*)( const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InNewAddress )</td></tr>
+<tr class="separator:a997666e194762198bb3bcedf0772d7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e414dd8b95c6cf6599e2f4d01665198" id="r_a1e414dd8b95c6cf6599e2f4d01665198"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e414dd8b95c6cf6599e2f4d01665198">FOnTitleChangedEvent</a> = void(*)( const FString&amp; InTitle )</td></tr>
+<tr class="separator:a1e414dd8b95c6cf6599e2f4d01665198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1446ae9f62d60b4606dda04784d6d1" id="r_a8b1446ae9f62d60b4606dda04784d6d1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b1446ae9f62d60b4606dda04784d6d1">FOnFaviconUrlChangedEvent</a> = void(*)( const TArray&lt;FString&gt;&amp; InUrls )</td></tr>
+<tr class="separator:a8b1446ae9f62d60b4606dda04784d6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4dbadb833a4beedd7137385cc62fe2" id="r_a3b4dbadb833a4beedd7137385cc62fe2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b4dbadb833a4beedd7137385cc62fe2">FOnFullscreenModeChangedEvent</a> = void(*)( bool bInFullscreen )</td></tr>
+<tr class="separator:a3b4dbadb833a4beedd7137385cc62fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163f1d6bfe271967c8708b3f0c2ba5db" id="r_a163f1d6bfe271967c8708b3f0c2ba5db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a163f1d6bfe271967c8708b3f0c2ba5db">FOnStatusMessageEvent</a> = void(*)( const FString&amp; InMessage )</td></tr>
+<tr class="separator:a163f1d6bfe271967c8708b3f0c2ba5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7135dd91ac599c7030f79b9db91733a9" id="r_a7135dd91ac599c7030f79b9db91733a9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7135dd91ac599c7030f79b9db91733a9">FOnConsoleMessageEvent</a> = void(*)( const FString&amp; InMessage , int32 InLevel )</td></tr>
+<tr class="separator:a7135dd91ac599c7030f79b9db91733a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138b5c25829d6ef04dd0cdb38af89758" id="r_a138b5c25829d6ef04dd0cdb38af89758"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a138b5c25829d6ef04dd0cdb38af89758">FOnLoadingProgressChangedEvent</a> = void(*)( double InProgress )</td></tr>
+<tr class="separator:a138b5c25829d6ef04dd0cdb38af89758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8a8ddd3fc8d2d8aac539dec1715d9b" id="r_a5e8a8ddd3fc8d2d8aac539dec1715d9b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e8a8ddd3fc8d2d8aac539dec1715d9b">FOnUrlRequestEvent</a> = void(*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InRequestUrl )</td></tr>
+<tr class="separator:a5e8a8ddd3fc8d2d8aac539dec1715d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ca8999540c55147046540e94027a70" id="r_a33ca8999540c55147046540e94027a70"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33ca8999540c55147046540e94027a70">FOnQueryRequestEvent</a> = void(*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , <a class="el" href="class_u_cef_view_query.html">UCefViewQuery</a>* InQuery )</td></tr>
+<tr class="separator:a33ca8999540c55147046540e94027a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150c2b724637b5fe0e38dad9c1aef7cf" id="r_a150c2b724637b5fe0e38dad9c1aef7cf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a150c2b724637b5fe0e38dad9c1aef7cf">FOnInvokeMethodEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InMethod , const FString&amp; InArguments )</td></tr>
+<tr class="separator:a150c2b724637b5fe0e38dad9c1aef7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7dddb31e6544ed6287fceecf17b407" id="r_afe7dddb31e6544ed6287fceecf17b407"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe7dddb31e6544ed6287fceecf17b407">FOnReportJavascriptResultEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InContext , const FString&amp; InResult )</td></tr>
+<tr class="separator:afe7dddb31e6544ed6287fceecf17b407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930a13480466a130bd1c1c35a7ba9c34" id="r_a930a13480466a130bd1c1c35a7ba9c34"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a930a13480466a130bd1c1c35a7ba9c34">FOnNativeBrowserCreatedEvent</a> = void(*)()</td></tr>
+<tr class="separator:a930a13480466a130bd1c1c35a7ba9c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada215fc31de9f345a9cfcb5b1d173eff" id="r_ada215fc31de9f345a9cfcb5b1d173eff"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada215fc31de9f345a9cfcb5b1d173eff">FOnCreateNewBrowserEvent</a> = void(*)( const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InSourceFrameId , const FString&amp; InUrl , const FString&amp; InName , const <a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a>&amp; InTargetDisposition , const FVector4&amp; InRect )</td></tr>
+<tr class="separator:ada215fc31de9f345a9cfcb5b1d173eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a096a62040c05e65f6009658edb2b7482" id="r_a096a62040c05e65f6009658edb2b7482"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a096a62040c05e65f6009658edb2b7482">UCefView</a> ()</td></tr>
+<tr class="memdesc:a096a62040c05e65f6009658edb2b7482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes the <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> widget and its properties.  <br /></td></tr>
+<tr class="separator:a096a62040c05e65f6009658edb2b7482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b89761b50938e18de344de7d7e2d9ec" id="r_a9b89761b50938e18de344de7d7e2d9ec"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b89761b50938e18de344de7d7e2d9ec">~UCefView</a> ()</td></tr>
+<tr class="memdesc:a9b89761b50938e18de344de7d7e2d9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Cleans up resources associated with the CEF browser view.  <br /></td></tr>
+<tr class="separator:a9b89761b50938e18de344de7d7e2d9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d954e8b86e8bb1402b77cbeb36a44a8" id="r_a2d954e8b86e8bb1402b77cbeb36a44a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d954e8b86e8bb1402b77cbeb36a44a8">SynchronizeProperties</a> () override</td></tr>
+<tr class="memdesc:a2d954e8b86e8bb1402b77cbeb36a44a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes UPROPERTY values with the underlying Slate widget. Called automatically by the engine when properties are changed in the editor or at runtime.  <br /></td></tr>
+<tr class="separator:a2d954e8b86e8bb1402b77cbeb36a44a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8979e8e3ba928e606db3ac81186bf85d" id="r_a8979e8e3ba928e606db3ac81186bf85d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8979e8e3ba928e606db3ac81186bf85d">ReleaseSlateResources</a> (bool bInReleaseChildren) override</td></tr>
+<tr class="memdesc:a8979e8e3ba928e606db3ac81186bf85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases resources held by the Slate widget, optionally releasing child widgets as well. Called when the UMG widget is destroyed or removed from the UI hierarchy.  <br /></td></tr>
+<tr class="separator:a8979e8e3ba928e606db3ac81186bf85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11df6274f072ab744678cbfb4370e264" id="r_a11df6274f072ab744678cbfb4370e264"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11df6274f072ab744678cbfb4370e264">AddLocalFolderResource</a> (const FString &amp;InFolderPath, const FString &amp;InTargetUrl, int32 InPriority=0)</td></tr>
+<tr class="memdesc:a11df6274f072ab744678cbfb4370e264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a URL mapping for a local web resource directory, making its contents accessible via a virtual URL. This is useful for serving local HTML, JS, or other assets to the browser.  <br /></td></tr>
+<tr class="separator:a11df6274f072ab744678cbfb4370e264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37213ab6931bd43b28fcaaace6bb85cb" id="r_a37213ab6931bd43b28fcaaace6bb85cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37213ab6931bd43b28fcaaace6bb85cb">AddArchiveFileResource</a> (const FString &amp;InArchivePath, const FString &amp;InTargetUrl, const FString &amp;InPassword=&quot;&quot;, int32 InPriority=0)</td></tr>
+<tr class="memdesc:a37213ab6931bd43b28fcaaace6bb85cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a URL mapping for a local archive (.zip) file, making its contents accessible via a virtual URL. This is useful for serving packaged web assets to the browser.  <br /></td></tr>
+<tr class="separator:a37213ab6931bd43b28fcaaace6bb85cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536ffb64a609d540c2bbd93a1b1c726a" id="r_a536ffb64a609d540c2bbd93a1b1c726a"><td class="memItemLeft" align="right" valign="top">int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a536ffb64a609d540c2bbd93a1b1c726a">GetBrowserId</a> ()</td></tr>
+<tr class="memdesc:a536ffb64a609d540c2bbd93a1b1c726a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unique browser ID for this CEF view instance.  <br /></td></tr>
+<tr class="separator:a536ffb64a609d540c2bbd93a1b1c726a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4188f0bdb5b6a66b59886946282488d" id="r_ac4188f0bdb5b6a66b59886946282488d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4188f0bdb5b6a66b59886946282488d">NavigateToUrl</a> (const FString &amp;InTargetUrl)</td></tr>
+<tr class="memdesc:ac4188f0bdb5b6a66b59886946282488d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigates the browser to the specified URL.  <br /></td></tr>
+<tr class="separator:ac4188f0bdb5b6a66b59886946282488d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2014bd0ae0e7c49dcf737c4f46a4c588" id="r_a2014bd0ae0e7c49dcf737c4f46a4c588"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2014bd0ae0e7c49dcf737c4f46a4c588">BrowserCanGoBack</a> ()</td></tr>
+<tr class="memdesc:a2014bd0ae0e7c49dcf737c4f46a4c588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the browser can navigate back in its history.  <br /></td></tr>
+<tr class="separator:a2014bd0ae0e7c49dcf737c4f46a4c588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac257892311ab9b9c453c726e57abfa52" id="r_ac257892311ab9b9c453c726e57abfa52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac257892311ab9b9c453c726e57abfa52">BrowserCanGoForward</a> ()</td></tr>
+<tr class="memdesc:ac257892311ab9b9c453c726e57abfa52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the browser can navigate forward in its history.  <br /></td></tr>
+<tr class="separator:ac257892311ab9b9c453c726e57abfa52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0319ca49109a8c41589010aa832feea" id="r_ab0319ca49109a8c41589010aa832feea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0319ca49109a8c41589010aa832feea">BrowserGoBack</a> ()</td></tr>
+<tr class="memdesc:ab0319ca49109a8c41589010aa832feea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigates the browser back to the previous page in its history, if possible.  <br /></td></tr>
+<tr class="separator:ab0319ca49109a8c41589010aa832feea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866b2c1cddb456bd61157f889e85de30" id="r_a866b2c1cddb456bd61157f889e85de30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866b2c1cddb456bd61157f889e85de30">BrowserGoForward</a> ()</td></tr>
+<tr class="memdesc:a866b2c1cddb456bd61157f889e85de30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigates the browser forward to the next page in its history, if possible.  <br /></td></tr>
+<tr class="separator:a866b2c1cddb456bd61157f889e85de30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fed336bcb29c0e7d3d23f388340e772" id="r_a7fed336bcb29c0e7d3d23f388340e772"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fed336bcb29c0e7d3d23f388340e772">IsBrowserLoading</a> ()</td></tr>
+<tr class="memdesc:a7fed336bcb29c0e7d3d23f388340e772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the browser is currently loading a page or resource.  <br /></td></tr>
+<tr class="separator:a7fed336bcb29c0e7d3d23f388340e772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314aa5a7dd12b7988d1ac23f352a2287" id="r_a314aa5a7dd12b7988d1ac23f352a2287"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a314aa5a7dd12b7988d1ac23f352a2287">BrowserReload</a> ()</td></tr>
+<tr class="memdesc:a314aa5a7dd12b7988d1ac23f352a2287"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads the current page in the browser.  <br /></td></tr>
+<tr class="separator:a314aa5a7dd12b7988d1ac23f352a2287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaabf6be1e8687596bdf1b31aceff6b93" id="r_aaabf6be1e8687596bdf1b31aceff6b93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaabf6be1e8687596bdf1b31aceff6b93">BrowserStopLoad</a> ()</td></tr>
+<tr class="memdesc:aaabf6be1e8687596bdf1b31aceff6b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the current page load operation in the browser.  <br /></td></tr>
+<tr class="separator:aaabf6be1e8687596bdf1b31aceff6b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2280eb077a93f144b41e28150f6130e7" id="r_a2280eb077a93f144b41e28150f6130e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2280eb077a93f144b41e28150f6130e7">TriggerEventForFrame</a> (const <a class="el" href="class_u_cef_view_event.html">UCefViewEvent</a> *InCefViewEvent, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId)</td></tr>
+<tr class="memdesc:a2280eb077a93f144b41e28150f6130e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a custom event for a specific frame in the CEF view. Allows sending user-defined events to the browser for advanced interaction.  <br /></td></tr>
+<tr class="separator:a2280eb077a93f144b41e28150f6130e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308462bb9a935d14565e2b00808e9742" id="r_a308462bb9a935d14565e2b00808e9742"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a308462bb9a935d14565e2b00808e9742">TriggerEventForMainFrame</a> (const <a class="el" href="class_u_cef_view_event.html">UCefViewEvent</a> *InCefViewEvent)</td></tr>
+<tr class="memdesc:a308462bb9a935d14565e2b00808e9742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a custom event for the main frame in the CEF view.  <br /></td></tr>
+<tr class="separator:a308462bb9a935d14565e2b00808e9742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61eac5eebd77818af1a8adb1fa172197" id="r_a61eac5eebd77818af1a8adb1fa172197"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61eac5eebd77818af1a8adb1fa172197">BroadcastEvent</a> (const <a class="el" href="class_u_cef_view_event.html">UCefViewEvent</a> *InCefViewEvent)</td></tr>
+<tr class="memdesc:a61eac5eebd77818af1a8adb1fa172197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts a custom event to all frames in the CEF view.  <br /></td></tr>
+<tr class="separator:a61eac5eebd77818af1a8adb1fa172197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713cba483323e515219945881c3bf04c" id="r_a713cba483323e515219945881c3bf04c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a713cba483323e515219945881c3bf04c">ResponseUCefQuery</a> (const <a class="el" href="class_u_cef_view_query.html">UCefViewQuery</a> *InCefQuery)</td></tr>
+<tr class="memdesc:a713cba483323e515219945881c3bf04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responds to a CEF query with the provided result. Used for asynchronous communication between JavaScript and native code.  <br /></td></tr>
+<tr class="separator:a713cba483323e515219945881c3bf04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebd2de48696802207f3356068f2a2e9" id="r_a3ebd2de48696802207f3356068f2a2e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ebd2de48696802207f3356068f2a2e9">ExecuteJavascript</a> (const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const FString &amp;InJavascriptCode, const FString &amp;InTargetUrl)</td></tr>
+<tr class="memdesc:a3ebd2de48696802207f3356068f2a2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes JavaScript code in a specific frame of the CEF view.  <br /></td></tr>
+<tr class="separator:a3ebd2de48696802207f3356068f2a2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cafd0355a28f0de9887dc6caab0092" id="r_a75cafd0355a28f0de9887dc6caab0092"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75cafd0355a28f0de9887dc6caab0092">ExecuteJavascriptWithResult</a> (const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const FString &amp;InJavascriptCode, const FString &amp;InTargetUrl, const FString &amp;InExecuteContext)</td></tr>
+<tr class="memdesc:a75cafd0355a28f0de9887dc6caab0092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes JavaScript code in a specific frame and returns the result asynchronously.  <br /></td></tr>
+<tr class="separator:a75cafd0355a28f0de9887dc6caab0092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123cd6e7ceb28b3b068d4bd566f3a7e5" id="r_a123cd6e7ceb28b3b068d4bd566f3a7e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a123cd6e7ceb28b3b068d4bd566f3a7e5">SetPreference</a> (const FString &amp;InPreferenceName, const FString &amp;InPreferenceValue, FString &amp;InError)</td></tr>
+<tr class="memdesc:a123cd6e7ceb28b3b068d4bd566f3a7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a browser preference to a specified value. Preferences control browser behavior such as cache, cookies, and rendering options.  <br /></td></tr>
+<tr class="separator:a123cd6e7ceb28b3b068d4bd566f3a7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09763f295904f70f44f11b32bf8d60ff" id="r_a09763f295904f70f44f11b32bf8d60ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09763f295904f70f44f11b32bf8d60ff">SetDisablePopupContextMenu</a> (bool bInIsDisable)</td></tr>
+<tr class="memdesc:a09763f295904f70f44f11b32bf8d60ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to disable the context menu for pop-up browser windows.  <br /></td></tr>
+<tr class="separator:a09763f295904f70f44f11b32bf8d60ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a2b7b966f8b3a8fda5d71a28b111dd" id="r_a48a2b7b966f8b3a8fda5d71a28b111dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a2b7b966f8b3a8fda5d71a28b111dd">IsPopupContextMenuDisabled</a> ()</td></tr>
+<tr class="memdesc:a48a2b7b966f8b3a8fda5d71a28b111dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the context menu is disabled for pop-up browser windows.  <br /></td></tr>
+<tr class="separator:a48a2b7b966f8b3a8fda5d71a28b111dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a5c260b4ca1bb640dbbbac3e56b5ba" id="r_a19a5c260b4ca1bb640dbbbac3e56b5ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19a5c260b4ca1bb640dbbbac3e56b5ba">HasDevTools</a> ()</td></tr>
+<tr class="memdesc:a19a5c260b4ca1bb640dbbbac3e56b5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects whether the browser currently has a DevTools window open.  <br /></td></tr>
+<tr class="separator:a19a5c260b4ca1bb640dbbbac3e56b5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792de3dfdf4b1164ff26c9e123ac2392" id="r_a792de3dfdf4b1164ff26c9e123ac2392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a792de3dfdf4b1164ff26c9e123ac2392">ShowDevTools</a> ()</td></tr>
+<tr class="memdesc:a792de3dfdf4b1164ff26c9e123ac2392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the DevTools dialog for the browser, allowing inspection and debugging of web content.  <br /></td></tr>
+<tr class="separator:a792de3dfdf4b1164ff26c9e123ac2392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60181e45876f7f65fc67f4d97a3fc887" id="r_a60181e45876f7f65fc67f4d97a3fc887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60181e45876f7f65fc67f4d97a3fc887">CloseDevTools</a> ()</td></tr>
+<tr class="memdesc:a60181e45876f7f65fc67f4d97a3fc887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the DevTools dialog if it is currently open.  <br /></td></tr>
+<tr class="separator:a60181e45876f7f65fc67f4d97a3fc887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb52b0c7df8fec6329786781604e3f2" id="r_aacb52b0c7df8fec6329786781604e3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacb52b0c7df8fec6329786781604e3f2">SetEnableDragAndDrop</a> (bool bInIsEnable)</td></tr>
+<tr class="memdesc:aacb52b0c7df8fec6329786781604e3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether to enable drag and drop functionality for the browser. Note: This function does not work for OSR (Off-Screen Rendering) mode. In OSR, dragging a file to a non-dragging area may display the file's content.  <br /></td></tr>
+<tr class="separator:aacb52b0c7df8fec6329786781604e3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e619ff7f47bdf6dc32b1aa13d6c2d42" id="r_a2e619ff7f47bdf6dc32b1aa13d6c2d42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e619ff7f47bdf6dc32b1aa13d6c2d42">IsDragAndDropEnabled</a> () const</td></tr>
+<tr class="memdesc:a2e619ff7f47bdf6dc32b1aa13d6c2d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether drag and drop functionality is enabled for the browser.  <br /></td></tr>
+<tr class="separator:a2e619ff7f47bdf6dc32b1aa13d6c2d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a6758617bdbf0ce1413b4e3a9383980e2" id="r_a6758617bdbf0ce1413b4e3a9383980e2"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6758617bdbf0ce1413b4e3a9383980e2">Url</a></td></tr>
+<tr class="memdesc:a6758617bdbf0ce1413b4e3a9383980e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial URL to be loaded in the CEF browser when the widget is created. Can be changed at runtime to navigate to a different page.  <br /></td></tr>
+<tr class="separator:a6758617bdbf0ce1413b4e3a9383980e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c066d6fd5c9ed341daef48b8f892e72" id="r_a1c066d6fd5c9ed341daef48b8f892e72"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c066d6fd5c9ed341daef48b8f892e72">FrameRate</a> = 0</td></tr>
+<tr class="memdesc:a1c066d6fd5c9ed341daef48b8f892e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frame rate (in frames per second) at which the CEF browser will render. Higher values provide smoother updates but may increase CPU/GPU usage. When set to 0, <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> will use the current engine frame rate limit retrieved from the Console Variable <em><b>t.MaxFPS</b></em> as the target frame rate and <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> also install a listener on this value to sync the frame rate limit anytime it changes Set to other positive value rather than 0 to specified the fixed target frame limit Default: 0.  <br /></td></tr>
+<tr class="separator:a1c066d6fd5c9ed341daef48b8f892e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77afb3caff4b2b0ea87a04467e1fb02" id="r_ad77afb3caff4b2b0ea87a04467e1fb02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad77afb3caff4b2b0ea87a04467e1fb02">bEnableContextMenu</a> = true</td></tr>
+<tr class="memdesc:ad77afb3caff4b2b0ea87a04467e1fb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the context menu in the CEF browser. If true, right-click context menus are shown; if false, they are suppressed. Default: true.  <br /></td></tr>
+<tr class="separator:ad77afb3caff4b2b0ea87a04467e1fb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450dd76b3453b94c6ad10be5ebc0d27a" id="r_a450dd76b3453b94c6ad10be5ebc0d27a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450dd76b3453b94c6ad10be5ebc0d27a">bAcceptDrops</a> = true</td></tr>
+<tr class="memdesc:a450dd76b3453b94c6ad10be5ebc0d27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables accepting drag-and-drop operations from external sources (e.g., files from OS). If true, the browser can accept drops; if false, drops are ignored. Default: false.  <br /></td></tr>
+<tr class="separator:a450dd76b3453b94c6ad10be5ebc0d27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a80de76c7df7047d5617ddb6ac3a4bf" id="r_a5a80de76c7df7047d5617ddb6ac3a4bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a80de76c7df7047d5617ddb6ac3a4bf">bAllowDrag</a> = true</td></tr>
+<tr class="memdesc:a5a80de76c7df7047d5617ddb6ac3a4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables allowing the browser content to be dragged (initiating drag operations). If true, users can drag content from the browser; if false, dragging is disabled. Default: false.  <br /></td></tr>
+<tr class="separator:a5a80de76c7df7047d5617ddb6ac3a4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19953926accaa7a55239fb0a3d47b796" id="r_a19953926accaa7a55239fb0a3d47b796"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19953926accaa7a55239fb0a3d47b796">LocalFolderResourceMapping</a></td></tr>
+<tr class="memdesc:a19953926accaa7a55239fb0a3d47b796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mappings for local folders to be used as web resources. Each mapping allows content in the specified folder to be accessed via a virtual URL in the browser.  <br /></td></tr>
+<tr class="separator:a19953926accaa7a55239fb0a3d47b796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09aa10c2b6986508c8c58083c8e8afe1" id="r_a09aa10c2b6986508c8c58083c8e8afe1"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09aa10c2b6986508c8c58083c8e8afe1">ArchiveFileResourceMapping</a></td></tr>
+<tr class="memdesc:a09aa10c2b6986508c8c58083c8e8afe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mappings for archive files (e.g., .zip) to be used as web resources. Each mapping allows content in the specified archive to be accessed via a virtual URL in the browser.  <br /></td></tr>
+<tr class="separator:a09aa10c2b6986508c8c58083c8e8afe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6940e63ae1d7544f5ecfc58b678e1800" id="r_a6940e63ae1d7544f5ecfc58b678e1800"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_cef_view_settings.html">FCefViewSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6940e63ae1d7544f5ecfc58b678e1800">Settings</a></td></tr>
+<tr class="memdesc:a6940e63ae1d7544f5ecfc58b678e1800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settings for the CEF view, including browser features, font preferences, and other options. These settings are applied when the browser is created and cannot be changed at runtime.  <br /></td></tr>
+<tr class="separator:a6940e63ae1d7544f5ecfc58b678e1800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6981c1dbd338c9c8246dd88167b9634" id="r_aa6981c1dbd338c9c8246dd88167b9634"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ae592da3e285ef0ed04e9f2fb963750e8">FOnLoadStateChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6981c1dbd338c9c8246dd88167b9634">OnLoadStateChanged</a></td></tr>
+<tr class="memdesc:aa6981c1dbd338c9c8246dd88167b9634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the browser's loading state changes (e.g., starts or finishes loading).  <br /></td></tr>
+<tr class="separator:aa6981c1dbd338c9c8246dd88167b9634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f0d727371651612fc1899b9bf62be0" id="r_a24f0d727371651612fc1899b9bf62be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af10c5cf228cac397ebc10c542bf5edd3">FOnLoadStartEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f0d727371651612fc1899b9bf62be0">OnLoadStart</a></td></tr>
+<tr class="memdesc:a24f0d727371651612fc1899b9bf62be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the browser starts loading a new document in any frame.  <br /></td></tr>
+<tr class="separator:a24f0d727371651612fc1899b9bf62be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc985b967ce3fb3bc20a5487798b475" id="r_a4dc985b967ce3fb3bc20a5487798b475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a5ab6cf5bcadc8cecbda7fe376327c5">FOnLoadEndEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dc985b967ce3fb3bc20a5487798b475">OnLoadEnd</a></td></tr>
+<tr class="memdesc:a4dc985b967ce3fb3bc20a5487798b475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the browser finishes loading a document in any frame.  <br /></td></tr>
+<tr class="separator:a4dc985b967ce3fb3bc20a5487798b475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e69b1aea60909f318feef579d1bd78" id="r_ad8e69b1aea60909f318feef579d1bd78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af1d8248f5937e8bc93fc3459cde3c2ce">FOnLoadErrorEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8e69b1aea60909f318feef579d1bd78">OnLoadError</a></td></tr>
+<tr class="memdesc:ad8e69b1aea60909f318feef579d1bd78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the browser fails to load a document due to an error.  <br /></td></tr>
+<tr class="separator:ad8e69b1aea60909f318feef579d1bd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea3121d5150999170e71fe2c5a1f533" id="r_a7ea3121d5150999170e71fe2c5a1f533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a886cc30c6c0abeb5664206718c1c06ea">FOnDraggableRegionChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ea3121d5150999170e71fe2c5a1f533">OnDraggableRegionChanged</a></td></tr>
+<tr class="memdesc:a7ea3121d5150999170e71fe2c5a1f533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the draggable or non-draggable regions of the browser change. Used for implementing custom window dragging in frameless windows.  <br /></td></tr>
+<tr class="separator:a7ea3121d5150999170e71fe2c5a1f533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f014a579cb22fe930daad2c0c87365" id="r_a54f014a579cb22fe930daad2c0c87365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a997666e194762198bb3bcedf0772d7c7">FOnAddressChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54f014a579cb22fe930daad2c0c87365">OnAddressChanged</a></td></tr>
+<tr class="memdesc:a54f014a579cb22fe930daad2c0c87365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the address (URL) of a frame changes.  <br /></td></tr>
+<tr class="separator:a54f014a579cb22fe930daad2c0c87365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf22ef8c08cf385ca0e7527e0331d9e4" id="r_abf22ef8c08cf385ca0e7527e0331d9e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a1e414dd8b95c6cf6599e2f4d01665198">FOnTitleChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf22ef8c08cf385ca0e7527e0331d9e4">OnTitleChanged</a></td></tr>
+<tr class="memdesc:abf22ef8c08cf385ca0e7527e0331d9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the document title changes.  <br /></td></tr>
+<tr class="separator:abf22ef8c08cf385ca0e7527e0331d9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b4cacc342adc80b88b7195b3e74d58" id="r_ad7b4cacc342adc80b88b7195b3e74d58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8b1446ae9f62d60b4606dda04784d6d1">FOnFaviconUrlChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b4cacc342adc80b88b7195b3e74d58">OnFaviconUrlChanged</a></td></tr>
+<tr class="memdesc:ad7b4cacc342adc80b88b7195b3e74d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the favicon URLs for the current page change.  <br /></td></tr>
+<tr class="separator:ad7b4cacc342adc80b88b7195b3e74d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f130dc6d1b26ef897ffeab397952011" id="r_a2f130dc6d1b26ef897ffeab397952011"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3b4dbadb833a4beedd7137385cc62fe2">FOnFullscreenModeChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f130dc6d1b26ef897ffeab397952011">OnFullscreenModeChanged</a></td></tr>
+<tr class="memdesc:a2f130dc6d1b26ef897ffeab397952011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the browser enters or exits fullscreen mode.  <br /></td></tr>
+<tr class="separator:a2f130dc6d1b26ef897ffeab397952011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf877e247e763067bacba9ac6f682fc" id="r_a1cf877e247e763067bacba9ac6f682fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a163f1d6bfe271967c8708b3f0c2ba5db">FOnStatusMessageEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cf877e247e763067bacba9ac6f682fc">OnStatusMessage</a></td></tr>
+<tr class="memdesc:a1cf877e247e763067bacba9ac6f682fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the browser's status message changes (e.g., link hover, loading status).  <br /></td></tr>
+<tr class="separator:a1cf877e247e763067bacba9ac6f682fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44199c4a83f2c52d6fe42d41b23300b" id="r_af44199c4a83f2c52d6fe42d41b23300b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a7135dd91ac599c7030f79b9db91733a9">FOnConsoleMessageEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af44199c4a83f2c52d6fe42d41b23300b">OnConsoleMessage</a></td></tr>
+<tr class="memdesc:af44199c4a83f2c52d6fe42d41b23300b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when a console message is emitted from web content (e.g., via console.log).  <br /></td></tr>
+<tr class="separator:af44199c4a83f2c52d6fe42d41b23300b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c8beb46c6a86b280522a03a2e485ff" id="r_a05c8beb46c6a86b280522a03a2e485ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a138b5c25829d6ef04dd0cdb38af89758">FOnLoadingProgressChangedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05c8beb46c6a86b280522a03a2e485ff">OnLoadingProgressChanged</a></td></tr>
+<tr class="memdesc:a05c8beb46c6a86b280522a03a2e485ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the loading progress of the current page changes.  <br /></td></tr>
+<tr class="separator:a05c8beb46c6a86b280522a03a2e485ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec46fd5c10140470f6123e5a3724e56" id="r_acec46fd5c10140470f6123e5a3724e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5e8a8ddd3fc8d2d8aac539dec1715d9b">FOnUrlRequestEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec46fd5c10140470f6123e5a3724e56">OnUrlRequest</a></td></tr>
+<tr class="memdesc:acec46fd5c10140470f6123e5a3724e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when a built-in scheme URL is accessed by the browser. Useful for handling custom resource requests.  <br /></td></tr>
+<tr class="separator:acec46fd5c10140470f6123e5a3724e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e092beae2a792fd0cbfb8a08359e842" id="r_a1e092beae2a792fd0cbfb8a08359e842"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a33ca8999540c55147046540e94027a70">FOnQueryRequestEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e092beae2a792fd0cbfb8a08359e842">OnQueryRequest</a></td></tr>
+<tr class="memdesc:a1e092beae2a792fd0cbfb8a08359e842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when a new UCefQuery request is received from web content. Used for asynchronous communication between JavaScript and native code.  <br /></td></tr>
+<tr class="separator:a1e092beae2a792fd0cbfb8a08359e842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34fb47c7fe923fbf826b6d89d52a79e" id="r_ad34fb47c7fe923fbf826b6d89d52a79e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a150c2b724637b5fe0e38dad9c1aef7cf">FOnInvokeMethodEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a></td></tr>
+<tr class="memdesc:ad34fb47c7fe923fbf826b6d89d52a79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when a method is invoked from web content (JavaScript) via the bridge object. Allows native code to handle custom method calls from JavaScript.  <br /></td></tr>
+<tr class="separator:ad34fb47c7fe923fbf826b6d89d52a79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c6d5574d96a8da0ee48b3ae619eba1" id="r_a63c6d5574d96a8da0ee48b3ae619eba1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#afe7dddb31e6544ed6287fceecf17b407">FOnReportJavascriptResultEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63c6d5574d96a8da0ee48b3ae619eba1">OnReportJavascriptResult</a></td></tr>
+<tr class="memdesc:a63c6d5574d96a8da0ee48b3ae619eba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the result of a JavaScript execution (via ExecuteJavascriptWithResult) is returned.  <br /></td></tr>
+<tr class="separator:a63c6d5574d96a8da0ee48b3ae619eba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6d77b0fc896b3833fcf5ee52c35725" id="r_a5b6d77b0fc896b3833fcf5ee52c35725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a930a13480466a130bd1c1c35a7ba9c34">FOnNativeBrowserCreatedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b6d77b0fc896b3833fcf5ee52c35725">OnNativeBrowserCreated</a></td></tr>
+<tr class="memdesc:a5b6d77b0fc896b3833fcf5ee52c35725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event triggered when the native browser window is created. Note: This event does not fire in OSR (Off-Screen Rendering) mode.  <br /></td></tr>
+<tr class="separator:a5b6d77b0fc896b3833fcf5ee52c35725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a8c5e994fcfac1146a13be6cdbfd96" id="r_ac3a8c5e994fcfac1146a13be6cdbfd96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ada215fc31de9f345a9cfcb5b1d173eff">FOnCreateNewBrowserEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3a8c5e994fcfac1146a13be6cdbfd96">OnCreateNewBrowser</a></td></tr>
+<tr class="memdesc:ac3a8c5e994fcfac1146a13be6cdbfd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback type when new browser is requested to be created.  <br /></td></tr>
+<tr class="separator:ac3a8c5e994fcfac1146a13be6cdbfd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a930f8c1710af58d7691eddc9013acc8e" id="r_a930f8c1710af58d7691eddc9013acc8e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a930f8c1710af58d7691eddc9013acc8e">MainFrameID</a></td></tr>
+<tr class="memdesc:a930f8c1710af58d7691eddc9013acc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main frame identity, representing the primary document frame in the browser. Used for targeting main-frame-specific operations and events.  <br /></td></tr>
+<tr class="separator:a930f8c1710af58d7691eddc9013acc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ce816eb048d756900bcb317749851d" id="r_a41ce816eb048d756900bcb317749851d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41ce816eb048d756900bcb317749851d">AllFrameID</a></td></tr>
+<tr class="memdesc:a41ce816eb048d756900bcb317749851d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier representing all frames in the browser. Used for broadcasting events or actions to every frame.  <br /></td></tr>
+<tr class="separator:a41ce816eb048d756900bcb317749851d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ada336c1d582e5c5dd81ac6556df4996d" id="r_ada336c1d582e5c5dd81ac6556df4996d"><td class="memItemLeft" align="right" valign="top">virtual TSharedRef&lt; SWidget &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada336c1d582e5c5dd81ac6556df4996d">RebuildWidget</a> () override</td></tr>
+<tr class="memdesc:ada336c1d582e5c5dd81ac6556df4996d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuilds the underlying Slate widget for this UMG widget. Called by the engine when the widget needs to be constructed or updated.  <br /></td></tr>
+<tr class="separator:ada336c1d582e5c5dd81ac6556df4996d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d9425177928b1eb92346c4a6df0a763" id="r_a1d9425177928b1eb92346c4a6df0a763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d9425177928b1eb92346c4a6df0a763">OnNewBrowser</a> (const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InSourceFrameId, const FString &amp;InUrl, const FString &amp;InName, <a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a> InTargetDisposition, FIntRect &amp;InRect)</td></tr>
+<tr class="memdesc:a1d9425177928b1eb92346c4a6df0a763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before a new browser is created (for browsers created by non-JavaScript means). Allows customization of the new browser's properties and window.  <br /></td></tr>
+<tr class="separator:a1d9425177928b1eb92346c4a6df0a763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae315b575a26dabbed45cc49e75a17b0d" id="r_ae315b575a26dabbed45cc49e75a17b0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae315b575a26dabbed45cc49e75a17b0d">OnNewPopup</a> (const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const FString &amp;InTargetUrl, FString &amp;InTargetFrameName, <a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a> InTargetDisposition, FIntRect &amp;InRect, <a class="el" href="struct_f_slate_cef_view_settings.html">FSlateCefViewSettings</a> &amp;InSettings, bool &amp;bInDisableJavascriptAccess)</td></tr>
+<tr class="memdesc:ae315b575a26dabbed45cc49e75a17b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before a pop-up browser is created (for browsers created by JavaScript). Allows customization or cancellation of the popup.  <br /></td></tr>
+<tr class="separator:ae315b575a26dabbed45cc49e75a17b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40095eb1e07b6717ac98b4c02f2f525d" id="r_a40095eb1e07b6717ac98b4c02f2f525d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40095eb1e07b6717ac98b4c02f2f525d">OnRequestCloseFromWeb</a> ()</td></tr>
+<tr class="memdesc:a40095eb1e07b6717ac98b4c02f2f525d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a close request is received from the web content (e.g., window.close()).  <br /></td></tr>
+<tr class="separator:a40095eb1e07b6717ac98b4c02f2f525d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670d3a1db5509e1205e2522bd6b7e18a" id="r_a670d3a1db5509e1205e2522bd6b7e18a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a670d3a1db5509e1205e2522bd6b7e18a">OnSlateLoadStateChangedEvent</a> (const int64 &amp;InBrowserId, bool bInIsLoading, bool bInCanGoBack, bool bInCanGoForward)</td></tr>
+<tr class="memdesc:a670d3a1db5509e1205e2522bd6b7e18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the load state changed event from the underlying Slate CEF view. Updates internal state and broadcasts the OnLoadStateChanged event.  <br /></td></tr>
+<tr class="separator:a670d3a1db5509e1205e2522bd6b7e18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae228f506569333c29d1ac19e011abb08" id="r_ae228f506569333c29d1ac19e011abb08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae228f506569333c29d1ac19e011abb08">OnSlateLoadStartEvent</a> (const int64 &amp;InBrowserId, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, bool bInIsMainFrame, int InTransitionType)</td></tr>
+<tr class="memdesc:ae228f506569333c29d1ac19e011abb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the load start event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:ae228f506569333c29d1ac19e011abb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98526a58f8d7d70f579d22e75f80c51a" id="r_a98526a58f8d7d70f579d22e75f80c51a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98526a58f8d7d70f579d22e75f80c51a">OnSlateLoadEndEvent</a> (const int64 &amp;InBrowserId, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, bool bInIsMainFrame, int InHttpStatusCode)</td></tr>
+<tr class="memdesc:a98526a58f8d7d70f579d22e75f80c51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the load end event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a98526a58f8d7d70f579d22e75f80c51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79deb900912a8afcf0841a5f8edbe24a" id="r_a79deb900912a8afcf0841a5f8edbe24a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79deb900912a8afcf0841a5f8edbe24a">OnSlateLoadErrorEvent</a> (const int64 &amp;InBrowserId, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, bool bInIsMainFrame, int InErrorCode, const FString &amp;InErrorMsg, const FString &amp;InFailedUrl, bool &amp;bInHandled)</td></tr>
+<tr class="memdesc:a79deb900912a8afcf0841a5f8edbe24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the load error event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a79deb900912a8afcf0841a5f8edbe24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecf381bfc7d38d5664a427659bc8881" id="r_a7ecf381bfc7d38d5664a427659bc8881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ecf381bfc7d38d5664a427659bc8881">OnSlateDraggableRegionChangedEvent</a> (const FVector4 &amp;InDraggableRegion, const FVector4 &amp;InNonDraggableRegion)</td></tr>
+<tr class="memdesc:a7ecf381bfc7d38d5664a427659bc8881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the draggable region changed event from the underlying Slate CEF view. Used for updating window drag regions in custom window chrome scenarios.  <br /></td></tr>
+<tr class="separator:a7ecf381bfc7d38d5664a427659bc8881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cac744265ea183a2f1611e8e50b5ce5" id="r_a1cac744265ea183a2f1611e8e50b5ce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cac744265ea183a2f1611e8e50b5ce5">OnSlateAddressChangedEvent</a> (const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const FString &amp;InNewAddress)</td></tr>
+<tr class="memdesc:a1cac744265ea183a2f1611e8e50b5ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the address changed event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a1cac744265ea183a2f1611e8e50b5ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13650cb862f51d2f414596b3626b79f6" id="r_a13650cb862f51d2f414596b3626b79f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13650cb862f51d2f414596b3626b79f6">OnSlateTitleChangedEvent</a> (const FString &amp;InTitle)</td></tr>
+<tr class="memdesc:a13650cb862f51d2f414596b3626b79f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the title changed event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a13650cb862f51d2f414596b3626b79f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9668d013b216e2f4dc924274e4147732" id="r_a9668d013b216e2f4dc924274e4147732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9668d013b216e2f4dc924274e4147732">OnSlateFaviconUrlChangedEvent</a> (const TArray&lt; FString &gt; &amp;InUrls)</td></tr>
+<tr class="memdesc:a9668d013b216e2f4dc924274e4147732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the favicon URL changed event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a9668d013b216e2f4dc924274e4147732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd77908643096122604166130c3d93c" id="r_a9cd77908643096122604166130c3d93c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd77908643096122604166130c3d93c">OnSlateFullscreenModeChangedEvent</a> (bool bInFullscreen)</td></tr>
+<tr class="memdesc:a9cd77908643096122604166130c3d93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the fullscreen mode changed event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a9cd77908643096122604166130c3d93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41967326f88210fe29f8fbc2bd878984" id="r_a41967326f88210fe29f8fbc2bd878984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41967326f88210fe29f8fbc2bd878984">OnSlateStatusMessageEvent</a> (const FString &amp;InMessage)</td></tr>
+<tr class="memdesc:a41967326f88210fe29f8fbc2bd878984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the status message event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a41967326f88210fe29f8fbc2bd878984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4934161b9ce5e8a57d26e6329cfea810" id="r_a4934161b9ce5e8a57d26e6329cfea810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4934161b9ce5e8a57d26e6329cfea810">OnSlateConsoleMessageEvent</a> (const FString &amp;InMessage, int32 InLevel)</td></tr>
+<tr class="memdesc:a4934161b9ce5e8a57d26e6329cfea810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the console message event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a4934161b9ce5e8a57d26e6329cfea810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b79252f897df6ab7c180177f3dfd426" id="r_a3b79252f897df6ab7c180177f3dfd426"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b79252f897df6ab7c180177f3dfd426">OnSlateLoadingProgressChangedEvent</a> (double InProgress)</td></tr>
+<tr class="memdesc:a3b79252f897df6ab7c180177f3dfd426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the loading progress changed event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a3b79252f897df6ab7c180177f3dfd426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9dfeba895ee19a1f328214351a0f5a7" id="r_af9dfeba895ee19a1f328214351a0f5a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9dfeba895ee19a1f328214351a0f5a7">OnSlateUrlRequestEvent</a> (const int64 &amp;InBrowserId, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const FString &amp;InRequestUrl)</td></tr>
+<tr class="memdesc:af9dfeba895ee19a1f328214351a0f5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the URL request event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:af9dfeba895ee19a1f328214351a0f5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ccf4d7c2aac991fb92c3ea4bc5f8a0" id="r_ab1ccf4d7c2aac991fb92c3ea4bc5f8a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1ccf4d7c2aac991fb92c3ea4bc5f8a0">OnSlateQueryRequestEvent</a> (const int64 &amp;InBrowserId, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const int64 &amp;InQueryId, const FString &amp;InRequest)</td></tr>
+<tr class="memdesc:ab1ccf4d7c2aac991fb92c3ea4bc5f8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the query request event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:ab1ccf4d7c2aac991fb92c3ea4bc5f8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a3e64ef952b1c0cb19ad5859490814" id="r_a79a3e64ef952b1c0cb19ad5859490814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a3e64ef952b1c0cb19ad5859490814">OnSlateInvokeMethodEvent</a> (const int64 &amp;InBrowserId, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const FString &amp;InMethod, const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;InArguments)</td></tr>
+<tr class="memdesc:a79a3e64ef952b1c0cb19ad5859490814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the invoke method event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a79a3e64ef952b1c0cb19ad5859490814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04644d57eb3201e3969c000714b205db" id="r_a04644d57eb3201e3969c000714b205db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04644d57eb3201e3969c000714b205db">OnSlateReportJavascriptResultEvent</a> (const int64 &amp;InBrowserId, const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InFrameId, const FString &amp;InContext, const TSharedPtr&lt; FJsonValue &gt; &amp;InResult)</td></tr>
+<tr class="memdesc:a04644d57eb3201e3969c000714b205db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the report JavaScript result event from the underlying Slate CEF view.  <br /></td></tr>
+<tr class="separator:a04644d57eb3201e3969c000714b205db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6c282c821269474d2dfbdaeb662376" id="r_a2d6c282c821269474d2dfbdaeb662376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d6c282c821269474d2dfbdaeb662376">OnSlateNativeBrowserCreatedEvent</a> ()</td></tr>
+<tr class="memdesc:a2d6c282c821269474d2dfbdaeb662376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the native browser created event from the underlying Slate CEF view. Used to perform additional initialization after the browser window is available.  <br /></td></tr>
+<tr class="separator:a2d6c282c821269474d2dfbdaeb662376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077906637d360e03b7fb21524881097f" id="r_a077906637d360e03b7fb21524881097f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a077906637d360e03b7fb21524881097f">OnSlateCreateNewBrowserEvent</a> (const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;InSourceFrameId, const FString &amp;InUrl, const FString &amp;InName, const <a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a> &amp;InTargetDisposition, const FIntRect &amp;InRect)</td></tr>
+<tr class="memdesc:a077906637d360e03b7fb21524881097f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the request of creating new browser.  <br /></td></tr>
+<tr class="separator:a077906637d360e03b7fb21524881097f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a832356ef88241ce3ea59a056bcc374b4" id="r_a832356ef88241ce3ea59a056bcc374b4"><td class="memItemLeft" align="right" valign="top">TSharedPtr&lt; <a class="el" href="class_s_cef_view.html">SCefView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832356ef88241ce3ea59a056bcc374b4">SlateCefView</a></td></tr>
+<tr class="separator:a832356ef88241ce3ea59a056bcc374b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal Engine UI. It provides a rich set of browser features, event hooks, and resource mapping capabilities, allowing seamless integration of web content into Unreal Engine applications. The widget supports navigation, JavaScript execution, event broadcasting, and advanced customization through settings and resource mappings. It is suitable for both in-game and editor use, and exposes a comprehensive set of Blueprint-callable methods and events for interaction. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a997666e194762198bb3bcedf0772d7c7" name="a997666e194762198bb3bcedf0772d7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997666e194762198bb3bcedf0772d7c7">&#9670;&#160;</a></span>FOnAddressChangedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a997666e194762198bb3bcedf0772d7c7">UCefView::FOnAddressChangedEvent</a> = void(*)( const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InNewAddress )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7135dd91ac599c7030f79b9db91733a9" name="a7135dd91ac599c7030f79b9db91733a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7135dd91ac599c7030f79b9db91733a9">&#9670;&#160;</a></span>FOnConsoleMessageEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a7135dd91ac599c7030f79b9db91733a9">UCefView::FOnConsoleMessageEvent</a> = void(*)( const FString&amp; InMessage , int32 InLevel )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada215fc31de9f345a9cfcb5b1d173eff" name="ada215fc31de9f345a9cfcb5b1d173eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada215fc31de9f345a9cfcb5b1d173eff">&#9670;&#160;</a></span>FOnCreateNewBrowserEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ada215fc31de9f345a9cfcb5b1d173eff">UCefView::FOnCreateNewBrowserEvent</a> = void(*)( const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InSourceFrameId , const FString&amp; InUrl , const FString&amp; InName , const <a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a>&amp; InTargetDisposition , const FVector4&amp; InRect )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a886cc30c6c0abeb5664206718c1c06ea" name="a886cc30c6c0abeb5664206718c1c06ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886cc30c6c0abeb5664206718c1c06ea">&#9670;&#160;</a></span>FOnDraggableRegionChangedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a886cc30c6c0abeb5664206718c1c06ea">UCefView::FOnDraggableRegionChangedEvent</a> = void(*)( const FVector4&amp; InDraggableRegion , const FVector4&amp; InNonDraggableRegion )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b1446ae9f62d60b4606dda04784d6d1" name="a8b1446ae9f62d60b4606dda04784d6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1446ae9f62d60b4606dda04784d6d1">&#9670;&#160;</a></span>FOnFaviconUrlChangedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a8b1446ae9f62d60b4606dda04784d6d1">UCefView::FOnFaviconUrlChangedEvent</a> = void(*)( const TArray&lt;FString&gt;&amp; InUrls )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b4dbadb833a4beedd7137385cc62fe2" name="a3b4dbadb833a4beedd7137385cc62fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4dbadb833a4beedd7137385cc62fe2">&#9670;&#160;</a></span>FOnFullscreenModeChangedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a3b4dbadb833a4beedd7137385cc62fe2">UCefView::FOnFullscreenModeChangedEvent</a> = void(*)( bool bInFullscreen )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a150c2b724637b5fe0e38dad9c1aef7cf" name="a150c2b724637b5fe0e38dad9c1aef7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150c2b724637b5fe0e38dad9c1aef7cf">&#9670;&#160;</a></span>FOnInvokeMethodEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a150c2b724637b5fe0e38dad9c1aef7cf">UCefView::FOnInvokeMethodEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InMethod , const FString&amp; InArguments )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a5ab6cf5bcadc8cecbda7fe376327c5" name="a5a5ab6cf5bcadc8cecbda7fe376327c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5ab6cf5bcadc8cecbda7fe376327c5">&#9670;&#160;</a></span>FOnLoadEndEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5a5ab6cf5bcadc8cecbda7fe376327c5">UCefView::FOnLoadEndEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InHttpStatusCode )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1d8248f5937e8bc93fc3459cde3c2ce" name="af1d8248f5937e8bc93fc3459cde3c2ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d8248f5937e8bc93fc3459cde3c2ce">&#9670;&#160;</a></span>FOnLoadErrorEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af1d8248f5937e8bc93fc3459cde3c2ce">UCefView::FOnLoadErrorEvent</a> = void(*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InErrorCode , const FString&amp; InErrorMsg , const FString&amp; InFailedUrl )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a138b5c25829d6ef04dd0cdb38af89758" name="a138b5c25829d6ef04dd0cdb38af89758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138b5c25829d6ef04dd0cdb38af89758">&#9670;&#160;</a></span>FOnLoadingProgressChangedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a138b5c25829d6ef04dd0cdb38af89758">UCefView::FOnLoadingProgressChangedEvent</a> = void(*)( double InProgress )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af10c5cf228cac397ebc10c542bf5edd3" name="af10c5cf228cac397ebc10c542bf5edd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10c5cf228cac397ebc10c542bf5edd3">&#9670;&#160;</a></span>FOnLoadStartEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af10c5cf228cac397ebc10c542bf5edd3">UCefView::FOnLoadStartEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , bool bInIsMainFrame , int InTransitionType )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae592da3e285ef0ed04e9f2fb963750e8" name="ae592da3e285ef0ed04e9f2fb963750e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae592da3e285ef0ed04e9f2fb963750e8">&#9670;&#160;</a></span>FOnLoadStateChangedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ae592da3e285ef0ed04e9f2fb963750e8">UCefView::FOnLoadStateChangedEvent</a> = (*)( const int64&amp; InBrowserId , bool bInIsLoading , bool bInCanGoBack , bool bInCanGoForward )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a930a13480466a130bd1c1c35a7ba9c34" name="a930a13480466a130bd1c1c35a7ba9c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930a13480466a130bd1c1c35a7ba9c34">&#9670;&#160;</a></span>FOnNativeBrowserCreatedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a930a13480466a130bd1c1c35a7ba9c34">UCefView::FOnNativeBrowserCreatedEvent</a> = void(*)()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33ca8999540c55147046540e94027a70" name="a33ca8999540c55147046540e94027a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ca8999540c55147046540e94027a70">&#9670;&#160;</a></span>FOnQueryRequestEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a33ca8999540c55147046540e94027a70">UCefView::FOnQueryRequestEvent</a> = void(*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , <a class="el" href="class_u_cef_view_query.html">UCefViewQuery</a>* InQuery )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe7dddb31e6544ed6287fceecf17b407" name="afe7dddb31e6544ed6287fceecf17b407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7dddb31e6544ed6287fceecf17b407">&#9670;&#160;</a></span>FOnReportJavascriptResultEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#afe7dddb31e6544ed6287fceecf17b407">UCefView::FOnReportJavascriptResultEvent</a> = (*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InContext , const FString&amp; InResult )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a163f1d6bfe271967c8708b3f0c2ba5db" name="a163f1d6bfe271967c8708b3f0c2ba5db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163f1d6bfe271967c8708b3f0c2ba5db">&#9670;&#160;</a></span>FOnStatusMessageEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a163f1d6bfe271967c8708b3f0c2ba5db">UCefView::FOnStatusMessageEvent</a> = void(*)( const FString&amp; InMessage )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e414dd8b95c6cf6599e2f4d01665198" name="a1e414dd8b95c6cf6599e2f4d01665198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e414dd8b95c6cf6599e2f4d01665198">&#9670;&#160;</a></span>FOnTitleChangedEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a1e414dd8b95c6cf6599e2f4d01665198">UCefView::FOnTitleChangedEvent</a> = void(*)( const FString&amp; InTitle )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e8a8ddd3fc8d2d8aac539dec1715d9b" name="a5e8a8ddd3fc8d2d8aac539dec1715d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8a8ddd3fc8d2d8aac539dec1715d9b">&#9670;&#160;</a></span>FOnUrlRequestEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5e8a8ddd3fc8d2d8aac539dec1715d9b">UCefView::FOnUrlRequestEvent</a> = void(*)( const int64&amp; InBrowserId , const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a>&amp; InFrameId , const FString&amp; InRequestUrl )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a096a62040c05e65f6009658edb2b7482" name="a096a62040c05e65f6009658edb2b7482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096a62040c05e65f6009658edb2b7482">&#9670;&#160;</a></span>UCefView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UCefView::UCefView </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor. Initializes the <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> widget and its properties. </p>
+
+</div>
+</div>
+<a id="a9b89761b50938e18de344de7d7e2d9ec" name="a9b89761b50938e18de344de7d7e2d9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b89761b50938e18de344de7d7e2d9ec">&#9670;&#160;</a></span>~UCefView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual UCefView::~UCefView </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. Cleans up resources associated with the CEF browser view. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a37213ab6931bd43b28fcaaace6bb85cb" name="a37213ab6931bd43b28fcaaace6bb85cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37213ab6931bd43b28fcaaace6bb85cb">&#9670;&#160;</a></span>AddArchiveFileResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::AddArchiveFileResource </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InArchivePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetUrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InPassword</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32</td>          <td class="paramname"><span class="paramname"><em>InPriority</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a URL mapping for a local archive (.zip) file, making its contents accessible via a virtual URL. This is useful for serving packaged web assets to the browser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InArchivePath</td><td>The absolute or relative path to the local archive file.</td></tr>
+    <tr><td class="paramname">InTargetUrl</td><td>The virtual URL to map to the archive (e.g., "http://archive/").</td></tr>
+    <tr><td class="paramname">InPassword</td><td>The password required to access the archive, if any. Default is empty.</td></tr>
+    <tr><td class="paramname">InPriority</td><td>The priority of the mapping. Higher values take precedence. Default is 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a11df6274f072ab744678cbfb4370e264" name="a11df6274f072ab744678cbfb4370e264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11df6274f072ab744678cbfb4370e264">&#9670;&#160;</a></span>AddLocalFolderResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::AddLocalFolderResource </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InFolderPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetUrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32</td>          <td class="paramname"><span class="paramname"><em>InPriority</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a URL mapping for a local web resource directory, making its contents accessible via a virtual URL. This is useful for serving local HTML, JS, or other assets to the browser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InFolderPath</td><td>The absolute or relative path to the local resource directory.</td></tr>
+    <tr><td class="paramname">InTargetUrl</td><td>The virtual URL to map to the directory (e.g., "http://local/").</td></tr>
+    <tr><td class="paramname">InPriority</td><td>The priority of the mapping. Higher values take precedence. Default is 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61eac5eebd77818af1a8adb1fa172197" name="a61eac5eebd77818af1a8adb1fa172197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61eac5eebd77818af1a8adb1fa172197">&#9670;&#160;</a></span>BroadcastEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::BroadcastEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_u_cef_view_event.html">UCefViewEvent</a> *</td>          <td class="paramname"><span class="paramname"><em>InCefViewEvent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Broadcasts a custom event to all frames in the CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InCefViewEvent</td><td>The event object to broadcast.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the event was successfully broadcast; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a2014bd0ae0e7c49dcf737c4f46a4c588" name="a2014bd0ae0e7c49dcf737c4f46a4c588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2014bd0ae0e7c49dcf737c4f46a4c588">&#9670;&#160;</a></span>BrowserCanGoBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::BrowserCanGoBack </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the browser can navigate back in its history. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the browser can go back; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="ac257892311ab9b9c453c726e57abfa52" name="ac257892311ab9b9c453c726e57abfa52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac257892311ab9b9c453c726e57abfa52">&#9670;&#160;</a></span>BrowserCanGoForward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::BrowserCanGoForward </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the browser can navigate forward in its history. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the browser can go forward; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="ab0319ca49109a8c41589010aa832feea" name="ab0319ca49109a8c41589010aa832feea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0319ca49109a8c41589010aa832feea">&#9670;&#160;</a></span>BrowserGoBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::BrowserGoBack </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Navigates the browser back to the previous page in its history, if possible. </p>
+
+</div>
+</div>
+<a id="a866b2c1cddb456bd61157f889e85de30" name="a866b2c1cddb456bd61157f889e85de30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866b2c1cddb456bd61157f889e85de30">&#9670;&#160;</a></span>BrowserGoForward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::BrowserGoForward </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Navigates the browser forward to the next page in its history, if possible. </p>
+
+</div>
+</div>
+<a id="a314aa5a7dd12b7988d1ac23f352a2287" name="a314aa5a7dd12b7988d1ac23f352a2287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314aa5a7dd12b7988d1ac23f352a2287">&#9670;&#160;</a></span>BrowserReload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::BrowserReload </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reloads the current page in the browser. </p>
+
+</div>
+</div>
+<a id="aaabf6be1e8687596bdf1b31aceff6b93" name="aaabf6be1e8687596bdf1b31aceff6b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaabf6be1e8687596bdf1b31aceff6b93">&#9670;&#160;</a></span>BrowserStopLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::BrowserStopLoad </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops the current page load operation in the browser. </p>
+
+</div>
+</div>
+<a id="a60181e45876f7f65fc67f4d97a3fc887" name="a60181e45876f7f65fc67f4d97a3fc887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60181e45876f7f65fc67f4d97a3fc887">&#9670;&#160;</a></span>CloseDevTools()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::CloseDevTools </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Closes the DevTools dialog if it is currently open. </p>
+
+</div>
+</div>
+<a id="a3ebd2de48696802207f3356068f2a2e9" name="a3ebd2de48696802207f3356068f2a2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebd2de48696802207f3356068f2a2e9">&#9670;&#160;</a></span>ExecuteJavascript()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::ExecuteJavascript </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InJavascriptCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetUrl</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executes JavaScript code in a specific frame of the CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InFrameId</td><td>The ID of the frame in which to execute the JavaScript.</td></tr>
+    <tr><td class="paramname">InJavascriptCode</td><td>The JavaScript code to execute.</td></tr>
+    <tr><td class="paramname">InTargetUrl</td><td>The URL to associate with the script (used for debugging and stack traces).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the JavaScript was successfully executed; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a75cafd0355a28f0de9887dc6caab0092" name="a75cafd0355a28f0de9887dc6caab0092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75cafd0355a28f0de9887dc6caab0092">&#9670;&#160;</a></span>ExecuteJavascriptWithResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::ExecuteJavascriptWithResult </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InJavascriptCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetUrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InExecuteContext</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executes JavaScript code in a specific frame and returns the result asynchronously. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InFrameId</td><td>The ID of the frame in which to execute the JavaScript.</td></tr>
+    <tr><td class="paramname">InJavascriptCode</td><td>The JavaScript code to execute.</td></tr>
+    <tr><td class="paramname">InTargetUrl</td><td>The URL to associate with the script (used for debugging and stack traces).</td></tr>
+    <tr><td class="paramname">InExecuteContext</td><td>The context in which the script is executed (e.g., "default", "isolated").</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the JavaScript was successfully executed; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a536ffb64a609d540c2bbd93a1b1c726a" name="a536ffb64a609d540c2bbd93a1b1c726a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a536ffb64a609d540c2bbd93a1b1c726a">&#9670;&#160;</a></span>GetBrowserId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64 UCefView::GetBrowserId </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the unique browser ID for this CEF view instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>The browser ID as a 64-bit integer.</dd></dl>
+
+</div>
+</div>
+<a id="a19a5c260b4ca1bb640dbbbac3e56b5ba" name="a19a5c260b4ca1bb640dbbbac3e56b5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a5c260b4ca1bb640dbbbac3e56b5ba">&#9670;&#160;</a></span>HasDevTools()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::HasDevTools </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detects whether the browser currently has a DevTools window open. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if DevTools is open; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a7fed336bcb29c0e7d3d23f388340e772" name="a7fed336bcb29c0e7d3d23f388340e772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fed336bcb29c0e7d3d23f388340e772">&#9670;&#160;</a></span>IsBrowserLoading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::IsBrowserLoading </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the browser is currently loading a page or resource. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the browser is loading; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a2e619ff7f47bdf6dc32b1aa13d6c2d42" name="a2e619ff7f47bdf6dc32b1aa13d6c2d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e619ff7f47bdf6dc32b1aa13d6c2d42">&#9670;&#160;</a></span>IsDragAndDropEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::IsDragAndDropEnabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets whether drag and drop functionality is enabled for the browser. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if drag and drop is enabled; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a48a2b7b966f8b3a8fda5d71a28b111dd" name="a48a2b7b966f8b3a8fda5d71a28b111dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a2b7b966f8b3a8fda5d71a28b111dd">&#9670;&#160;</a></span>IsPopupContextMenuDisabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::IsPopupContextMenuDisabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets whether the context menu is disabled for pop-up browser windows. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the context menu is disabled; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="ac4188f0bdb5b6a66b59886946282488d" name="ac4188f0bdb5b6a66b59886946282488d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4188f0bdb5b6a66b59886946282488d">&#9670;&#160;</a></span>NavigateToUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::NavigateToUrl </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetUrl</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Navigates the browser to the specified URL. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InTargetUrl</td><td>The URL to navigate to.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d9425177928b1eb92346c4a6df0a763" name="a1d9425177928b1eb92346c4a6df0a763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d9425177928b1eb92346c4a6df0a763">&#9670;&#160;</a></span>OnNewBrowser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnNewBrowser </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InSourceFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InUrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a></td>          <td class="paramname"><span class="paramname"><em>InTargetDisposition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FIntRect &amp;</td>          <td class="paramname"><span class="paramname"><em>InRect</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called before a new browser is created (for browsers created by non-JavaScript means). Allows customization of the new browser's properties and window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InSourceFrameId</td><td>The source frame ID initiating the new browser.</td></tr>
+    <tr><td class="paramname">InUrl</td><td>The target URL to be loaded in the new browser.</td></tr>
+    <tr><td class="paramname">InName</td><td>The target window name.</td></tr>
+    <tr><td class="paramname">InTargetDisposition</td><td>The method by which the window should be opened (e.g., new tab, new window). </td></tr>
+    <tr><td class="paramname">InRect</td><td>The rectangle specifying the popup window's position and size.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae315b575a26dabbed45cc49e75a17b0d" name="ae315b575a26dabbed45cc49e75a17b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae315b575a26dabbed45cc49e75a17b0d">&#9670;&#160;</a></span>OnNewPopup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::OnNewPopup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetUrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetFrameName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a></td>          <td class="paramname"><span class="paramname"><em>InTargetDisposition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FIntRect &amp;</td>          <td class="paramname"><span class="paramname"><em>InRect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_f_slate_cef_view_settings.html">FSlateCefViewSettings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InSettings</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>bInDisableJavascriptAccess</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called before a pop-up browser is created (for browsers created by JavaScript). Allows customization or cancellation of the popup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InFrameId</td><td>The source frame ID.</td></tr>
+    <tr><td class="paramname">InTargetUrl</td><td>The target URL for the popup.</td></tr>
+    <tr><td class="paramname">InTargetFrameName</td><td>The target frame name (modifiable).</td></tr>
+    <tr><td class="paramname">InTargetDisposition</td><td>The method by which the window should be opened.</td></tr>
+    <tr><td class="paramname">InRect</td><td>The rectangle specifying the popup window's position and size.</td></tr>
+    <tr><td class="paramname">InSettings</td><td>Settings to be applied to the popup browser.</td></tr>
+    <tr><td class="paramname">bInDisableJavascriptAccess</td><td>Set to true to disable JavaScript access in the popup.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True to cancel the popup; false to allow it.</dd></dl>
+
+</div>
+</div>
+<a id="a40095eb1e07b6717ac98b4c02f2f525d" name="a40095eb1e07b6717ac98b4c02f2f525d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40095eb1e07b6717ac98b4c02f2f525d">&#9670;&#160;</a></span>OnRequestCloseFromWeb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::OnRequestCloseFromWeb </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when a close request is received from the web content (e.g., window.close()). </p>
+<dl class="section return"><dt>Returns</dt><dd>True to allow the browser to close; false to cancel the close operation.</dd></dl>
+
+</div>
+</div>
+<a id="a1cac744265ea183a2f1611e8e50b5ce5" name="a1cac744265ea183a2f1611e8e50b5ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cac744265ea183a2f1611e8e50b5ce5">&#9670;&#160;</a></span>OnSlateAddressChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateAddressChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InNewAddress</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the address changed event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InFrameId</td><td>The frame ID whose address changed.</td></tr>
+    <tr><td class="paramname">InNewAddress</td><td>The new address (URL).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4934161b9ce5e8a57d26e6329cfea810" name="a4934161b9ce5e8a57d26e6329cfea810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4934161b9ce5e8a57d26e6329cfea810">&#9670;&#160;</a></span>OnSlateConsoleMessageEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateConsoleMessageEvent </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InMessage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32</td>          <td class="paramname"><span class="paramname"><em>InLevel</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the console message event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InMessage</td><td>The console message.</td></tr>
+    <tr><td class="paramname">InLevel</td><td>The log level.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a077906637d360e03b7fb21524881097f" name="a077906637d360e03b7fb21524881097f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077906637d360e03b7fb21524881097f">&#9670;&#160;</a></span>OnSlateCreateNewBrowserEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateCreateNewBrowserEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InSourceFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InUrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2ed">ECefWindowOpenDisposition</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InTargetDisposition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FIntRect &amp;</td>          <td class="paramname"><span class="paramname"><em>InRect</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the request of creating new browser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InSourceFrameId</td><td>The frame id which requests to create a new browser.</td></tr>
+    <tr><td class="paramname">InUrl</td><td>The URL of the new browser.</td></tr>
+    <tr><td class="paramname">InName</td><td>The name of the new browser.</td></tr>
+    <tr><td class="paramname">InTargetDisposition</td><td>The target disposition of the new browser.</td></tr>
+    <tr><td class="paramname">InRect</td><td>The rect of the new browser.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ecf381bfc7d38d5664a427659bc8881" name="a7ecf381bfc7d38d5664a427659bc8881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ecf381bfc7d38d5664a427659bc8881">&#9670;&#160;</a></span>OnSlateDraggableRegionChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateDraggableRegionChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype">const FVector4 &amp;</td>          <td class="paramname"><span class="paramname"><em>InDraggableRegion</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FVector4 &amp;</td>          <td class="paramname"><span class="paramname"><em>InNonDraggableRegion</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the draggable region changed event from the underlying Slate CEF view. Used for updating window drag regions in custom window chrome scenarios. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InDraggableRegion</td><td>The new draggable region.</td></tr>
+    <tr><td class="paramname">InNonDraggableRegion</td><td>The new non-draggable region.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9668d013b216e2f4dc924274e4147732" name="a9668d013b216e2f4dc924274e4147732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9668d013b216e2f4dc924274e4147732">&#9670;&#160;</a></span>OnSlateFaviconUrlChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateFaviconUrlChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype">const TArray&lt; FString &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>InUrls</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the favicon URL changed event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InUrls</td><td>The new favicon URLs.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9cd77908643096122604166130c3d93c" name="a9cd77908643096122604166130c3d93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd77908643096122604166130c3d93c">&#9670;&#160;</a></span>OnSlateFullscreenModeChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateFullscreenModeChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInFullscreen</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the fullscreen mode changed event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bInFullscreen</td><td>True if fullscreen; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79a3e64ef952b1c0cb19ad5859490814" name="a79a3e64ef952b1c0cb19ad5859490814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79a3e64ef952b1c0cb19ad5859490814">&#9670;&#160;</a></span>OnSlateInvokeMethodEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateInvokeMethodEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InMethod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TArray&lt; TSharedPtr&lt; FJsonValue &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>InArguments</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the invoke method event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID.</td></tr>
+    <tr><td class="paramname">InMethod</td><td>The method name to invoke.</td></tr>
+    <tr><td class="paramname">InArguments</td><td>The arguments as a JSON value array.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a98526a58f8d7d70f579d22e75f80c51a" name="a98526a58f8d7d70f579d22e75f80c51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98526a58f8d7d70f579d22e75f80c51a">&#9670;&#160;</a></span>OnSlateLoadEndEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateLoadEndEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInIsMainFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>InHttpStatusCode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the load end event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID.</td></tr>
+    <tr><td class="paramname">bInIsMainFrame</td><td>True if main frame; otherwise, false.</td></tr>
+    <tr><td class="paramname">InHttpStatusCode</td><td>The HTTP status code.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79deb900912a8afcf0841a5f8edbe24a" name="a79deb900912a8afcf0841a5f8edbe24a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79deb900912a8afcf0841a5f8edbe24a">&#9670;&#160;</a></span>OnSlateLoadErrorEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateLoadErrorEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInIsMainFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>InErrorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InErrorMsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InFailedUrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>bInHandled</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the load error event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID.</td></tr>
+    <tr><td class="paramname">bInIsMainFrame</td><td>True if main frame; otherwise, false.</td></tr>
+    <tr><td class="paramname">InErrorCode</td><td>The error code.</td></tr>
+    <tr><td class="paramname">InErrorMsg</td><td>The error message.</td></tr>
+    <tr><td class="paramname">InFailedUrl</td><td>The URL that failed to load.</td></tr>
+    <tr><td class="paramname">bInHandled</td><td>Set to true if the error was handled; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b79252f897df6ab7c180177f3dfd426" name="a3b79252f897df6ab7c180177f3dfd426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b79252f897df6ab7c180177f3dfd426">&#9670;&#160;</a></span>OnSlateLoadingProgressChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateLoadingProgressChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>InProgress</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the loading progress changed event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InProgress</td><td>The loading progress (0.0 to 1.0).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae228f506569333c29d1ac19e011abb08" name="ae228f506569333c29d1ac19e011abb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae228f506569333c29d1ac19e011abb08">&#9670;&#160;</a></span>OnSlateLoadStartEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateLoadStartEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInIsMainFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>InTransitionType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the load start event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID.</td></tr>
+    <tr><td class="paramname">bInIsMainFrame</td><td>True if main frame; otherwise, false.</td></tr>
+    <tr><td class="paramname">InTransitionType</td><td>The navigation transition type.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a670d3a1db5509e1205e2522bd6b7e18a" name="a670d3a1db5509e1205e2522bd6b7e18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670d3a1db5509e1205e2522bd6b7e18a">&#9670;&#160;</a></span>OnSlateLoadStateChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateLoadStateChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInIsLoading</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInCanGoBack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInCanGoForward</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the load state changed event from the underlying Slate CEF view. Updates internal state and broadcasts the OnLoadStateChanged event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">bInIsLoading</td><td>True if loading; otherwise, false.</td></tr>
+    <tr><td class="paramname">bInCanGoBack</td><td>True if can go back; otherwise, false.</td></tr>
+    <tr><td class="paramname">bInCanGoForward</td><td>True if can go forward; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d6c282c821269474d2dfbdaeb662376" name="a2d6c282c821269474d2dfbdaeb662376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6c282c821269474d2dfbdaeb662376">&#9670;&#160;</a></span>OnSlateNativeBrowserCreatedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateNativeBrowserCreatedEvent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the native browser created event from the underlying Slate CEF view. Used to perform additional initialization after the browser window is available. </p>
+
+</div>
+</div>
+<a id="ab1ccf4d7c2aac991fb92c3ea4bc5f8a0" name="ab1ccf4d7c2aac991fb92c3ea4bc5f8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ccf4d7c2aac991fb92c3ea4bc5f8a0">&#9670;&#160;</a></span>OnSlateQueryRequestEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateQueryRequestEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InQueryId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InRequest</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the query request event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID.</td></tr>
+    <tr><td class="paramname">InQueryId</td><td>The query ID.</td></tr>
+    <tr><td class="paramname">InRequest</td><td>The query request string.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04644d57eb3201e3969c000714b205db" name="a04644d57eb3201e3969c000714b205db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04644d57eb3201e3969c000714b205db">&#9670;&#160;</a></span>OnSlateReportJavascriptResultEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateReportJavascriptResultEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InContext</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TSharedPtr&lt; FJsonValue &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>InResult</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the report JavaScript result event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID.</td></tr>
+    <tr><td class="paramname">InContext</td><td>The JavaScript execution context.</td></tr>
+    <tr><td class="paramname">InResult</td><td>The result as a JSON value.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a41967326f88210fe29f8fbc2bd878984" name="a41967326f88210fe29f8fbc2bd878984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41967326f88210fe29f8fbc2bd878984">&#9670;&#160;</a></span>OnSlateStatusMessageEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateStatusMessageEvent </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InMessage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the status message event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InMessage</td><td>The status message.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a13650cb862f51d2f414596b3626b79f6" name="a13650cb862f51d2f414596b3626b79f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13650cb862f51d2f414596b3626b79f6">&#9670;&#160;</a></span>OnSlateTitleChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateTitleChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InTitle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the title changed event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InTitle</td><td>The new document title.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9dfeba895ee19a1f328214351a0f5a7" name="af9dfeba895ee19a1f328214351a0f5a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9dfeba895ee19a1f328214351a0f5a7">&#9670;&#160;</a></span>OnSlateUrlRequestEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::OnSlateUrlRequestEvent </td>
+          <td>(</td>
+          <td class="paramtype">const int64 &amp;</td>          <td class="paramname"><span class="paramname"><em>InBrowserId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InRequestUrl</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the URL request event from the underlying Slate CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID.</td></tr>
+    <tr><td class="paramname">InRequestUrl</td><td>The requested URL.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ada336c1d582e5c5dd81ac6556df4996d" name="ada336c1d582e5c5dd81ac6556df4996d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada336c1d582e5c5dd81ac6556df4996d">&#9670;&#160;</a></span>RebuildWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TSharedRef&lt; SWidget &gt; UCefView::RebuildWidget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rebuilds the underlying Slate widget for this UMG widget. Called by the engine when the widget needs to be constructed or updated. </p>
+<dl class="section return"><dt>Returns</dt><dd>A shared reference to the constructed Slate widget.</dd></dl>
+
+</div>
+</div>
+<a id="a8979e8e3ba928e606db3ac81186bf85d" name="a8979e8e3ba928e606db3ac81186bf85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8979e8e3ba928e606db3ac81186bf85d">&#9670;&#160;</a></span>ReleaseSlateResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UCefView::ReleaseSlateResources </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInReleaseChildren</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Releases resources held by the Slate widget, optionally releasing child widgets as well. Called when the UMG widget is destroyed or removed from the UI hierarchy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bInReleaseChildren</td><td>If true, releases child widgets as well.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a713cba483323e515219945881c3bf04c" name="a713cba483323e515219945881c3bf04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713cba483323e515219945881c3bf04c">&#9670;&#160;</a></span>ResponseUCefQuery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::ResponseUCefQuery </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_u_cef_view_query.html">UCefViewQuery</a> *</td>          <td class="paramname"><span class="paramname"><em>InCefQuery</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Responds to a CEF query with the provided result. Used for asynchronous communication between JavaScript and native code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InCefQuery</td><td>The CEF query object to respond to.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the query was successfully responded to; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a09763f295904f70f44f11b32bf8d60ff" name="a09763f295904f70f44f11b32bf8d60ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09763f295904f70f44f11b32bf8d60ff">&#9670;&#160;</a></span>SetDisablePopupContextMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::SetDisablePopupContextMenu </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInIsDisable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether to disable the context menu for pop-up browser windows. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bInIsDisable</td><td>True to disable the context menu; false to enable it.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacb52b0c7df8fec6329786781604e3f2" name="aacb52b0c7df8fec6329786781604e3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb52b0c7df8fec6329786781604e3f2">&#9670;&#160;</a></span>SetEnableDragAndDrop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::SetEnableDragAndDrop </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInIsEnable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether to enable drag and drop functionality for the browser. Note: This function does not work for OSR (Off-Screen Rendering) mode. In OSR, dragging a file to a non-dragging area may display the file's content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bInIsEnable</td><td>True to enable drag and drop; false to disable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>In OSR mode, additional handling may be required to prevent unwanted file display. </p>
+
+</div>
+</div>
+<a id="a123cd6e7ceb28b3b068d4bd566f3a7e5" name="a123cd6e7ceb28b3b068d4bd566f3a7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123cd6e7ceb28b3b068d4bd566f3a7e5">&#9670;&#160;</a></span>SetPreference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::SetPreference </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InPreferenceName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InPreferenceValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InError</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a browser preference to a specified value. Preferences control browser behavior such as cache, cookies, and rendering options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InPreferenceName</td><td>The name of the preference to set (e.g., "webkit.webprefs.javascript_enabled").</td></tr>
+    <tr><td class="paramname">InPreferenceValue</td><td>The value to set the preference to (as a string).</td></tr>
+    <tr><td class="paramname">InError</td><td>An output parameter that will contain an error message if the preference could not be set.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the preference was successfully set; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a792de3dfdf4b1164ff26c9e123ac2392" name="a792de3dfdf4b1164ff26c9e123ac2392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792de3dfdf4b1164ff26c9e123ac2392">&#9670;&#160;</a></span>ShowDevTools()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UCefView::ShowDevTools </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opens the DevTools dialog for the browser, allowing inspection and debugging of web content. </p>
+
+</div>
+</div>
+<a id="a2d954e8b86e8bb1402b77cbeb36a44a8" name="a2d954e8b86e8bb1402b77cbeb36a44a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d954e8b86e8bb1402b77cbeb36a44a8">&#9670;&#160;</a></span>SynchronizeProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void UCefView::SynchronizeProperties </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Synchronizes UPROPERTY values with the underlying Slate widget. Called automatically by the engine when properties are changed in the editor or at runtime. </p>
+
+</div>
+</div>
+<a id="a2280eb077a93f144b41e28150f6130e7" name="a2280eb077a93f144b41e28150f6130e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2280eb077a93f144b41e28150f6130e7">&#9670;&#160;</a></span>TriggerEventForFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::TriggerEventForFrame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_u_cef_view_event.html">UCefViewEvent</a> *</td>          <td class="paramname"><span class="paramname"><em>InCefViewEvent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>InFrameId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Triggers a custom event for a specific frame in the CEF view. Allows sending user-defined events to the browser for advanced interaction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InCefViewEvent</td><td>The event object to trigger.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The ID of the frame to trigger the event on.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the event was successfully triggered; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<a id="a308462bb9a935d14565e2b00808e9742" name="a308462bb9a935d14565e2b00808e9742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308462bb9a935d14565e2b00808e9742">&#9670;&#160;</a></span>TriggerEventForMainFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::TriggerEventForMainFrame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_u_cef_view_event.html">UCefViewEvent</a> *</td>          <td class="paramname"><span class="paramname"><em>InCefViewEvent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Triggers a custom event for the main frame in the CEF view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InCefViewEvent</td><td>The event object to trigger.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the event was successfully triggered; otherwise, false.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a41ce816eb048d756900bcb317749851d" name="a41ce816eb048d756900bcb317749851d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41ce816eb048d756900bcb317749851d">&#9670;&#160;</a></span>AllFrameID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> UCefView::AllFrameID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The identifier representing all frames in the browser. Used for broadcasting events or actions to every frame. </p>
+
+</div>
+</div>
+<a id="a09aa10c2b6986508c8c58083c8e8afe1" name="a09aa10c2b6986508c8c58083c8e8afe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09aa10c2b6986508c8c58083c8e8afe1">&#9670;&#160;</a></span>ArchiveFileResourceMapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt;<a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a>&gt; UCefView::ArchiveFileResourceMapping</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mappings for archive files (e.g., .zip) to be used as web resources. Each mapping allows content in the specified archive to be accessed via a virtual URL in the browser. </p>
+
+</div>
+</div>
+<a id="a450dd76b3453b94c6ad10be5ebc0d27a" name="a450dd76b3453b94c6ad10be5ebc0d27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450dd76b3453b94c6ad10be5ebc0d27a">&#9670;&#160;</a></span>bAcceptDrops</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::bAcceptDrops = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables accepting drag-and-drop operations from external sources (e.g., files from OS). If true, the browser can accept drops; if false, drops are ignored. Default: false. </p>
+
+</div>
+</div>
+<a id="a5a80de76c7df7047d5617ddb6ac3a4bf" name="a5a80de76c7df7047d5617ddb6ac3a4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a80de76c7df7047d5617ddb6ac3a4bf">&#9670;&#160;</a></span>bAllowDrag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::bAllowDrag = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables allowing the browser content to be dragged (initiating drag operations). If true, users can drag content from the browser; if false, dragging is disabled. Default: false. </p>
+
+</div>
+</div>
+<a id="ad77afb3caff4b2b0ea87a04467e1fb02" name="ad77afb3caff4b2b0ea87a04467e1fb02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77afb3caff4b2b0ea87a04467e1fb02">&#9670;&#160;</a></span>bEnableContextMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UCefView::bEnableContextMenu = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables the context menu in the CEF browser. If true, right-click context menus are shown; if false, they are suppressed. Default: true. </p>
+
+</div>
+</div>
+<a id="a1c066d6fd5c9ed341daef48b8f892e72" name="a1c066d6fd5c9ed341daef48b8f892e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c066d6fd5c9ed341daef48b8f892e72">&#9670;&#160;</a></span>FrameRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 UCefView::FrameRate = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The frame rate (in frames per second) at which the CEF browser will render. Higher values provide smoother updates but may increase CPU/GPU usage. When set to 0, <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> will use the current engine frame rate limit retrieved from the Console Variable <em><b>t.MaxFPS</b></em> as the target frame rate and <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> also install a listener on this value to sync the frame rate limit anytime it changes Set to other positive value rather than 0 to specified the fixed target frame limit Default: 0. </p>
+
+</div>
+</div>
+<a id="a19953926accaa7a55239fb0a3d47b796" name="a19953926accaa7a55239fb0a3d47b796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19953926accaa7a55239fb0a3d47b796">&#9670;&#160;</a></span>LocalFolderResourceMapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TArray&lt;<a class="el" href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a>&gt; UCefView::LocalFolderResourceMapping</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mappings for local folders to be used as web resources. Each mapping allows content in the specified folder to be accessed via a virtual URL in the browser. </p>
+
+</div>
+</div>
+<a id="a930f8c1710af58d7691eddc9013acc8e" name="a930f8c1710af58d7691eddc9013acc8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930f8c1710af58d7691eddc9013acc8e">&#9670;&#160;</a></span>MainFrameID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_f_cef_frame_id.html">FCefFrameId</a> UCefView::MainFrameID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The main frame identity, representing the primary document frame in the browser. Used for targeting main-frame-specific operations and events. </p>
+
+</div>
+</div>
+<a id="a54f014a579cb22fe930daad2c0c87365" name="a54f014a579cb22fe930daad2c0c87365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f014a579cb22fe930daad2c0c87365">&#9670;&#160;</a></span>OnAddressChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a997666e194762198bb3bcedf0772d7c7">FOnAddressChangedEvent</a> UCefView::OnAddressChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the address (URL) of a frame changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InFrameId</td><td>The frame ID whose address changed.</td></tr>
+    <tr><td class="paramname">InNewAddress</td><td>The new address (URL).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af44199c4a83f2c52d6fe42d41b23300b" name="af44199c4a83f2c52d6fe42d41b23300b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44199c4a83f2c52d6fe42d41b23300b">&#9670;&#160;</a></span>OnConsoleMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a7135dd91ac599c7030f79b9db91733a9">FOnConsoleMessageEvent</a> UCefView::OnConsoleMessage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when a console message is emitted from web content (e.g., via console.log). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InMessage</td><td>The console message text.</td></tr>
+    <tr><td class="paramname">InLevel</td><td>The log level (e.g., info, warning, error).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac3a8c5e994fcfac1146a13be6cdbfd96" name="ac3a8c5e994fcfac1146a13be6cdbfd96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a8c5e994fcfac1146a13be6cdbfd96">&#9670;&#160;</a></span>OnCreateNewBrowser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ada215fc31de9f345a9cfcb5b1d173eff">FOnCreateNewBrowserEvent</a> UCefView::OnCreateNewBrowser</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The callback type when new browser is requested to be created. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InSourceFrameId</td><td>The frame id which requests to create a new browser.</td></tr>
+    <tr><td class="paramname">InUrl</td><td>The URL of the new browser.</td></tr>
+    <tr><td class="paramname">InName</td><td>The name of the new browser.</td></tr>
+    <tr><td class="paramname">InTargetDisposition</td><td>The target disposition of the new browser.</td></tr>
+    <tr><td class="paramname">InRect</td><td>The rect of the new browser.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ea3121d5150999170e71fe2c5a1f533" name="a7ea3121d5150999170e71fe2c5a1f533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ea3121d5150999170e71fe2c5a1f533">&#9670;&#160;</a></span>OnDraggableRegionChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a886cc30c6c0abeb5664206718c1c06ea">FOnDraggableRegionChangedEvent</a> UCefView::OnDraggableRegionChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the draggable or non-draggable regions of the browser change. Used for implementing custom window dragging in frameless windows. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InDraggableRegion</td><td>The new draggable region (as a vector or rectangle).</td></tr>
+    <tr><td class="paramname">InNonDraggableRegion</td><td>The new non-draggable region.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7b4cacc342adc80b88b7195b3e74d58" name="ad7b4cacc342adc80b88b7195b3e74d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b4cacc342adc80b88b7195b3e74d58">&#9670;&#160;</a></span>OnFaviconUrlChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a8b1446ae9f62d60b4606dda04784d6d1">FOnFaviconUrlChangedEvent</a> UCefView::OnFaviconUrlChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the favicon URLs for the current page change. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InUrls</td><td>The new list of favicon URLs.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f130dc6d1b26ef897ffeab397952011" name="a2f130dc6d1b26ef897ffeab397952011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f130dc6d1b26ef897ffeab397952011">&#9670;&#160;</a></span>OnFullscreenModeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a3b4dbadb833a4beedd7137385cc62fe2">FOnFullscreenModeChangedEvent</a> UCefView::OnFullscreenModeChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the browser enters or exits fullscreen mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bInFullscreen</td><td>True if the browser is now in fullscreen mode; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad34fb47c7fe923fbf826b6d89d52a79e" name="ad34fb47c7fe923fbf826b6d89d52a79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34fb47c7fe923fbf826b6d89d52a79e">&#9670;&#160;</a></span>OnInvokeMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a150c2b724637b5fe0e38dad9c1aef7cf">FOnInvokeMethodEvent</a> UCefView::OnInvokeMethod</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when a method is invoked from web content (JavaScript) via the bridge object. Allows native code to handle custom method calls from JavaScript. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID making the call.</td></tr>
+    <tr><td class="paramname">InMethod</td><td>The name of the method being invoked.</td></tr>
+    <tr><td class="paramname">InArguments</td><td>The arguments list as a JSON string.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4dc985b967ce3fb3bc20a5487798b475" name="a4dc985b967ce3fb3bc20a5487798b475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc985b967ce3fb3bc20a5487798b475">&#9670;&#160;</a></span>OnLoadEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5a5ab6cf5bcadc8cecbda7fe376327c5">FOnLoadEndEvent</a> UCefView::OnLoadEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the browser finishes loading a document in any frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID where loading ended.</td></tr>
+    <tr><td class="paramname">bInIsMainFrame</td><td>True if this is the main frame; otherwise, false.</td></tr>
+    <tr><td class="paramname">InHttpStatusCode</td><td>The HTTP status code of the loaded document.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8e69b1aea60909f318feef579d1bd78" name="ad8e69b1aea60909f318feef579d1bd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e69b1aea60909f318feef579d1bd78">&#9670;&#160;</a></span>OnLoadError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#af1d8248f5937e8bc93fc3459cde3c2ce">FOnLoadErrorEvent</a> UCefView::OnLoadError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the browser fails to load a document due to an error. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID where the error occurred.</td></tr>
+    <tr><td class="paramname">bInIsMainFrame</td><td>True if this is the main frame; otherwise, false.</td></tr>
+    <tr><td class="paramname">InErrorCode</td><td>The error code (see CEF error codes).</td></tr>
+    <tr><td class="paramname">InErrorMsg</td><td>A descriptive error message.</td></tr>
+    <tr><td class="paramname">InFailedUrl</td><td>The URL that failed to load.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05c8beb46c6a86b280522a03a2e485ff" name="a05c8beb46c6a86b280522a03a2e485ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c8beb46c6a86b280522a03a2e485ff">&#9670;&#160;</a></span>OnLoadingProgressChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a138b5c25829d6ef04dd0cdb38af89758">FOnLoadingProgressChangedEvent</a> UCefView::OnLoadingProgressChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the loading progress of the current page changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InProgress</td><td>The current loading progress (0.0 to 1.0).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24f0d727371651612fc1899b9bf62be0" name="a24f0d727371651612fc1899b9bf62be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f0d727371651612fc1899b9bf62be0">&#9670;&#160;</a></span>OnLoadStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#af10c5cf228cac397ebc10c542bf5edd3">FOnLoadStartEvent</a> UCefView::OnLoadStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the browser starts loading a new document in any frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID where loading started.</td></tr>
+    <tr><td class="paramname">bInIsMainFrame</td><td>True if this is the main frame; otherwise, false.</td></tr>
+    <tr><td class="paramname">InTransitionType</td><td>The transition type (navigation reason).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6981c1dbd338c9c8246dd88167b9634" name="aa6981c1dbd338c9c8246dd88167b9634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6981c1dbd338c9c8246dd88167b9634">&#9670;&#160;</a></span>OnLoadStateChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ae592da3e285ef0ed04e9f2fb963750e8">FOnLoadStateChangedEvent</a> UCefView::OnLoadStateChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the browser's loading state changes (e.g., starts or finishes loading). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">bInIsLoading</td><td>True if the browser is currently loading; otherwise, false.</td></tr>
+    <tr><td class="paramname">bInCanGoBack</td><td>True if the browser can navigate back; otherwise, false.</td></tr>
+    <tr><td class="paramname">bInCanGoForward</td><td>True if the browser can navigate forward; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b6d77b0fc896b3833fcf5ee52c35725" name="a5b6d77b0fc896b3833fcf5ee52c35725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6d77b0fc896b3833fcf5ee52c35725">&#9670;&#160;</a></span>OnNativeBrowserCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a930a13480466a130bd1c1c35a7ba9c34">FOnNativeBrowserCreatedEvent</a> UCefView::OnNativeBrowserCreated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the native browser window is created. Note: This event does not fire in OSR (Off-Screen Rendering) mode. </p>
+
+</div>
+</div>
+<a id="a1e092beae2a792fd0cbfb8a08359e842" name="a1e092beae2a792fd0cbfb8a08359e842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e092beae2a792fd0cbfb8a08359e842">&#9670;&#160;</a></span>OnQueryRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a33ca8999540c55147046540e94027a70">FOnQueryRequestEvent</a> UCefView::OnQueryRequest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when a new UCefQuery request is received from web content. Used for asynchronous communication between JavaScript and native code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID making the query.</td></tr>
+    <tr><td class="paramname">InQuery</td><td>The query request object.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a63c6d5574d96a8da0ee48b3ae619eba1" name="a63c6d5574d96a8da0ee48b3ae619eba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c6d5574d96a8da0ee48b3ae619eba1">&#9670;&#160;</a></span>OnReportJavascriptResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#afe7dddb31e6544ed6287fceecf17b407">FOnReportJavascriptResultEvent</a> UCefView::OnReportJavascriptResult</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the result of a JavaScript execution (via ExecuteJavascriptWithResult) is returned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID where the script was executed.</td></tr>
+    <tr><td class="paramname">InContext</td><td>The execution context identifier.</td></tr>
+    <tr><td class="paramname">InResult</td><td>The result of the JavaScript execution as a string.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1cf877e247e763067bacba9ac6f682fc" name="a1cf877e247e763067bacba9ac6f682fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf877e247e763067bacba9ac6f682fc">&#9670;&#160;</a></span>OnStatusMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a163f1d6bfe271967c8708b3f0c2ba5db">FOnStatusMessageEvent</a> UCefView::OnStatusMessage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the browser's status message changes (e.g., link hover, loading status). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InMessage</td><td>The new status message.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf22ef8c08cf385ca0e7527e0331d9e4" name="abf22ef8c08cf385ca0e7527e0331d9e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf22ef8c08cf385ca0e7527e0331d9e4">&#9670;&#160;</a></span>OnTitleChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1e414dd8b95c6cf6599e2f4d01665198">FOnTitleChangedEvent</a> UCefView::OnTitleChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when the document title changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InTitle</td><td>The new document title.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acec46fd5c10140470f6123e5a3724e56" name="acec46fd5c10140470f6123e5a3724e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec46fd5c10140470f6123e5a3724e56">&#9670;&#160;</a></span>OnUrlRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5e8a8ddd3fc8d2d8aac539dec1715d9b">FOnUrlRequestEvent</a> UCefView::OnUrlRequest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Event triggered when a built-in scheme URL is accessed by the browser. Useful for handling custom resource requests. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InBrowserId</td><td>The unique browser ID.</td></tr>
+    <tr><td class="paramname">InFrameId</td><td>The frame ID making the request.</td></tr>
+    <tr><td class="paramname">InRequestUrl</td><td>The full requested URL.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6940e63ae1d7544f5ecfc58b678e1800" name="a6940e63ae1d7544f5ecfc58b678e1800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6940e63ae1d7544f5ecfc58b678e1800">&#9670;&#160;</a></span>Settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_cef_view_settings.html">FCefViewSettings</a> UCefView::Settings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Settings for the CEF view, including browser features, font preferences, and other options. These settings are applied when the browser is created and cannot be changed at runtime. </p>
+
+</div>
+</div>
+<a id="a832356ef88241ce3ea59a056bcc374b4" name="a832356ef88241ce3ea59a056bcc374b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832356ef88241ce3ea59a056bcc374b4">&#9670;&#160;</a></span>SlateCefView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TSharedPtr&lt;<a class="el" href="class_s_cef_view.html">SCefView</a>&gt; UCefView::SlateCefView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6758617bdbf0ce1413b4e3a9383980e2" name="a6758617bdbf0ce1413b4e3a9383980e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6758617bdbf0ce1413b4e3a9383980e2">&#9670;&#160;</a></span>Url</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FString UCefView::Url</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The initial URL to be loaded in the CEF browser when the widget is created. Can be changed at runtime to navigate to a different page. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_u_cef_view.html">UCefView</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

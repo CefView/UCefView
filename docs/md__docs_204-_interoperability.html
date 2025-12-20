@@ -91,7 +91,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                UCefView&#160;<span id="projectnumber">1.0.23</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -310,7 +310,7 @@ UCefViewBridge.invoke</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// bind invoke handler</span></div>
 <div class="line">MyUCefView-&gt;<a class="code hl_variable" href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a>.AddDynamic(MyWebClient, &amp;UWebClient::InvokeHandler);</div>
-<div class="ttc" id="aclass_u_cef_view_html_ad34fb47c7fe923fbf826b6d89d52a79e"><div class="ttname"><a href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">UCefView::OnInvokeMethod</a></div><div class="ttdeci">FOnInvokeMethodEvent OnInvokeMethod</div><div class="ttdoc">Event triggered when a method is invoked from web content (JavaScript) via the bridge object....</div><div class="ttdef"><b>Definition</b> CefView.h:629</div></div>
+<div class="ttc" id="aclass_u_cef_view_html_ad34fb47c7fe923fbf826b6d89d52a79e"><div class="ttname"><a href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">UCefView::OnInvokeMethod</a></div><div class="ttdeci">FOnInvokeMethodEvent OnInvokeMethod</div><div class="ttdoc">Event triggered when a method is invoked from web content (JavaScript) via the bridge object....</div><div class="ttdef"><b>Definition</b> CefView.h:612</div></div>
 <div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:43</div></div>
 </div><!-- fragment --><p><b>Invoke native handler from Javascript</b> </p><div class="fragment"><div class="line">// invoke C++ code</div>
 <div class="line">window.UCefViewBridge.invoke(&quot;HelloNative&quot;, 1, &quot;2&quot;,  true);</div>

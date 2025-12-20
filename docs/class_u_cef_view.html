@@ -91,7 +91,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                UCefView&#160;<span id="projectnumber">1.0.23</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -317,9 +317,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6758617bdbf0ce1413b4e3a9383980e2" id="r_a6758617bdbf0ce1413b4e3a9383980e2"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6758617bdbf0ce1413b4e3a9383980e2">Url</a></td></tr>
 <tr class="memdesc:a6758617bdbf0ce1413b4e3a9383980e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial URL to be loaded in the CEF browser when the widget is created. Can be changed at runtime to navigate to a different page.  <br /></td></tr>
 <tr class="separator:a6758617bdbf0ce1413b4e3a9383980e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c066d6fd5c9ed341daef48b8f892e72" id="r_a1c066d6fd5c9ed341daef48b8f892e72"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c066d6fd5c9ed341daef48b8f892e72">FrameRate</a> = 0</td></tr>
-<tr class="memdesc:a1c066d6fd5c9ed341daef48b8f892e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frame rate (in frames per second) at which the CEF browser will render. Higher values provide smoother updates but may increase CPU/GPU usage. When set to 0, <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> will use the current engine frame rate limit retrieved from the Console Variable <em><b>t.MaxFPS</b></em> as the target frame rate and <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> also install a listener on this value to sync the frame rate limit anytime it changes Set to other positive value rather than 0 to specified the fixed target frame limit Default: 0.  <br /></td></tr>
-<tr class="separator:a1c066d6fd5c9ed341daef48b8f892e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad77afb3caff4b2b0ea87a04467e1fb02" id="r_ad77afb3caff4b2b0ea87a04467e1fb02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad77afb3caff4b2b0ea87a04467e1fb02">bEnableContextMenu</a> = true</td></tr>
 <tr class="memdesc:ad77afb3caff4b2b0ea87a04467e1fb02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the context menu in the CEF browser. If true, right-click context menus are shown; if false, they are suppressed. Default: true.  <br /></td></tr>
 <tr class="separator:ad77afb3caff4b2b0ea87a04467e1fb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2514,22 +2511,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables or disables the context menu in the CEF browser. If true, right-click context menus are shown; if false, they are suppressed. Default: true. </p>
-
-</div>
-</div>
-<a id="a1c066d6fd5c9ed341daef48b8f892e72" name="a1c066d6fd5c9ed341daef48b8f892e72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c066d6fd5c9ed341daef48b8f892e72">&#9670;&#160;</a></span>FrameRate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32 UCefView::FrameRate = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The frame rate (in frames per second) at which the CEF browser will render. Higher values provide smoother updates but may increase CPU/GPU usage. When set to 0, <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> will use the current engine frame rate limit retrieved from the Console Variable <em><b>t.MaxFPS</b></em> as the target frame rate and <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> also install a listener on this value to sync the frame rate limit anytime it changes Set to other positive value rather than 0 to specified the fixed target frame limit Default: 0. </p>
 
 </div>
 </div>

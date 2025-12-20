@@ -91,7 +91,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                UCefView&#160;<span id="projectnumber">1.0.23</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -221,11 +221,19 @@ Cef Settings</div></div>
 <li>Create an instance of the <code><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></code> widget.</li>
 <li>Use the <code><a class="el" href="class_s_cef_view.html#a9510be89b2f94fc80d529be237eab89b" title="Sets the URL to be loaded in the browser.">SCefView::SetUrl</a></code> method to load a URL into the WebView.</li>
 <li>Customize the appearance and behavior of the WebView using the <code><a class="el" href="struct_f_cef_view_settings.html" title="FCefViewSettings defines per-instance configuration for a CEF browser embedded in a UMG widget....">FCefViewSettings</a></code> structure.</li>
-<li><p class="startli">Bind events such as <code><a class="el" href="class_s_cef_view.html#a800c3c161b729d76db8fce7cbb592b6d" title="On load start event.">SCefView::OnLoadStart</a></code>, <code><a class="el" href="class_s_cef_view.html#a4bf64b268746a15188ddb2ecedaa7e03" title="On load end event.">SCefView::OnLoadEnd</a></code>, and <code><a class="el" href="class_s_cef_view.html#a9e683fe2fb2b960b6aa8a921c3b235b9" title="On console message event.">SCefView::OnConsoleMessage</a></code> to handle WebView events in your C++ code.</p>
-<p class="startli">```cpp // In your .h file #include "Slate/SCefView.h"</p>
-<p class="startli">TSharedPtr&lt;SCefView&gt; MyWebView;</p>
-<p class="startli">// In your .cpp file, inside a method like SNew SNew(SCefView) .Url(TEXT("https://www.google.com")) .OnLoadStart(this, &amp;SMyWidget::HandleLoadStart) .OnLoadEnd(this, &amp;SMyWidget::HandleLoadEnd) ```</p>
-</li>
+<li>Bind events such as <code><a class="el" href="class_s_cef_view.html#a800c3c161b729d76db8fce7cbb592b6d" title="On load start event.">SCefView::OnLoadStart</a></code>, <code><a class="el" href="class_s_cef_view.html#a4bf64b268746a15188ddb2ecedaa7e03" title="On load end event.">SCefView::OnLoadEnd</a></code>, and <code><a class="el" href="class_s_cef_view.html#a9e683fe2fb2b960b6aa8a921c3b235b9" title="On console message event.">SCefView::OnConsoleMessage</a></code> to handle WebView events in your C++ code. <div class="fragment"><div class="line"><span class="comment">// In your .h file</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_s_cef_view_8h.html">Slate/SCefView.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line">TSharedPtr&lt;SCefView&gt; MyWebView;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// In your .cpp file, inside a method like SNew</span></div>
+<div class="line">SNew(<a class="code hl_class" href="class_s_cef_view.html">SCefView</a>)</div>
+<div class="line">    .Url(TEXT(<span class="stringliteral">&quot;https://www.google.com&quot;</span>))</div>
+<div class="line">    .OnLoadStart(<span class="keyword">this</span>, &amp;SMyWidget::HandleLoadStart)</div>
+<div class="line">    .OnLoadEnd(<span class="keyword">this</span>, &amp;SMyWidget::HandleLoadEnd)  </div>
+<div class="ttc" id="a_s_cef_view_8h_html"><div class="ttname"><a href="_s_cef_view_8h.html">SCefView.h</a></div><div class="ttdoc">Declares the SCefView class, a Slate widget that hosts a CEF browser.</div></div>
+<div class="ttc" id="aclass_s_cef_view_html"><div class="ttname"><a href="class_s_cef_view.html">SCefView</a></div><div class="ttdoc">A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.</div><div class="ttdef"><b>Definition</b> SCefView.h:38</div></div>
+</div><!-- fragment --></li>
 </ol>
 <h1><a class="anchor" id="autotoc_md12"></a>
 4. Using UCefView (UMG)</h1>

@@ -1,0 +1,369 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="google-site-verification" content="ZrQwodBTb-yj0Q2Qw4-KxC8HN5x84J9tn1ZrY1zRFrU" />
+    <title>UCefView: FArchiveFileResourceMapping</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,
+            100% {
+                transform: rotate(0)
+            }
+            20%,
+            60% {
+                transform: rotate(-25deg)
+            }
+            40%,
+            80% {
+                transform: rotate(10deg)
+            }
+        }
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+    </style>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <a href="https://github.com/CefView/UCefView" class="github-corner" title="View source on GitHub" target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 250 250" width="40" height="40"
+            style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+    <!-- do not remove this div, it is closed by doxygen! -->
+    <div id="top">
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">
+                                UCefView&#160;<span id="projectnumber">1.0.21</span>
+                                <span>
+                                    <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
+                                    <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
+                                        alt="Fab logo" style="width: 24px; width: 24px;">
+                                </span>
+                            </div>
+                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part -->
+<!-- Generated by Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_f_archive_file_resource_mapping.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_f_archive_file_resource_mapping-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">FArchiveFileResourceMapping</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;CefViewTypes.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a474ac7e111ed3830982f41a885746b61" id="r_a474ac7e111ed3830982f41a885746b61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474ac7e111ed3830982f41a885746b61">operator==</a> (const <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &amp;Other)</td></tr>
+<tr class="memdesc:a474ac7e111ed3830982f41a885746b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects.  <br /></td></tr>
+<tr class="separator:a474ac7e111ed3830982f41a885746b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18caa25da6386048be24ffaf39f8f804" id="r_a18caa25da6386048be24ffaf39f8f804"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18caa25da6386048be24ffaf39f8f804">operator!=</a> (const <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &amp;Other)</td></tr>
+<tr class="memdesc:a18caa25da6386048be24ffaf39f8f804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects.  <br /></td></tr>
+<tr class="separator:a18caa25da6386048be24ffaf39f8f804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae3116f4af3fa7c5dd95eca1d273465bd" id="r_ae3116f4af3fa7c5dd95eca1d273465bd"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3116f4af3fa7c5dd95eca1d273465bd">Url</a></td></tr>
+<tr class="memdesc:ae3116f4af3fa7c5dd95eca1d273465bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target URL to be mapped to.  <br /></td></tr>
+<tr class="separator:ae3116f4af3fa7c5dd95eca1d273465bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ee5bda4788f2b5083ff99287b0eeb4" id="r_ac8ee5bda4788f2b5083ff99287b0eeb4"><td class="memItemLeft" align="right" valign="top">FFilePath&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8ee5bda4788f2b5083ff99287b0eeb4">Path</a></td></tr>
+<tr class="memdesc:ac8ee5bda4788f2b5083ff99287b0eeb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The zip format file containing the resources to be mapped.  <br /></td></tr>
+<tr class="separator:ac8ee5bda4788f2b5083ff99287b0eeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2df90d84a014bbdb76e8f6164a8fff5" id="r_ad2df90d84a014bbdb76e8f6164a8fff5"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2df90d84a014bbdb76e8f6164a8fff5">Password</a></td></tr>
+<tr class="memdesc:ad2df90d84a014bbdb76e8f6164a8fff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The password for accessing the archive file, if required.  <br /></td></tr>
+<tr class="separator:ad2df90d84a014bbdb76e8f6164a8fff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074360edf50340e470b6b8cd6b54cbc4" id="r_a074360edf50340e470b6b8cd6b54cbc4"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a074360edf50340e470b6b8cd6b54cbc4">Priority</a> = 0</td></tr>
+<tr class="memdesc:a074360edf50340e470b6b8cd6b54cbc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The priority of the mapping.  <br /></td></tr>
+<tr class="separator:a074360edf50340e470b6b8cd6b54cbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser. </p>
+<p>This struct allows you to serve web assets from a compressed archive file, making distribution and packaging easier. The browser can access files inside the archive as if they were hosted at the specified Url. </p>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> Mapping;</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#ae3116f4af3fa7c5dd95eca1d273465bd">Url</a> = TEXT(<span class="stringliteral">&quot;http://archive.local/&quot;</span>);</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#ac8ee5bda4788f2b5083ff99287b0eeb4">Path</a>.FilePath = TEXT(<span class="stringliteral">&quot;WebAssets.zip&quot;</span>);</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#ad2df90d84a014bbdb76e8f6164a8fff5">Password</a> = TEXT(<span class="stringliteral">&quot;secret&quot;</span>);</div>
+<div class="line">Mapping.<a class="code hl_variable" href="#a074360edf50340e470b6b8cd6b54cbc4">Priority</a> = 2;</div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a></div><div class="ttdoc">Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:293</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_a074360edf50340e470b6b8cd6b54cbc4"><div class="ttname"><a href="#a074360edf50340e470b6b8cd6b54cbc4">FArchiveFileResourceMapping::Priority</a></div><div class="ttdeci">int32 Priority</div><div class="ttdoc">The priority of the mapping.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:345</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ac8ee5bda4788f2b5083ff99287b0eeb4"><div class="ttname"><a href="#ac8ee5bda4788f2b5083ff99287b0eeb4">FArchiveFileResourceMapping::Path</a></div><div class="ttdeci">FFilePath Path</div><div class="ttdoc">The zip format file containing the resources to be mapped.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:321</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ad2df90d84a014bbdb76e8f6164a8fff5"><div class="ttname"><a href="#ad2df90d84a014bbdb76e8f6164a8fff5">FArchiveFileResourceMapping::Password</a></div><div class="ttdeci">FString Password</div><div class="ttdoc">The password for accessing the archive file, if required.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:333</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ae3116f4af3fa7c5dd95eca1d273465bd"><div class="ttname"><a href="#ae3116f4af3fa7c5dd95eca1d273465bd">FArchiveFileResourceMapping::Url</a></div><div class="ttdeci">FString Url</div><div class="ttdoc">The target URL to be mapped to.</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:307</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a18caa25da6386048be24ffaf39f8f804" name="a18caa25da6386048be24ffaf39f8f804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18caa25da6386048be24ffaf39f8f804">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FArchiveFileResourceMapping::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inequality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Other</td><td>The other mapping to compare with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the mappings are not equal, false otherwise.</dd></dl>
+<p>Returns true if any of the Url, Path, Password, or Priority fields differ. </p>
+
+</div>
+</div>
+<a id="a474ac7e111ed3830982f41a885746b61" name="a474ac7e111ed3830982f41a885746b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474ac7e111ed3830982f41a885746b61">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FArchiveFileResourceMapping::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Equality operator for comparing two <a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a> objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Other</td><td>The other mapping to compare with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the mappings are equal, false otherwise.</dd></dl>
+<p>Two mappings are considered equal if their Url, Path, Password, and Priority are all identical. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad2df90d84a014bbdb76e8f6164a8fff5" name="ad2df90d84a014bbdb76e8f6164a8fff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2df90d84a014bbdb76e8f6164a8fff5">&#9670;&#160;</a></span>Password</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FString FArchiveFileResourceMapping::Password</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The password for accessing the archive file, if required. </p>
+<p>Leave empty if the archive is not password-protected. </p>
+
+</div>
+</div>
+<a id="ac8ee5bda4788f2b5083ff99287b0eeb4" name="ac8ee5bda4788f2b5083ff99287b0eeb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ee5bda4788f2b5083ff99287b0eeb4">&#9670;&#160;</a></span>Path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FFilePath FArchiveFileResourceMapping::Path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The zip format file containing the resources to be mapped. </p>
+<p>The path value must be relative to the game directory (e.g., "WebAssets.zip"). Only zip archives are supported. </p>
+
+</div>
+</div>
+<a id="a074360edf50340e470b6b8cd6b54cbc4" name="a074360edf50340e470b6b8cd6b54cbc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074360edf50340e470b6b8cd6b54cbc4">&#9670;&#160;</a></span>Priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32 FArchiveFileResourceMapping::Priority = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The priority of the mapping. </p>
+<p>Higher priority mappings take precedence when multiple mappings overlap. </p>
+
+</div>
+</div>
+<a id="ae3116f4af3fa7c5dd95eca1d273465bd" name="ae3116f4af3fa7c5dd95eca1d273465bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3116f4af3fa7c5dd95eca1d273465bd">&#9670;&#160;</a></span>Url</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FString FArchiveFileResourceMapping::Url</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The target URL to be mapped to. </p>
+<p>This is the virtual URL that the browser will use to access resources from the specified archive file. Example: "http://archive.local/" </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

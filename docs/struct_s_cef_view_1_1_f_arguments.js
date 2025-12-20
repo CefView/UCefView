@@ -4,7 +4,6 @@ var struct_s_cef_view_1_1_f_arguments =
     [ "bAcceptDrops", "struct_s_cef_view_1_1_f_arguments.html#a02272151443c0ba62c04cf77b7b51dc1", null ],
     [ "bAllowDrag", "struct_s_cef_view_1_1_f_arguments.html#a9dc3733884ef3cefd2feeb76f66239f8", null ],
     [ "bEnableContextMenu", "struct_s_cef_view_1_1_f_arguments.html#aa0db5d1e219802b202624ce8aea096e4", null ],
-    [ "FrameRate", "struct_s_cef_view_1_1_f_arguments.html#abcfff9ca32abed87570059c5798d1f90", null ],
     [ "OnAddressChanged", "struct_s_cef_view_1_1_f_arguments.html#a75f56024832765dcf2a7e416d9794a7c", null ],
     [ "OnConsoleMessage", "struct_s_cef_view_1_1_f_arguments.html#a5cd060fe60a474a45f812dff119bb03b", null ],
     [ "OnCreateNewBrowser", "struct_s_cef_view_1_1_f_arguments.html#adfe9699ca38d3e7ba4243eea3d4738e4", null ],

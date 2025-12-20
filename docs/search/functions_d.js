@@ -7,13 +7,12 @@ var searchData=
   ['setdisablepopupcontextmenu_4',['SetDisablePopupContextMenu',['../class_s_cef_view.html#abd110fa69812e326493af104f46d3471',1,'SCefView::SetDisablePopupContextMenu()'],['../class_u_cef_view.html#a09763f295904f70f44f11b32bf8d60ff',1,'UCefView::SetDisablePopupContextMenu()']]],
   ['setenablecontextmenu_5',['SetEnableContextMenu',['../class_s_cef_view.html#a7f612421aebd441056df0a13cb5785db',1,'SCefView']]],
   ['setenabledraganddrop_6',['SetEnableDragAndDrop',['../class_u_cef_view.html#aacb52b0c7df8fec6329786781604e3f2',1,'UCefView']]],
-  ['setframerate_7',['SetFrameRate',['../class_s_cef_view.html#acd8394bc7b311c52bab7ca7534a3f677',1,'SCefView']]],
-  ['setidandrequest_8',['SetIdAndRequest',['../class_u_cef_view_query.html#a83ad58b888ead9b1006cdf7210d17a2c',1,'UCefViewQuery']]],
-  ['setpreference_9',['SetPreference',['../class_s_cef_view.html#a6f4582a38fde75fa749129d1d0df6035',1,'SCefView::SetPreference()'],['../class_u_cef_view.html#a123cd6e7ceb28b3b068d4bd566f3a7e5',1,'UCefView::SetPreference()']]],
-  ['seturl_10',['SetUrl',['../class_s_cef_view.html#a9510be89b2f94fc80d529be237eab89b',1,'SCefView']]],
-  ['setvisibility_11',['SetVisibility',['../class_s_cef_view.html#a5a294f46100a9560d509a27cbd66f734',1,'SCefView']]],
-  ['showdevtools_12',['ShowDevTools',['../class_s_cef_view.html#a4a12afe20a3ec422ea9ebfdfc9a0ff93',1,'SCefView::ShowDevTools()'],['../class_u_cef_view.html#a792de3dfdf4b1164ff26c9e123ac2392',1,'UCefView::ShowDevTools()']]],
-  ['shutdown_13',['Shutdown',['../class_f_slate_cef_context.html#a362d11c2afe2451453bb803558d04ecc',1,'FSlateCefContext']]],
-  ['supportskeyboardfocus_14',['SupportsKeyboardFocus',['../class_s_cef_view.html#a1d3c6af4f0a9f668d068508af7c97bb0',1,'SCefView']]],
-  ['synchronizeproperties_15',['SynchronizeProperties',['../class_u_cef_view.html#a2d954e8b86e8bb1402b77cbeb36a44a8',1,'UCefView']]]
+  ['setidandrequest_7',['SetIdAndRequest',['../class_u_cef_view_query.html#a83ad58b888ead9b1006cdf7210d17a2c',1,'UCefViewQuery']]],
+  ['setpreference_8',['SetPreference',['../class_s_cef_view.html#a6f4582a38fde75fa749129d1d0df6035',1,'SCefView::SetPreference()'],['../class_u_cef_view.html#a123cd6e7ceb28b3b068d4bd566f3a7e5',1,'UCefView::SetPreference()']]],
+  ['seturl_9',['SetUrl',['../class_s_cef_view.html#a9510be89b2f94fc80d529be237eab89b',1,'SCefView']]],
+  ['setvisibility_10',['SetVisibility',['../class_s_cef_view.html#a5a294f46100a9560d509a27cbd66f734',1,'SCefView']]],
+  ['showdevtools_11',['ShowDevTools',['../class_s_cef_view.html#a4a12afe20a3ec422ea9ebfdfc9a0ff93',1,'SCefView::ShowDevTools()'],['../class_u_cef_view.html#a792de3dfdf4b1164ff26c9e123ac2392',1,'UCefView::ShowDevTools()']]],
+  ['shutdown_12',['Shutdown',['../class_f_slate_cef_context.html#a362d11c2afe2451453bb803558d04ecc',1,'FSlateCefContext']]],
+  ['supportskeyboardfocus_13',['SupportsKeyboardFocus',['../class_s_cef_view.html#a1d3c6af4f0a9f668d068508af7c97bb0',1,'SCefView']]],
+  ['synchronizeproperties_14',['SynchronizeProperties',['../class_u_cef_view.html#a2d954e8b86e8bb1402b77cbeb36a44a8',1,'UCefView']]]
 ];
