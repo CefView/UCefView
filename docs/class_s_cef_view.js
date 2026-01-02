@@ -46,7 +46,6 @@ var class_s_cef_view =
     [ "IsBrowserLoading", "class_s_cef_view.html#a3fe20ee38b505c7ac60afedddbd7dab1", null ],
     [ "IsContextMenuEnabled", "class_s_cef_view.html#a5f6cf44478582856dfdc47deb0ebc012", null ],
     [ "IsPopupContextMenuDisabled", "class_s_cef_view.html#ab1ea15acc1a8bd31a550004a5fa947e1", null ],
-    [ "NavigateToUrl", "class_s_cef_view.html#a6a0ec5927ec6fb689ea4e4c9ba57754c", null ],
     [ "OnArrangeChildren", "class_s_cef_view.html#a3130b85450f665a3f45e9ab8d193909c", null ],
     [ "OnDragDetected", "class_s_cef_view.html#a73b0f08f9c35ced56a4f97e8326d19cb", null ],
     [ "OnDragEnter", "class_s_cef_view.html#ad4753cb8b548e1251d8c850f64a91f75", null ],
