@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -213,11 +213,11 @@ $(function(){initNavTree('ucefview_interoperability.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 提供原生 Unreal Engine 环境（C++/Blueprint）与 Web 环境（JavaScript）之间的互操作能力。你可以从 C++ 调用 JavaScript，也可以从 JavaScript 调用 C++/Blueprint，从而构建混合式应用。</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 UCefViewBridge 对象</h2>
 <p>为了实现通信，UCefView 会自动向 Web 页面注入一个 bridge 对象到 <span class="tt">window</span> 上。网页可以通过它与 Unreal 应用交互。</p>
-<p>该对象名称可在项目的 Cef Settings 中通过 <span class="tt">BridgeObjectName</span> 配置，默认名称为 <span class="tt">UCefViewBridge</span>。</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+<p>该对象名称可在项目的 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings 中通过 <span class="tt">BridgeObjectName</span> 配置，默认名称为 <span class="tt">UCefViewBridge</span>。</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 UCefViewBridge API</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -229,9 +229,9 @@ UCefViewBridge API</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">invoke(methodName, ...args)</span>  </td><td class="markdownTableBodyNone">使用指定方法名和参数调用原生 C++/Blueprint 处理器。  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 C++ 到 JavaScript</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
 直接执行 JavaScript</h3>
 <p>你可以从 C++ 在 WebView 上下文中执行任意 JavaScript 代码。</p>
 <div class="fragment"><div class="line"><span class="comment">// Assume you have a pointer to a UCefView widget</span></div>
@@ -251,7 +251,7 @@ C++ 到 JavaScript</h2>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#aaf4befed513c397d292455f6484094d5" title="Executes JavaScript code in a specific frame.">SCefView::ExecuteJavascript</a></span></li>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#abca004abb34f06115d7392c7c770fae2" title="Executes JavaScript code in a specific frame and returns the result.">SCefView::ExecuteJavascriptWithResult</a></span></li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
 触发事件</h3>
 <p>你可以在 JavaScript 中注册事件，然后从 C++ 或 Blueprint 触发该事件。</p>
 <p><b>在 JavaScript 中注册事件处理器</b></p>
@@ -282,9 +282,9 @@ C++ 到 JavaScript</h2>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#a9bf28c7fc1c3f0d0a14b94674a0c8b5e" title="Triggers a custom event for the main frame in the browser.">SCefView::TriggerEventForMainFrame</a></span></li>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#ad47aec37942530b01cfa76725aa07fb7" title="Broadcasts a custom event to all frames in the browser.">SCefView::BroadcastEvent</a></span></li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
 JavaScript 到 C++</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 UCefViewBridge.invoke</h3>
 <p>你可以从 C++/Blueprint 注册 invoke handler，然后从 JavaScript 调用。</p>
 <p><b>在 C++/Blueprint 中注册 invoke handler</b></p>
@@ -310,10 +310,10 @@ UCefViewBridge.invoke</h3>
 <div class="line"> </div>
 <div class="line">MyUCefView-&gt;<a class="code hl_variable" href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a>.AddDynamic(MyWebClient, &amp;UWebClient::InvokeHandler);</div>
 <div class="ttc" id="aclass_u_cef_view_html_ad34fb47c7fe923fbf826b6d89d52a79e"><div class="ttname"><a href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">UCefView::OnInvokeMethod</a></div><div class="ttdeci">FOnInvokeMethodEvent OnInvokeMethod</div><div class="ttdoc">Event triggered when a method is invoked from web content (JavaScript) via the bridge object....</div><div class="ttdef"><b>定义</b> CefView.h:646</div></div>
-<div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...</div><div class="ttdef"><b>定义</b> CefViewTypes.h:45</div></div>
+<div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...</div><div class="ttdef"><b>定义</b> CefViewTypes.h:36</div></div>
 </div><!-- fragment --><p><b>从 JavaScript 调用原生 handler</b></p>
 <div class="fragment"><div class="line">window.UCefViewBridge.invoke(&quot;HelloNative&quot;, 1, &quot;2&quot;, true);</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
 window.cefViewQuery(query)</h3>
 <p>你可以注册 CefViewQuery handler 来处理 JavaScript 发起的请求，并返回响应。</p>
 <p><b>在 C++/Blueprint 中注册 CefViewQuery handler</b></p>

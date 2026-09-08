@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['运行更新脚本_0',['3. 运行更新脚本',['../ucefview_change_cef_version.html#autotoc_md37',1,'']]]
+  ['直接执行_20javascript_0',['直接执行 JavaScript',['../ucefview_interoperability.html#autotoc_md24',1,'']]]
 ];

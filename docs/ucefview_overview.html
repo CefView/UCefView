@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.16.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="description" content="GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
     <meta name="google-site-verification" content="1Cc6um0RQMBPsodrdQSNSHdgO6_TDw5SSwudaPqYzo0" />
     <title>UCefView: Overview</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -103,14 +103,14 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
                                         alt="Fab logo" style="width: 24px; width: 24px;">
                                 </span>
                             </div>
-                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                            <div id="projectbrief">GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
                         </td>
                         <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -224,6 +224,8 @@ Key Features</h2>
 <li><b>JavaScript Dialogs:</b> Handles JavaScript dialogs (alerts, confirms, prompts) directly within your Unreal Engine application.</li>
 <li><b>Cross-Platform Compatibility:</b> Supports Windows, macOS, and Linux platforms.</li>
 <li><b>Customizable Settings:</b> Fine-tune the behavior of the WebView with a comprehensive set of settings.</li>
+<li><b>Editor SDK Management:</b> Download compatible XCef/CEF variants, select one per project, and restart to load it from the shared installation. Editor and Live Coding builds do not copy SDK files.</li>
+<li><b>Self-contained Game Runtime:</b> Game packaging includes the selected runtime as loose files; players do not need the Editor SDK manager or a shared SDK installation.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 Why UCefView?</h2>
@@ -232,7 +234,7 @@ Why UCefView?</h2>
 <li><b>Performance:</b> Hardware-accelerated rendering and efficient threading model provide smooth and responsive performance.</li>
 <li><b>Flexibility:</b> Supports both Slate and UMG, allowing you to integrate WebViews into any type of Unreal Engine UI.</li>
 <li><b>Ease of Use:</b> Simple and intuitive API for loading URLs, executing JavaScript, and handling events.</li>
-<li><b>Extensibility:</b> <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> is designed to be extensible, allowing you to add custom features and functionality as needed and you can choose the CEF version you want to use easily.</li>
+<li><b>Extensibility:</b> Add custom features through the Unreal API and choose among CEF variants compatible with the plugin's fixed XCef API version.</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 Example Use Cases</h2>

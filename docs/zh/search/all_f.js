@@ -1,6 +1,16 @@
 var searchData=
 [
-  ['javascript_0',['JavaScript',['../ucefview_interoperability.html#autotoc_md23',1,'直接执行 JavaScript'],['../ucefview_interoperability.html#autotoc_md22',1,'C++ 到 JavaScript']]],
-  ['javascript_1',['Javascript',['../struct_f_slate_cef_view_settings.html#a0c785b609e50410df2e5e1ffb5a7955f',1,'FSlateCefViewSettings::Javascript'],['../struct_f_cef_view_settings.html#ab88a36a4dd792141d19e3dfbbec007e2',1,'FCefViewSettings::Javascript']]],
-  ['javascript_20到_20c_2',['JavaScript 到 C++',['../ucefview_interoperability.html#autotoc_md25',1,'']]]
+  ['ignoreaction_0',['IgnoreAction',['../_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2edafffdd439dd20ad1a3fda9b8a0d3d5de2',1,'CefViewTypes.h']]],
+  ['imageloading_1',['ImageLoading',['../struct_f_slate_cef_view_settings.html#ab9174db61c0c34c48ae8fb5b0ae845dc',1,'FSlateCefViewSettings::ImageLoading'],['../struct_f_cef_view_settings.html#ad59cdd2e04438d83347816cb5ece928b',1,'FCefViewSettings::ImageLoading']]],
+  ['imageshrinkstandalonetofit_2',['ImageShrinkStandaloneToFit',['../struct_f_slate_cef_view_settings.html#aa1eee3474f601e2680a9fef992a0f800',1,'FSlateCefViewSettings::ImageShrinkStandaloneToFit'],['../struct_f_cef_view_settings.html#a7c469ad47cacd7a3898df1769ed3a2d6',1,'FCefViewSettings::ImageShrinkStandaloneToFit']]],
+  ['info_3',['Info',['../_cef_settings_8h.html#a4c27b1d793d4fa4f189c3edd2c0878e5a4059b0251f66a18cb56f544728796875',1,'Info:&#160;CefSettings.h'],['../_slate_cef_settings_8h.html#a4db44130438b331b2d036d5c55a4546ea4059b0251f66a18cb56f544728796875',1,'Info:&#160;SlateCefSettings.h']]],
+  ['initialize_4',['Initialize',['../class_u_cef_context.html#a7c68ab4f57531c03d27bf4d739bf0ef2',1,'UCefContext']]],
+  ['invoke_5',['UCefViewBridge.invoke',['../ucefview_interoperability.html#autotoc_md27',1,'']]],
+  ['isacceptdrops_6',['IsAcceptDrops',['../class_s_cef_view.html#a1b7120751f659f119dc8d7504ce01b03',1,'SCefView']]],
+  ['isallowdrag_7',['IsAllowDrag',['../class_s_cef_view.html#a4f74734bf09354bbf28625f3293c3a7d',1,'SCefView']]],
+  ['isbrowserloading_8',['IsBrowserLoading',['../class_s_cef_view.html#a3fe20ee38b505c7ac60afedddbd7dab1',1,'SCefView::IsBrowserLoading()'],['../class_u_cef_view.html#a7fed336bcb29c0e7d3d23f388340e772',1,'UCefView::IsBrowserLoading()']]],
+  ['iscontextmenuenabled_9',['IsContextMenuEnabled',['../class_s_cef_view.html#a5f6cf44478582856dfdc47deb0ebc012',1,'SCefView']]],
+  ['isinitialized_10',['IsInitialized',['../class_f_slate_cef_context.html#abe3ee66766f18fa03a11e1828d306d11',1,'FSlateCefContext']]],
+  ['issuccess_11',['IsSuccess',['../class_u_cef_view_query.html#aa89a757ecbf991d1472334fb4d2a19f4',1,'UCefViewQuery']]],
+  ['istransparentinputpassthroughenabled_12',['IsTransparentInputPassthroughEnabled',['../class_s_cef_view.html#ae8c0daaaaaecbafa09942418a52f7b08',1,'SCefView']]]
 ];

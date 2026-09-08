@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['name_0',['Name',['../class_u_cef_view_event.html#aa992130b4715c6039849b7917675d565',1,'UCefViewEvent']]],
-  ['navigatetourl_1',['NavigateToUrl',['../class_u_cef_view.html#ac4188f0bdb5b6a66b59886946282488d',1,'UCefView']]],
-  ['newbackgroundtab_2',['NewBackgroundTab',['../_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2eda77f215a8283b40960a8fe2dc51589374',1,'CefViewTypes.h']]],
-  ['newforegroundtab_3',['NewForeGroundTab',['../_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2edade2fb031840d04e0a66d8dc19e006075',1,'CefViewTypes.h']]],
-  ['newpopup_4',['NewPopup',['../_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2eda41018e79e935a778dcbb49e78001baa5',1,'CefViewTypes.h']]],
-  ['newwindow_5',['NewWindow',['../_cef_view_types_8h.html#a45da43aebe00c3d3592b2ef4f10eb2edabdc9ec125e7a3ade37130f80c1c59893',1,'CefViewTypes.h']]],
-  ['notes_6',['Implementation Notes',['../ucefview_input_passthrough.html#autotoc_md33',1,'']]]
+  ['mainframeid_0',['MainFrameID',['../class_s_cef_view.html#a86f0cfa39157a778d3a5ce64d7d613ee',1,'SCefView::MainFrameID'],['../class_u_cef_view.html#a930f8c1710af58d7691eddc9013acc8e',1,'UCefView::MainFrameID']]],
+  ['make_20the_20web_20page_20transparent_1',['Make the Web Page Transparent',['../ucefview_input_passthrough.html#autotoc_md32',1,'']]],
+  ['management_2',['XCef SDK Management',['../ucefview_update_xcef.html',1,'']]],
+  ['mapping_3',['Mapping',['../ucefview_resource_mapping.html#autotoc_md15',1,'Archive File Mapping'],['../ucefview_resource_mapping.html#autotoc_md13',1,'Global vs. Per-Instance Mapping'],['../ucefview_resource_mapping.html#autotoc_md16',1,'Local Folder Mapping'],['../ucefview_resource_mapping.html',1,'Resource Mapping']]],
+  ['mapping_20types_4',['Mapping Types',['../ucefview_resource_mapping.html#autotoc_md14',1,'']]],
+  ['materials_5',['Materials',['../ucefview_technical_details.html#autotoc_md51',1,'']]],
+  ['minimumfontsize_6',['MinimumFontSize',['../struct_f_slate_cef_view_settings.html#ae5ada0d058a6246ba79143c2ebe88011',1,'FSlateCefViewSettings::MinimumFontSize'],['../struct_f_cef_view_settings.html#aa9b40637d787cd989ca4e26fe05ce45b',1,'FCefViewSettings::MinimumFontSize']]],
+  ['minimumlogicalfontsize_7',['MinimumLogicalFontSize',['../struct_f_slate_cef_view_settings.html#aad3a09f4a2cfbcfe1848b09490e12379',1,'FSlateCefViewSettings::MinimumLogicalFontSize'],['../struct_f_cef_view_settings.html#a6388b5ab68466996da058acc2ea85564',1,'FCefViewSettings::MinimumLogicalFontSize']]],
+  ['modules_8',['Modules',['../ucefview_technical_details.html#autotoc_md45',1,'']]]
 ];

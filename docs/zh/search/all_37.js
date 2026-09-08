@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['直接执行_20javascript_0',['直接执行 JavaScript',['../ucefview_interoperability.html#autotoc_md23',1,'']]]
+  ['更新插件支持的_20xcef_20api_20版本_0',['更新插件支持的 XCef API 版本',['../ucefview_update_xcef.html#autotoc_md40',1,'']]]
 ];

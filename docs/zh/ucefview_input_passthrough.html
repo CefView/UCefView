@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -215,9 +215,9 @@ $(function(){initNavTree('ucefview_input_passthrough.html','',''); });
 <div class="textblock"><p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 支持像素级透明输入穿透。启用后，WebView 只会在可见的浏览器像素上消费指针输入。鼠标、触摸、滚轮和拖拽事件如果落在透明像素上，会以 unhandled 的形式返回给 Unreal，使 WebView 后方的 widget 仍能交互。</p>
 <p>这适合 HUD、菜单和混合 UI：HTML/CSS 可以覆盖在原生 UMG 或 Slate widget 上方。例如，一个浮动 Web 菜单可以在按钮区域消费点击，而透明区域则把点击传给底层 Unreal UI。</p>
 <dl class="section warning"><dt>警告</dt><dd>像素级透明输入穿透只要启用就一定会产生性能开销，即使网页本身没有任何透明区域或透明像素。UCefView 仍需要从渲染后的浏览器纹理维护 alpha mask，因此只应在确实需要像素级输入穿透的 view 上启用。</dd></dl>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
 启用功能</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
 UMG</h3>
 <p>在 UMG 编辑器中选择 <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> widget，并启用：</p>
 <ul>
@@ -227,7 +227,7 @@ UMG</h3>
 <ul>
 <li><span class="tt"><a class="el" href="class_u_cef_view.html#af924b25690927e3dcd9c583a5af89e24" title="Enables or disables input passthrough for transparent rendered pixels.">UCefView::SetEnableTransparentInputPassthrough</a></span></li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
 Slate</h3>
 <p>构造 <span class="tt"><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></span> 时传入参数：</p>
 <div class="fragment"><div class="line">SNew(<a class="code hl_class" href="class_s_cef_view.html">SCefView</a>)</div>
@@ -236,7 +236,7 @@ Slate</h3>
 <div class="ttc" id="aclass_s_cef_view_html"><div class="ttname"><a href="class_s_cef_view.html">SCefView</a></div><div class="ttdoc">A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.</div><div class="ttdef"><b>定义</b> SCefView.h:42</div></div>
 </div><!-- fragment --><p>或者运行时修改：</p>
 <div class="fragment"><div class="line">MyCefView-&gt;SetEnableTransparentInputPassthrough(<span class="keyword">true</span>);</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
 让网页真正透明</h2>
 <p>透明输入穿透依赖最终渲染结果中的 alpha 值。网页和 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 背景都必须真正透明。</p>
 <p>对于 HTML 内容，确保页面背景没有填满整个浏览器：</p>
@@ -245,7 +245,7 @@ Slate</h3>
 <div class="line">    background: transparent;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>对于 UCefView，需要保持配置的背景 alpha 为 <span class="tt">0</span>。如果 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 背景是不透明的，整个 view 都会被视为可见，输入不会穿透。</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
 命中测试规则</h2>
 <p>启用透明穿透后，Slate widget 会在处理输入前检查本地指针位置。检查顺序遵循可见层级：</p>
 <ol type="1">
@@ -255,11 +255,11 @@ Slate</h3>
 <li>如果 CEF popup 可见，则在主 frame 之上采样 popup alpha mask。不透明 popup 像素消费输入。</li>
 <li>如果没有任何可见浏览器像素占用该位置，事件会作为 unhandled 返回给 Unreal，后方 widget 可以接收它。</li>
 </ol>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md33"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
 实现说明</h2>
 <p>Alpha mask 由 <span class="tt">FCefSlateTexture</span> 维护。它使用双缓冲 <span class="tt">TBitArray&lt;&gt;</span> 存储，只有新的 readback 完成后才会切换当前使用的 mask。无论底层来自 pixel buffer 还是 shared texture，只要转换成 Unreal <span class="tt">UETexture2DRHIRef</span>，都会走同一套采样路径。</p>
 <p>由于 mask 来自渲染后的纹理，该功能反映的是最终浏览器 alpha 输出，而不是 DOM hit testing。代价是 texture readback 会有成本，因此应只在需要像素级穿透行为的 view 上启用。</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md34"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md35"></a>
 常见问题</h2>
 <ul>
 <li>如果所有点击仍被 WebView 消费，检查网页或 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 背景是否不透明。</li>

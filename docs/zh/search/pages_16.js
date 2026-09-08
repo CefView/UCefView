@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['到_20c_0',['JavaScript 到 C++',['../ucefview_interoperability.html#autotoc_md25',1,'']]],
-  ['到_20javascript_1',['C++ 到 JavaScript',['../ucefview_interoperability.html#autotoc_md22',1,'']]]
+  ['为什么选择_20ucefview？_0',['为什么选择 UCefView？',['../ucefview_overview.html#autotoc_md4',1,'']]]
 ];

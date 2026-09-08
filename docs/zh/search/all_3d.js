@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['输入穿透_0',['输入穿透',['../ucefview_input_passthrough.html',1,'']]]
+  ['版本_0',['更新插件支持的 XCef API 版本',['../ucefview_update_xcef.html#autotoc_md40',1,'']]]
 ];

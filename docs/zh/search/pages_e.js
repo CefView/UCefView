@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['scefview_20slate_0',['3. 使用 SCefView (Slate)',['../ucefview_getting_started.html#autotoc_md9',1,'']]],
-  ['slate_1',['Slate',['../ucefview_getting_started.html#autotoc_md9',1,'3. 使用 SCefView (Slate)'],['../ucefview_input_passthrough.html#autotoc_md30',1,'Slate']]]
+  ['local_20folder_20mapping_0',['Local Folder Mapping',['../ucefview_resource_mapping.html#autotoc_md16',1,'']]]
 ];

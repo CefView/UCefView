@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -224,6 +224,8 @@ $(function(){initNavTree('ucefview_overview.html','',''); });
 <li><b>JavaScript Dialog 支持：</b> 在 Unreal 应用中处理 alert、confirm、prompt 等 JavaScript 弹窗。</li>
 <li><b>跨平台：</b> 支持 Windows、macOS 和 Linux。</li>
 <li><b>可配置：</b> 通过完整的设置项调整 WebView 行为。</li>
+<li><b>Editor SDK 管理：</b> 下载兼容的 XCef/CEF 变体，为项目选择 SDK，重启后从共享安装加载。Editor 和 Live Coding 构建不复制 SDK 文件。</li>
+<li><b>游戏自带运行文件：</b> 打包时携带所选运行库，玩家无需安装 Editor SDK 管理器或共享 SDK。</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 为什么选择 UCefView？</h2>
@@ -232,7 +234,7 @@ $(function(){initNavTree('ucefview_overview.html','',''); });
 <li><b>性能：</b> 硬件加速渲染与合理的线程模型带来流畅、响应迅速的体验。</li>
 <li><b>灵活性：</b> 同时支持 Slate 与 UMG，适合不同类型的 Unreal UI。</li>
 <li><b>易用性：</b> 提供简单直观的 API，用于加载 URL、执行 JavaScript 和处理事件。</li>
-<li><b>可扩展性：</b> <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 设计上易于扩展，也可以按项目需要选择合适的 CEF 版本。</li>
+<li><b>可扩展性：</b> 通过 Unreal API 扩展功能，并从兼容插件固定 XCef API 版本的 CEF 变体中选择适合项目的版本。</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 示例场景</h2>

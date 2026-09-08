@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['web_20page_20transparent_0',['Make the Web Page Transparent',['../ucefview_input_passthrough.html#autotoc_md31',1,'']]],
-  ['why_20ucefview_1',['Why UCefView?',['../ucefview_overview.html#autotoc_md4',1,'']]],
-  ['widgets_2',['Widgets',['../ucefview_technical_details.html#autotoc_md46',1,'']]],
-  ['window_20cefviewquery_20query_3',['window.cefViewQuery(query)',['../ucefview_interoperability.html#autotoc_md27',1,'']]]
+  ['verification_0',['Verification',['../ucefview_update_xcef.html#autotoc_md43',1,'']]],
+  ['version_1',['Updating the plugin&apos;s XCef API version',['../ucefview_update_xcef.html#autotoc_md40',1,'']]],
+  ['vs_20per_20instance_20mapping_2',['Global vs. Per-Instance Mapping',['../ucefview_resource_mapping.html#autotoc_md13',1,'']]]
 ];

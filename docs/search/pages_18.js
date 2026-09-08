@@ -1,17 +1,15 @@
 var searchData=
 [
-  ['technical_20details_0',['Technical Details',['../ucefview_technical_details.html',1,'']]],
-  ['test_20rules_1',['Hit-Test Rules',['../ucefview_input_passthrough.html#autotoc_md32',1,'']]],
-  ['the_20feature_2',['Enable the Feature',['../ucefview_input_passthrough.html#autotoc_md28',1,'']]],
-  ['the_20script_20configuration_20file_3',['2. Update the Script Configuration File',['../ucefview_change_cef_version.html#autotoc_md36',1,'']]],
-  ['the_20ucefviewbridge_20object_4',['The UCefViewBridge Object',['../ucefview_interoperability.html#autotoc_md20',1,'']]],
-  ['the_20update_5',['4. Verify the Update',['../ucefview_change_cef_version.html#autotoc_md40',1,'']]],
-  ['the_20update_20script_6',['3. Run the Update Script',['../ucefview_change_cef_version.html#autotoc_md37',1,'']]],
-  ['the_20web_20page_20transparent_7',['Make the Web Page Transparent',['../ucefview_input_passthrough.html#autotoc_md31',1,'']]],
-  ['to_20javascript_8',['C++ to JavaScript',['../ucefview_interoperability.html#autotoc_md22',1,'']]],
-  ['to_20use_9',['How to Use',['../ucefview_resource_mapping.html#autotoc_md16',1,'']]],
-  ['transparent_10',['Make the Web Page Transparent',['../ucefview_input_passthrough.html#autotoc_md31',1,'']]],
-  ['triggering_11',['Event Triggering',['../ucefview_interoperability.html#autotoc_md24',1,'']]],
-  ['troubleshooting_12',['5. Troubleshooting',['../ucefview_change_cef_version.html#autotoc_md41',1,'']]],
-  ['types_13',['Mapping Types',['../ucefview_resource_mapping.html#autotoc_md13',1,'']]]
+  ['s_20xcef_20api_20version_0',['Updating the plugin&apos;s XCef API version',['../ucefview_update_xcef.html#autotoc_md40',1,'']]],
+  ['scefview_20slate_1',['3. Using SCefView (Slate)',['../ucefview_getting_started.html#autotoc_md9',1,'']]],
+  ['sdk_2',['Install and select an SDK',['../ucefview_update_xcef.html#autotoc_md36',1,'']]],
+  ['sdk_20management_3',['XCef SDK Management',['../ucefview_update_xcef.html',1,'']]],
+  ['sdks_4',['Runtime SDKs',['../ucefview_update_xcef.html#autotoc_md42',1,'']]],
+  ['select_20an_20sdk_5',['Install and select an SDK',['../ucefview_update_xcef.html#autotoc_md36',1,'']]],
+  ['selection_6',['Shared installation and project selection',['../ucefview_update_xcef.html#autotoc_md37',1,'']]],
+  ['settings_7',['2. Configuration Project Settings',['../ucefview_getting_started.html#autotoc_md8',1,'']]],
+  ['shared_20installation_20and_20project_20selection_8',['Shared installation and project selection',['../ucefview_update_xcef.html#autotoc_md37',1,'']]],
+  ['slate_9',['Slate',['../ucefview_getting_started.html#autotoc_md9',1,'3. Using SCefView (Slate)'],['../ucefview_input_passthrough.html#autotoc_md31',1,'Slate']]],
+  ['started_10',['Getting Started',['../ucefview_getting_started.html',1,'']]],
+  ['support_20and_20documentation_11',['Support and Documentation',['../ucefview_overview.html#autotoc_md6',1,'']]]
 ];

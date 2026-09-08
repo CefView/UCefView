@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['对象_0',['UCefViewBridge 对象',['../ucefview_interoperability.html#autotoc_md20',1,'']]]
+  ['参考_0',['API 参考',['../ucefview_resource_mapping.html#autotoc_md20',1,'']]]
 ];

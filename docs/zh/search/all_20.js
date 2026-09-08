@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['全局映射与实例映射_0',['全局映射与实例映射',['../ucefview_resource_mapping.html#autotoc_md12',1,'']]]
+  ['为什么选择_20ucefview？_0',['为什么选择 UCefView？',['../ucefview_overview.html#autotoc_md4',1,'']]]
 ];

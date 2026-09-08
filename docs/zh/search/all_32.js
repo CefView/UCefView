@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['核心特性_0',['核心特性',['../ucefview_overview.html#autotoc_md3',1,'']]]
+  ['快速开始_0',['快速开始',['../ucefview_getting_started.html',1,'']]]
 ];

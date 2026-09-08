@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['类_0',['关键 C++ 类',['../ucefview_technical_details.html#autotoc_md44',1,'']]]
+  ['核心特性_0',['核心特性',['../ucefview_overview.html#autotoc_md3',1,'']]]
 ];

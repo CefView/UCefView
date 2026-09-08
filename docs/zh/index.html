@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -216,6 +216,8 @@ $(function(){initNavTree('index.html','',''); });
 <p><b>Unreal Engine 高性能 WebView 插件</b></p>
 <p><a href="https://fab.com/s/ec232806c889">从 FAB 获取</a> | <a href="https://github.com/CefView/UCefViewPlayGroud">GitHub 示例工程</a></p>
 <p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 将 Chromium Embedded Framework (CEF) 集成到 Unreal Engine 中，提供稳定、高性能的 WebView 组件。它支持 Slate (<span class="tt"><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></span>) 和 UMG (<span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span>) 两种使用方式，提供硬件加速渲染、跨平台集成能力以及灵活的 JavaScript 互操作桥接。</p>
+<p>XCef SDK 与插件分开安装。在 <b>Project Settings &gt; Engine &gt; <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings &gt; XCef SDK</b> 安装并选择兼容包，重启 Editor 即可加载。Editor 和 PIE 复用用户共享安装，Live Coding 不复制 SDK；打包游戏自带目标运行文件。详见 <a class="el" href="ucefview_getting_started.html" title="快速开始">快速开始</a> 和 <a class="el" href="ucefview_update_xcef.html" title="XCef SDK 管理">XCef SDK 管理</a> 。</p>
+<p>CEF 在独立的 XCefHost 中运行，可以与引擎内置 Web Browser 共存。当前 SDK 集成支持 Windows x64、macOS x86_64/arm64 和 Linux x64。</p>
 <ul>
 <li>支持的 Unreal Engine 版本： <br  />
  <table class="markdownTable">
@@ -224,22 +226,17 @@ $(function(){initNavTree('index.html','',''); });
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td></tr>
 </table>
-<dl class="section note"><dt>注解</dt><dd>Unreal <span class="tt">5.7.0</span> 到 <span class="tt">5.7.4</span> 存在一个编辑器问题 <a href="https://github.com/EpicGames/UnrealEngine/pull/14145">[#14145]</a> (UE 5.8已修复)：即使插件配置已关闭，编辑器仍可能强制加载内置 Web Browser。若要在这些版本中使用 UCefView，可以按以下方式处理： <br  />
- 1 在插件管理器中禁用内置 Web Browser： <br  />
- <span class="tt">Plugin Manager &gt; Built-In &gt; UI &gt; Web Browser</span> <br  />
- 2 重命名引擎内置 CEF 目录，避免加载内置 CEF 二进制文件： <br  />
- <span class="tt">UE_5.7\Engine\Binaries\ThirdParty\CEF3</span> -&gt; <span class="tt">UE_5.7\Engine\Binaries\ThirdParty\CEF3-disabled</span></dd></dl>
 </li>
 <li>支持的目标平台与架构： <br  />
  <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">平台  </th><th class="markdownTableHeadNone">架构  </th><th class="markdownTableHeadNone">版本  </th></tr>
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">平台  </th><th class="markdownTableHeadNone">架构  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">x86_64  </td><td class="markdownTableBodyNone">10(1703)+  </td></tr>
+<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">x86_64  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">x86_64 &amp; Arm64  </td><td class="markdownTableBodyNone">13.5+  </td></tr>
+<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">x86_64 &amp; Arm64  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">x86_64 &amp; Arm64  </td><td class="markdownTableBodyNone">4.18+  </td></tr>
+<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">x86_64  </td></tr>
 </table>
 <dl class="section warning"><dt>警告</dt><dd>Linux 平台当前仍处于实验状态，仅在 headless 模式下验证。</dd></dl>
 </li>
@@ -262,11 +259,11 @@ $(function(){initNavTree('index.html','',''); });
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">平台  </th><th class="markdownTableHeadNone">版本  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">与 UE 5.0 要求一致  </td></tr>
+<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">取决于所选 Unreal Engine 和 XCef/CEF SDK  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">与 UE 5.0 要求一致  </td></tr>
+<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">取决于所选 Unreal Engine 和 XCef/CEF SDK  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">与 UE 5.0 要求一致  </td></tr>
+<td class="markdownTableBodyNone">支持  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">取决于所选 Unreal Engine 和 XCef/CEF SDK  </td></tr>
 </table>
 </li>
 </ul>
@@ -285,7 +282,7 @@ $(function(){initNavTree('index.html','',''); });
 <h3 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 使用场景</h3>
 <p><img src="browser-as-actors.png" alt="" class="inline" title="作为 Actor 使用"/>    </p>
-<p><img src="browser-as-UI.png" alt="" class="inline" title="作为菜单 UI 使用"/>    </p>
+<p><img src="browser-as-ui.png" alt="" class="inline" title="作为菜单 UI 使用"/>    </p>
 <p><img src="browser-jsdialog.png" alt="" class="inline" title="Slate JSDialog"/>     </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

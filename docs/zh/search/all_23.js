@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['参考_0',['API 参考',['../ucefview_resource_mapping.html#autotoc_md19',1,'']]]
+  ['全局映射与实例映射_0',['全局映射与实例映射',['../ucefview_resource_mapping.html#autotoc_md13',1,'']]]
 ];

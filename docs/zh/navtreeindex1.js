@@ -208,11 +208,11 @@ var NAVTREEINDEX1 =
 "struct_s_cef_view_1_1_f_arguments.html#adfe9699ca38d3e7ba4243eea3d4738e4":[7,0,7,0,7],
 "struct_s_cef_view_1_1_f_arguments.html#ae6374c3fee59722398e33db308be06b1":[7,0,7,0,23],
 "struct_s_cef_view_1_1_f_arguments.html#af30d10d06ff499b67ed4c0adece28c4d":[7,0,7,0,12],
-"ucefview_change_cef_version.html":[5],
 "ucefview_getting_started.html":[1],
 "ucefview_input_passthrough.html":[4],
 "ucefview_interoperability.html":[3],
 "ucefview_overview.html":[0],
 "ucefview_resource_mapping.html":[2],
-"ucefview_technical_details.html":[6]
+"ucefview_technical_details.html":[6],
+"ucefview_update_xcef.html":[5]
 };

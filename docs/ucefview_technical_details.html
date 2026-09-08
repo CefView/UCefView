@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.16.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="description" content="GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
     <meta name="google-site-verification" content="1Cc6um0RQMBPsodrdQSNSHdgO6_TDw5SSwudaPqYzo0" />
     <title>UCefView: Technical Details</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -103,14 +103,14 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
                                         alt="Fab logo" style="width: 24px; width: 24px;">
                                 </span>
                             </div>
-                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                            <div id="projectbrief">GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
                         </td>
                         <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -213,15 +213,15 @@ $(function(){initNavTree('ucefview_technical_details.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>This document provides a technical breakdown of the <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> plugin's architecture, modules, and key components.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
 Architecture</h2>
 <p>The plugin is built upon a layered architecture to ensure modularity and ease of maintenance:</p>
 <ol type="1">
-<li><b>Chromium Embedded Framework (CEF)</b>: The core of the plugin. CEF is an open-source framework for embedding a Chromium-based browser within another application.</li>
-<li><b>CefViewCore</b>: A standalone, lightweight C++ library that acts as a wrapper around the complex CEF API. It simplifies CEF's functionality into a more manageable interface and handles the low-level details of browser creation, rendering, and JavaScript interoperability. This library has no dependencies on Unreal Engine.</li>
-<li><b><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Plugin</b>: The main Unreal Engine plugin module. It integrates <span class="tt">CefViewCore</span> into the engine, providing <span class="tt"><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></span> (Slate) and <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> (UMG) widgets, Blueprint libraries, and other engine-specific functionalities.</li>
+<li><b>Chromium Embedded Framework (CEF)</b>: The browser engine hosted by the standalone XCefHost process.</li>
+<li><b>XCef</b>: A native library that exposes browser features through a stable C ABI and moves CEF lifecycle, rendering, and browser callbacks into XCefHost.</li>
+<li><b><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Plugin</b>: The Unreal Engine module that consumes XCef and provides <span class="tt"><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></span> (Slate), <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> (UMG), Blueprint libraries, and engine rendering integration.</li>
 </ol>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
 Modules</h2>
 <p>The plugin is composed of two primary modules:</p>
 <table class="markdownTable">
@@ -230,9 +230,17 @@ Modules</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><b><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></b>  </td><td class="markdownTableBodyNone">The main plugin module containing all Unreal Engine integration code. This includes the UMG and Slate widgets, Blueprint function libraries, and asset types.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CefViewCore</b>  </td><td class="markdownTableBodyNone">A third-party C++ library that provides a high-level wrapper around the CEF API. This decouples the core browser logic from Unreal Engine.  </td></tr>
+<td class="markdownTableBodyNone"><b>UCefViewEditor</b>  </td><td class="markdownTableBodyNone">Project settings, SDK catalog/download/installation, shared SDK directory resolution, and Editor error dialogs. Excluded from packaged games.  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
+<p>XCef is a dynamically loaded native SDK, not an Unreal module. Only one cross-platform header copy is bundled at <span class="tt">Source/ThirdParty/XCef/include</span>; the SDK runtime is installed separately.</p>
+<p>For Editor targets, <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> depends on UCefViewEditor and gets the absolute selected runtime directory through <span class="tt">FUCefViewEditorModule::GetXCefSdkDirectory</span>. The Editor module resolves the project selection independently of the settings UI or catalog. UCefViewEditor has no reverse build dependency on <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a>; it registers the runtime settings object through reflection.</p>
+<p>Both modules implement their own package-identity and required-file checks. The Editor module owns the Slate error dialog; runtime loading reports errors without showing UI. Editor builds do not stage SDK files, including during Live Coding.</p>
+<p>Game targets have no dependency on UCefViewEditor. UBT copies the configured SDK into <span class="tt">&lt;Project&gt;/Binaries/ThirdParty/XCef/&lt;platform[/architecture]&gt;</span> and UAT stages those files as NonUFS. Packaged games resolve this copy relative to the game project directory. See <a class="el" href="ucefview_update_xcef.html" title="XCef SDK Management">XCef SDK Management</a> for configuration and runtime paths.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
+Distribution</h2>
+<p>The local publish workflow runs BuildPlugin, then creates source ZIPs for the configured Unreal versions. BuildPlugin output retains compiled binaries and precompiled build files. Source ZIPs contain <span class="tt">Source</span>, <span class="tt">Content</span>, <span class="tt">Resources</span>, <span class="tt">Config</span>, <span class="tt">Docs</span>, and the selected distribution scripts, and omit <span class="tt">Binaries</span> and <span class="tt">Intermediate</span>.</p>
+<p><span class="tt">PublishPlugin.ps1 -SkipUpload</span> performs the local workflow without uploading. Generating a ZIP for an Unreal version updates its descriptor; only the engine passed to the build step is actually compiled. Validate other engines and platforms separately.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
 Key C++ Classes</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -254,10 +262,10 @@ Key C++ Classes</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><b>CefViewTypes</b>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_cef_view_types_8h.html" title="Declares core types and structures used by the UCefView plugin.">CefViewTypes.h</a></span>  </td><td class="markdownTableBodyNone">Contains common enumerations and type definitions used throughout the plugin.  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
 Blueprints</h2>
 <p>The plugin includes several pre-built Blueprint assets to help you get started quickly. These are located in the <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Content</span> folder.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md49"></a>
 Widgets</h3>
 <ul>
 <li><b>WBP_CefView</b>: A simple widget that directly encapsulates a <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> component.</li>
@@ -265,13 +273,13 @@ Widgets</h3>
 <li><b>WBP_CefViewSingleTabBrowserWindow</b>: A fully functional single-tab browser window example.</li>
 <li><b>WBP_CefViewMultipleTabBrowserWindow</b>: A fully functional multi-tab browser window example.</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md50"></a>
 Actors</h3>
 <ul>
 <li><b>ACefView</b>: An Actor that can be placed in the world to display a web view on a static mesh component.</li>
 <li><b>ACefViewSingleTabBrowser</b>: An example Actor that demonstrates how to use the browser widgets in a 3D world context.</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md51"></a>
 Materials</h3>
 <ul>
 <li><b>sRGBToLinear</b>: A utility material function for converting the web view's texture from sRGB to Linear color space, which is necessary for correct color representation in Unreal Engine's rendering pipeline. </li>

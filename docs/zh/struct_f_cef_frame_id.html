@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -221,7 +221,7 @@ $(function(){initNavTree('struct_f_cef_frame_id.html','','struct_f_cef_frame_id-
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:ac757d03ee4c325d2e66a0040e5489b34" id="r_ac757d03ee4c325d2e66a0040e5489b34"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac757d03ee4c325d2e66a0040e5489b34">FCefFrameId</a> ()</td></tr>
-<tr class="memdesc:ac757d03ee4c325d2e66a0040e5489b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="struct_f_cef_frame_id.html" title="Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...">FCefFrameId</a>. Initializes the frame id to zero (for int) or empty string (for FString).  <br /></td></tr>
+<tr class="memdesc:ac757d03ee4c325d2e66a0040e5489b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="struct_f_cef_frame_id.html" title="Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...">FCefFrameId</a>. Initializes the frame id to an empty string.  <br /></td></tr>
 <tr class="memitem:a49e1855aeb575f11b9e93da495e0696f" id="r_a49e1855aeb575f11b9e93da495e0696f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a49e1855aeb575f11b9e93da495e0696f">FCefFrameId</a> (const TCHAR *Id)</td></tr>
 <tr class="memdesc:a49e1855aeb575f11b9e93da495e0696f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="struct_f_cef_frame_id.html" title="Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...">FCefFrameId</a> with a string id.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -232,11 +232,9 @@ Public 属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded Framework. </p>
-<p>The underlying type of the frame id depends on the CEF version: for versions prior to 122, it is an integer; for 122 and above, it is a string. </p>
 <p>This struct is used throughout the <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> plugin to reference specific frames for navigation, scripting, and event handling. </p>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#ac757d03ee4c325d2e66a0040e5489b34">FCefFrameId</a> FrameId(12345); <span class="comment">// For CEF &lt; 122</span></div>
-<div class="line"><a class="code hl_function" href="#ac757d03ee4c325d2e66a0040e5489b34">FCefFrameId</a> FrameId(TEXT(<span class="stringliteral">&quot;frame-guid&quot;</span>)); <span class="comment">// For CEF &gt;= 122</span></div>
-<div class="ttc" id="astruct_f_cef_frame_id_html_ac757d03ee4c325d2e66a0040e5489b34"><div class="ttname"><a href="#ac757d03ee4c325d2e66a0040e5489b34">FCefFrameId::FCefFrameId</a></div><div class="ttdeci">FCefFrameId()</div><div class="ttdoc">Default constructor for FCefFrameId. Initializes the frame id to zero (for int) or empty string (for ...</div><div class="ttdef"><b>定义</b> CefViewTypes.h:51</div></div>
+<div class="fragment"><div class="line"><a class="code hl_function" href="#ac757d03ee4c325d2e66a0040e5489b34">FCefFrameId</a> FrameId(TEXT(<span class="stringliteral">&quot;frame-guid&quot;</span>));</div>
+<div class="ttc" id="astruct_f_cef_frame_id_html_ac757d03ee4c325d2e66a0040e5489b34"><div class="ttname"><a href="#ac757d03ee4c325d2e66a0040e5489b34">FCefFrameId::FCefFrameId</a></div><div class="ttdeci">FCefFrameId()</div><div class="ttdoc">Default constructor for FCefFrameId. Initializes the frame id to an empty string.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:42</div></div>
 </div><!-- fragment --> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="ac757d03ee4c325d2e66a0040e5489b34" name="ac757d03ee4c325d2e66a0040e5489b34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac757d03ee4c325d2e66a0040e5489b34">&#9670;&#160;</a></span>FCefFrameId() <span class="overload">[1/2]</span></h2>
@@ -261,7 +259,7 @@ Public 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Default constructor for <a class="el" href="struct_f_cef_frame_id.html" title="Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...">FCefFrameId</a>. Initializes the frame id to zero (for int) or empty string (for FString). </p>
+<p>Default constructor for <a class="el" href="struct_f_cef_frame_id.html" title="Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...">FCefFrameId</a>. Initializes the frame id to an empty string. </p>
 
 </div>
 </div>
@@ -312,7 +310,7 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The string value representing the frame id. </p>
-<p>Used for CEF versions 122 and above. This value is globally unique. </p>
+<p>This value is globally unique. </p>
 
 </div>
 </div>

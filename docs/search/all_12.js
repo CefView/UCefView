@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['mainframeid_0',['MainFrameID',['../class_s_cef_view.html#a86f0cfa39157a778d3a5ce64d7d613ee',1,'SCefView::MainFrameID'],['../class_u_cef_view.html#a930f8c1710af58d7691eddc9013acc8e',1,'UCefView::MainFrameID']]],
-  ['make_20the_20web_20page_20transparent_1',['Make the Web Page Transparent',['../ucefview_input_passthrough.html#autotoc_md31',1,'']]],
-  ['mapping_2',['Mapping',['../ucefview_resource_mapping.html#autotoc_md14',1,'Archive File Mapping'],['../ucefview_resource_mapping.html#autotoc_md12',1,'Global vs. Per-Instance Mapping'],['../ucefview_resource_mapping.html#autotoc_md15',1,'Local Folder Mapping'],['../ucefview_resource_mapping.html',1,'Resource Mapping']]],
-  ['mapping_20types_3',['Mapping Types',['../ucefview_resource_mapping.html#autotoc_md13',1,'']]],
-  ['materials_4',['Materials',['../ucefview_technical_details.html#autotoc_md48',1,'']]],
-  ['minimumfontsize_5',['MinimumFontSize',['../struct_f_slate_cef_view_settings.html#ae5ada0d058a6246ba79143c2ebe88011',1,'FSlateCefViewSettings::MinimumFontSize'],['../struct_f_cef_view_settings.html#aa9b40637d787cd989ca4e26fe05ce45b',1,'FCefViewSettings::MinimumFontSize']]],
-  ['minimumlogicalfontsize_6',['MinimumLogicalFontSize',['../struct_f_slate_cef_view_settings.html#aad3a09f4a2cfbcfe1848b09490e12379',1,'FSlateCefViewSettings::MinimumLogicalFontSize'],['../struct_f_cef_view_settings.html#a6388b5ab68466996da058acc2ea85564',1,'FCefViewSettings::MinimumLogicalFontSize']]],
-  ['modules_7',['Modules',['../ucefview_technical_details.html#autotoc_md43',1,'']]]
+  ['loading_0',['Editor and game loading',['../ucefview_update_xcef.html#autotoc_md38',1,'']]],
+  ['local_20folder_20mapping_1',['Local Folder Mapping',['../ucefview_resource_mapping.html#autotoc_md16',1,'']]],
+  ['locale_2',['Locale',['../class_u_cef_settings.html#aad6e34844766eb31899dae9d4a748a69',1,'UCefSettings::Locale'],['../struct_f_slate_cef_settings.html#a74ab22a2fed7fd8cc7d3624b81297108',1,'FSlateCefSettings::Locale']]],
+  ['localfolderresourcemapping_3',['LocalFolderResourceMapping',['../class_u_cef_settings.html#ae3e1239cdf218d790e6e7aa11a75322f',1,'UCefSettings::LocalFolderResourceMapping'],['../struct_f_slate_cef_settings.html#a6de7d3bea4201b7bef3e2c6f8676bedb',1,'FSlateCefSettings::LocalFolderResourceMapping'],['../class_u_cef_view.html#a19953926accaa7a55239fb0a3d47b796',1,'UCefView::LocalFolderResourceMapping']]],
+  ['localstorage_4',['LocalStorage',['../struct_f_slate_cef_view_settings.html#ad81f6ac7515bba42af0df3e4095cb096',1,'FSlateCefViewSettings::LocalStorage'],['../struct_f_cef_view_settings.html#a8a357c456301feec9693362b2447dc54',1,'FCefViewSettings::LocalStorage']]],
+  ['loglevel_5',['LogLevel',['../class_u_cef_settings.html#a56c65044fe28f4e1031893f5345f90ed',1,'UCefSettings::LogLevel'],['../struct_f_slate_cef_settings.html#a59e99320bd671913d48b63921ded8783',1,'FSlateCefSettings::LogLevel']]]
 ];

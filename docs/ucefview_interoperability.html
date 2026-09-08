@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.16.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="description" content="GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
     <meta name="google-site-verification" content="1Cc6um0RQMBPsodrdQSNSHdgO6_TDw5SSwudaPqYzo0" />
     <title>UCefView: Interoperability</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -103,14 +103,14 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
                                         alt="Fab logo" style="width: 24px; width: 24px;">
                                 </span>
                             </div>
-                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                            <div id="projectbrief">GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
                         </td>
                         <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -213,11 +213,11 @@ $(function(){initNavTree('ucefview_interoperability.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> provides robust interoperability between the native Unreal Engine context (C++/Blueprint) and the web context (JavaScript). This allows you to call JavaScript from C++ and vice-versa, enabling the creation of powerful hybrid applications.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 The UCefViewBridge Object</h2>
 <p>To facilitate communication, <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> automatically injects a bridge object into the <span class="tt">window</span> object of the web context. This object provides the primary interface for web pages to interact with your Unreal application.</p>
-<p>The name of this bridge object can be configured in your project's Cef Settings via the <span class="tt">BridgeObjectName</span> field. The default name is <span class="tt">UCefViewBridge</span>.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+<p>The name of this bridge object can be configured in your project's <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings via the <span class="tt">BridgeObjectName</span> field. The default name is <span class="tt">UCefViewBridge</span>.</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 UCefViewBridge API</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -229,9 +229,9 @@ UCefViewBridge API</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">invoke(methodName, ...args)</span>  </td><td class="markdownTableBodyNone">Invokes a native C++/Blueprint handler with the specified name and arguments.  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 C++ to JavaScript</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
 Executing JavaScript Directly</h3>
 <p>You can execute arbitrary JavaScript code within the context of the WebView from C++.</p>
 <div class="fragment"><div class="line"><span class="comment">// Assume you have a pointer to a UCefView widget</span></div>
@@ -252,7 +252,7 @@ Executing JavaScript Directly</h3>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#aaf4befed513c397d292455f6484094d5" title="Executes JavaScript code in a specific frame.">SCefView::ExecuteJavascript</a></span></li>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#abca004abb34f06115d7392c7c770fae2" title="Executes JavaScript code in a specific frame and returns the result.">SCefView::ExecuteJavascriptWithResult</a></span></li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
 Event Triggering</h3>
 <p>You can register an event from javascript code and then trigger the event from C++ code or Blueprint.</p>
 <p><b>Register event handler in Javascript</b> </p><div class="fragment"><div class="line">function onLoad() {</div>
@@ -289,9 +289,9 @@ Event Triggering</h3>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#a9bf28c7fc1c3f0d0a14b94674a0c8b5e" title="Triggers a custom event for the main frame in the browser.">SCefView::TriggerEventForMainFrame</a></span></li>
 <li><span class="tt"><a class="el" href="class_s_cef_view.html#ad47aec37942530b01cfa76725aa07fb7" title="Broadcasts a custom event to all frames in the browser.">SCefView::BroadcastEvent</a></span></li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
 JavaScript -&gt; C++</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md26"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 UCefViewBridge.invoke</h3>
 <p>You can register an invoke handler from C++/Blueprint and then invoke the handler from Javascript.</p>
 <p><b>Register invoke handler in C++/Blueprint</b> </p><div class="fragment"><div class="line">UCLASS()</div>
@@ -319,10 +319,10 @@ UCefViewBridge.invoke</h3>
 <div class="line"><span class="comment">// bind invoke handler</span></div>
 <div class="line">MyUCefView-&gt;<a class="code hl_variable" href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">OnInvokeMethod</a>.AddDynamic(MyWebClient, &amp;UWebClient::InvokeHandler);</div>
 <div class="ttc" id="aclass_u_cef_view_html_ad34fb47c7fe923fbf826b6d89d52a79e"><div class="ttname"><a href="class_u_cef_view.html#ad34fb47c7fe923fbf826b6d89d52a79e">UCefView::OnInvokeMethod</a></div><div class="ttdeci">FOnInvokeMethodEvent OnInvokeMethod</div><div class="ttdoc">Event triggered when a method is invoked from web content (JavaScript) via the bridge object....</div><div class="ttdef"><b>Definition</b> CefView.h:646</div></div>
-<div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:45</div></div>
+<div class="ttc" id="astruct_f_cef_frame_id_html"><div class="ttname"><a href="struct_f_cef_frame_id.html">FCefFrameId</a></div><div class="ttdoc">Type alias for CEF frame id, used to uniquely identify a browser frame within the Chromium Embedded F...</div><div class="ttdef"><b>Definition</b> CefViewTypes.h:36</div></div>
 </div><!-- fragment --><p><b>Invoke native handler from Javascript</b> </p><div class="fragment"><div class="line">// invoke C++ code</div>
 <div class="line">window.UCefViewBridge.invoke(&quot;HelloNative&quot;, 1, &quot;2&quot;,  true);</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
 window.cefViewQuery(query)</h3>
 <p>you can register CefViewQuery handler to process the CefViewQuery request and reply with your response.</p>
 <p><b>Register CefViewQuery handler in C++/Blueprint</b> </p><div class="fragment"><div class="line">UCLASS()</div>

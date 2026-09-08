@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['架构_0',['架构',['../ucefview_technical_details.html#autotoc_md42',1,'']]]
+  ['常见问题_0',['常见问题',['../ucefview_input_passthrough.html#autotoc_md35',1,'']]]
 ];

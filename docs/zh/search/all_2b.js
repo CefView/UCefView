@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['快速开始_0',['快速开始',['../ucefview_getting_started.html',1,'']]]
+  ['命中测试规则_0',['命中测试规则',['../ucefview_input_passthrough.html#autotoc_md33',1,'']]]
 ];

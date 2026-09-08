@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.16.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="description" content="GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
     <meta name="google-site-verification" content="1Cc6um0RQMBPsodrdQSNSHdgO6_TDw5SSwudaPqYzo0" />
     <title>UCefView: Getting Started</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -103,14 +103,14 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
                                         alt="Fab logo" style="width: 24px; width: 24px;">
                                 </span>
                             </div>
-                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                            <div id="projectbrief">GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
                         </td>
                         <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -215,17 +215,20 @@ $(function(){initNavTree('ucefview_getting_started.html','',''); });
 <div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 1. Installation</h2>
 <ol type="1">
-<li>Install the <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> plugin to your Unreal Engine project from Fab. <a href="https://fab.com/s/ec232806c889" target="_blank">UCefView on Fab</a> <a href="https://fab.com/s/ec232806c889">UCefView on Fab</a></li>
+<li>Install <a href="https://fab.com/s/ec232806c889">UCefView from Fab</a> for your Unreal Engine version. Enable it in each project that uses it. A source distribution can instead be placed at <span class="tt">&lt;Project&gt;/Plugins/UCefView</span>.</li>
 <li>Ensure the plugin is enabled in the Plugins window (Edit -&gt; Plugins).</li>
+<li>Open <b>Edit &gt; Project Settings &gt; Engine &gt; <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings &gt; XCef SDK</b>. Refresh the catalog, download/install a compatible SDK, and choose <b>Use for this project</b>.</li>
+<li>Restart the Editor to load the selected SDK. SDK selection does not require recompiling the project. An initial SDK error dialog lets you continue to the settings panel.</li>
 </ol>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> is not compatible with Unreal’s built‑in Web Browser plugin when used side‑by‑side. Please disable Unreal’s built‑in Web Browser plugin in your project via <span class="tt">Edit &gt; Plugins &gt; Built-in &gt; UI &gt; Web Browser</span>.</dd></dl>
+<p>XCef SDKs are installed separately from the plugin. <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> hosts CEF in XCefHost and can coexist with Unreal's built-in Web Browser plugin; the old CEF3 folder workaround is no longer needed. Enable only one installation of <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> in a project: either the Engine plugin or a project plugin.</p>
+<p>The Editor and PIE load the selected shared SDK directly. Editor builds, including Live Coding, do not copy or clean its runtime files. Close Editors using an SDK before removing or modifying that installation.</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 2. Configuration Project Settings</h2>
-<p>Navigate to <b>Edit -&gt; Project Settings...: Engine -&gt; Cef Settings</b> to configure the global CEF settings for your project. Key settings include:</p>
+<p>Navigate to <b>Edit &gt; Project Settings &gt; Engine &gt; <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings</b> to configure the global browser settings for your project. Key settings include:</p>
 <div class="image">
 <img src="cef-settings.png" alt=""/>
 <div class="caption">
-Cef Settings</div></div>
+UCefView Settings</div></div>
     <ul>
 <li><b>Locale:</b> Sets the locale for the CEF browser.</li>
 <li><b>User Agent:</b> Defines the user agent string used by the browser.</li>
@@ -233,7 +236,7 @@ Cef Settings</div></div>
 <li><b>Command Line Args:</b> Additional command-line arguments to pass to the CEF browser process.</li>
 <li><b>Builtin Scheme Name:</b> The scheme name for builtin resources.</li>
 <li><b>Bridge Object Name:</b> The name of the JavaScript object used for the C++ bridge.</li>
-<li><b>Disable Sandbox:</b> Whether to disable the sandbox for the UCefViewHelper processes.</li>
+<li><b>Disable Sandbox:</b> Whether to disable the CEF sandbox in XCefHost.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Regarding macOS platform, CEF doesn't support sandbox enable on main process, this means if you want to ship a game product with <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> plugin, you need to disable the App Sandbox feature for your Unreal project in generated Xcode project.</dd></dl>
 <p>For more details, please refer to the <span class="tt"><a class="el" href="class_u_cef_settings.html" title="Represents the settings for CEF context initialization and configuration.">UCefSettings</a></span> class.</p>
@@ -276,13 +279,18 @@ Cef Settings</div></div>
 <li><b>WBP_CefView</b>: A basic user widget that encapsulates a single <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> component.</li>
 <li><b>WBP_CefViewBrowserTab</b>: A user widget that includes a <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> component along with an address bar and navigation buttons (back, forward, reload).</li>
 <li><b>WBP_CefViewSingleTabBrowserWindow</b>: A complete single-tab browser window widget.</li>
-<li><b>WBP_CefViweMultipleTabBrowserWindow</b>: A complete multiple-tab browser window widget.</li>
+<li><b>WBP_CefViewMultipleTabBrowserWindow</b>: A complete multiple-tab browser window widget.</li>
 </ul>
 <div class="image">
 <img src="blueprint-customization.png" alt=""/>
 <div class="caption">
 Custom With Blueprint</div></div>
-     </div></div><!-- contents -->
+    <h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+6. Packaging a game</h2>
+<p>Install the SDK for each target platform/architecture and keep its selection in the project's <span class="tt">Config/DefaultEngine.ini</span>. The build machine needs the selected SDK installed; UnrealBuildTool does not download it.</p>
+<p>Game builds copy the selected runtime to <span class="tt">&lt;Project&gt;/Binaries/ThirdParty/XCef/&lt;platform[/architecture]&gt;</span> and stage it as loose NonUFS files. Distribute the complete packaged output, including these runtime files. Players do not need the SDK manager, a shared SDK installation, or a download on first launch.</p>
+<p>These steps apply to both Engine and project installations of <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a>. Close running games before rebuilding their runtime files. See <a class="el" href="ucefview_update_xcef.html" title="XCef SDK Management">XCef SDK Management</a> for SDK paths, version selection, and troubleshooting. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

@@ -30,7 +30,7 @@ var NAVTREE =
     [ "资源映射", "ucefview_resource_mapping.html", null ],
     [ "互操作", "ucefview_interoperability.html", null ],
     [ "输入穿透", "ucefview_input_passthrough.html", null ],
-    [ "更换 CEF 版本", "ucefview_change_cef_version.html", null ],
+    [ "XCef SDK 管理", "ucefview_update_xcef.html", null ],
     [ "技术细节", "ucefview_technical_details.html", null ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],

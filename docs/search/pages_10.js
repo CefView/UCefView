@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['local_20folder_20mapping_0',['Local Folder Mapping',['../ucefview_resource_mapping.html#autotoc_md15',1,'']]]
+  ['key_20c_20classes_0',['Key C++ Classes',['../ucefview_technical_details.html#autotoc_md47',1,'']]],
+  ['key_20features_1',['Key Features',['../ucefview_overview.html#autotoc_md3',1,'']]]
 ];

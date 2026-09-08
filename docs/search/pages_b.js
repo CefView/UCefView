@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['game_20and_20ui_20examples_0',['In-Game and UI Examples',['../index.html#autotoc_md1',1,'']]],
-  ['getting_20started_1',['Getting Started',['../ucefview_getting_started.html',1,'']]],
-  ['global_20vs_20per_20instance_20mapping_2',['Global vs. Per-Instance Mapping',['../ucefview_resource_mapping.html#autotoc_md12',1,'']]]
+  ['feature_0',['Enable the Feature',['../ucefview_input_passthrough.html#autotoc_md29',1,'']]],
+  ['features_1',['Key Features',['../ucefview_overview.html#autotoc_md3',1,'']]],
+  ['file_20mapping_2',['Archive File Mapping',['../ucefview_resource_mapping.html#autotoc_md15',1,'']]],
+  ['folder_20mapping_3',['Local Folder Mapping',['../ucefview_resource_mapping.html#autotoc_md16',1,'']]]
 ];

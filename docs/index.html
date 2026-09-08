@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.16.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
+    <meta name="description" content="GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches." />
     <meta name="google-site-verification" content="1Cc6um0RQMBPsodrdQSNSHdgO6_TDw5SSwudaPqYzo0" />
     <title>UCefView: UCefView</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -103,14 +103,14 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
                                         alt="Fab logo" style="width: 24px; width: 24px;">
                                 </span>
                             </div>
-                            <div id="projectbrief">World&#39;s highest-performance WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
+                            <div id="projectbrief">GPU-accelerated WebView plugin for Unreal Engine. UCefView delivers GPU-accelerated rendering, seamless cross-platform integration and both C++ code and Blueprint development approaches.</div>
                         </td>
                         <td>        <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -213,10 +213,11 @@ $(function(){initNavTree('index.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__docs_200-_main"></a></p>
-<p><b>World's highest-performance WebView plugin for Unreal Engine</b> <br  />
-</p>
+<p><b>GPU-accelerated WebView plugin for Unreal Engine</b></p>
 <p><a href="https://fab.com/s/ec232806c889">Get from FAB</a> | <a href="https://github.com/CefView/UCefViewPlayGroud">Demo Project on GitHub</a></p>
 <p>Bring the power of Chromium Embedded Framework (CEF) to your Unreal Engine projects with <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a>. This plugin provides a robust and performant WebView component, enabling you to seamlessly integrate web-based content into your games and applications. <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> offers both Slate (<a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a>) and UMG (<a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a>) implementations, hardware-accelerated rendering, and a flexible JavaScript bridge for rich interactivity.</p>
+<p>Install the XCef SDK separately in <b>Project Settings &gt; Engine &gt; <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings &gt; XCef SDK</b>, choose a compatible package, and restart the Editor. Editor and PIE reuse the shared installation; Live Coding does not copy SDK files. Packaged games include their target runtime. See <a class="el" href="ucefview_getting_started.html" title="Getting Started">Getting Started</a> and <a class="el" href="ucefview_update_xcef.html" title="XCef SDK Management">XCef SDK Management</a>.</p>
+<p>CEF runs in the separate XCefHost process and can coexist with Unreal's built-in Web Browser. The current SDK integration supports Windows x64, macOS x86_64/arm64, and Linux x64.</p>
 <ul>
 <li>Supported Unreal Engine Version: <br  />
  <table class="markdownTable">
@@ -225,23 +226,17 @@ $(function(){initNavTree('index.html','',''); });
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">✅  </td></tr>
 </table>
-<dl class="section note"><dt>Note</dt><dd>In Unreal <span class="tt">5.7.0</span> ~ <span class="tt">5.7.4</span> there is a bug <a href="https://github.com/EpicGames/UnrealEngine/pull/14145">[#14145]</a> (fixed in UE 5.8) of the editor, it will forcibly load the built‑in Web Browser regardless the plugin config status. If you need to use <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> in these versions, you can perform the following instructions as workaround: <br  />
- 1 Disable the built-in WebBrowser plugin： <br  />
- <span class="tt">Plugin Manager &gt; Built-In &gt; UI &gt; Web Browser</span> <br  />
- 2 Rename the built-in CEF folder to prevent the engine loading the built-in CEF binaries. <br  />
- <span class="tt">UE_5.7\Engine\Binaries\ThirdParty\CEF3</span> -&gt; <span class="tt">UE_5.7\Engine\Binaries\ThirdParty\CEF3-disabled</span> <br  />
-</dd></dl>
 </li>
 <li>Supported Target Platforms and Architecture: <br  />
  <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">🖥️  </th><th class="markdownTableHeadNone">Platform  </th><th class="markdownTableHeadNone">Architecture  </th><th class="markdownTableHeadNone">Version  </th></tr>
+<th class="markdownTableHeadNone">🖥️  </th><th class="markdownTableHeadNone">Platform  </th><th class="markdownTableHeadNone">Architecture  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">x86_64  </td><td class="markdownTableBodyNone">10(1703)+  </td></tr>
+<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">x86_64  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">x86_64 &amp; Arm64  </td><td class="markdownTableBodyNone">13.5+  </td></tr>
+<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">x86_64 &amp; Arm64  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">x86_64 &amp; Arm64  </td><td class="markdownTableBodyNone">4.18+  </td></tr>
+<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">x86_64  </td></tr>
 </table>
 <dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> on Linux is currently in an experimental state. Only validated in headless mode</dd></dl>
 </li>
@@ -264,11 +259,11 @@ $(function(){initNavTree('index.html','',''); });
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">🖥️  </th><th class="markdownTableHeadNone">Platform  </th><th class="markdownTableHeadNone">Version  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">Same requirement with UE 5.0  </td></tr>
+<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Windows  </td><td class="markdownTableBodyNone">Determined by the selected Unreal Engine and XCef/CEF SDK  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">Same requirement with UE 5.0  </td></tr>
+<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">macOS  </td><td class="markdownTableBodyNone">Determined by the selected Unreal Engine and XCef/CEF SDK  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">Same requirement with UE 5.0  </td></tr>
+<td class="markdownTableBodyNone">✅  </td><td class="markdownTableBodyNone">Linux  </td><td class="markdownTableBodyNone">Determined by the selected Unreal Engine and XCef/CEF SDK  </td></tr>
 </table>
 </li>
 </ul>
@@ -287,7 +282,7 @@ In-Game and UI Examples</h3>
 <h3 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 Use Cases</h3>
 <p><img src="browser-as-actors.png" alt="" class="inline" title="As Actor"/>    </p>
-<p><img src="browser-as-UI.png" alt="" class="inline" title="As Menu UI"/>    </p>
+<p><img src="browser-as-ui.png" alt="" class="inline" title="As Menu UI"/>    </p>
 <p><img src="browser-jsdialog.png" alt="" class="inline" title="Slate JSDialog"/>     </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

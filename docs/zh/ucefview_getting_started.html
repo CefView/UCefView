@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -215,17 +215,20 @@ $(function(){initNavTree('ucefview_getting_started.html','',''); });
 <div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 1. 安装</h2>
 <ol type="1">
-<li>从 Fab 将 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 插件安装到你的 Unreal Engine 项目中。<a href="https://fab.com/s/ec232806c889" target="_blank">UCefView on Fab</a> <a href="https://fab.com/s/ec232806c889">UCefView on Fab</a></li>
+<li>从 <a href="https://fab.com/s/ec232806c889">Fab 安装 UCefView</a> 到对应版本的 Unreal Engine，并在需要使用的项目中启用。源码分发包也可以放到 <span class="tt">&lt;Project&gt;/Plugins/UCefView</span>。</li>
 <li>在插件窗口中确认插件已启用（<span class="tt">Edit -&gt; Plugins</span>）。</li>
+<li>打开 **Edit &gt; Project Settings &gt; Engine &gt; <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings &gt; XCef SDK**，刷新目录，下载并安装兼容的 SDK，然后选择 **Use for this project**。</li>
+<li>重启 Editor 加载所选 SDK。切换 SDK 不需要重新编译项目；首次缺少 SDK 时，可以关闭错误提示并继续进入设置面板。</li>
 </ol>
-<dl class="section warning"><dt>警告</dt><dd><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 不能与 Unreal 内置 Web Browser 插件同时使用。请在 <span class="tt">Edit &gt; Plugins &gt; Built-in &gt; UI &gt; Web Browser</span> 中禁用 Unreal 内置 Web Browser 插件。</dd></dl>
+<p>XCef SDK 与插件分开安装。UCefView 在 XCefHost 中运行 CEF，可以与 Unreal 内置 Web Browser 插件共存，无需再重命名引擎的 CEF3 目录。同一项目只启用一份 UCefView：使用 Engine 插件或项目插件其中之一。</p>
+<p>Editor 和 PIE 直接加载所选共享 SDK。Editor 构建（包括 Live Coding）不会复制或清理它的运行文件。删除或修改共享 SDK 前，请关闭使用它的 Editor。</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 2. 项目设置</h2>
-<p>打开 <b>Edit -&gt; Project Settings...: Engine -&gt; Cef Settings</b> 配置项目级 CEF 设置。常用设置包括：</p>
+<p>打开 <b>Edit &gt; Project Settings &gt; Engine &gt; <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings</b> 配置项目级浏览器设置。常用设置包括：</p>
 <div class="image">
 <img src="cef-settings.png" alt=""/>
 <div class="caption">
-Cef Settings</div></div>
+UCefView Settings</div></div>
     <ul>
 <li><b>Locale：</b> 设置 CEF 浏览器区域语言。</li>
 <li><b>User Agent：</b> 设置浏览器请求使用的 user agent。</li>
@@ -233,7 +236,7 @@ Cef Settings</div></div>
 <li><b>Command Line Args：</b> 传递给 CEF browser process 的额外命令行参数。</li>
 <li><b>Builtin Scheme Name：</b> 内置资源使用的 scheme 名称。</li>
 <li><b>Bridge Object Name：</b> C++/JavaScript 桥接对象名称。</li>
-<li><b>Disable Sandbox：</b> 是否禁用 UCefViewHelper 进程沙箱。</li>
+<li><b>Disable Sandbox：</b> 是否禁用 XCefHost 中的 CEF 沙箱。</li>
 </ul>
 <dl class="section note"><dt>注解</dt><dd>macOS 平台上，CEF 不支持在主进程中启用 sandbox。若你要发布带 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 的游戏产品，需要在生成的 Xcode 项目中关闭 App Sandbox。</dd></dl>
 <p>更多细节请参考 <span class="tt"><a class="el" href="class_u_cef_settings.html" title="Represents the settings for CEF context initialization and configuration.">UCefSettings</a></span> 类。</p>
@@ -274,13 +277,18 @@ Cef Settings</div></div>
 <li>**WBP_CefView**：封装单个 <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> 的基础 user widget。</li>
 <li>**WBP_CefViewBrowserTab**：包含地址栏和后退、前进、刷新按钮的浏览器 tab widget。</li>
 <li>**WBP_CefViewSingleTabBrowserWindow**：完整的单标签浏览器窗口。</li>
-<li>**WBP_CefViweMultipleTabBrowserWindow**：完整的多标签浏览器窗口。</li>
+<li>**WBP_CefViewMultipleTabBrowserWindow**：完整的多标签浏览器窗口。</li>
 </ul>
 <div class="image">
 <img src="blueprint-customization.png" alt=""/>
 <div class="caption">
 Custom With Blueprint</div></div>
-     </div></div><!-- contents -->
+    <h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+6. 游戏打包</h2>
+<p>安装目标平台和架构需要的 SDK，并将选择保存在项目的 <span class="tt">Config/DefaultEngine.ini</span> 中。构建机器必须已安装所选 SDK；UnrealBuildTool 不会自动下载。</p>
+<p>Game 构建将所选运行文件复制到 <span class="tt">&lt;Project&gt;/Binaries/ThirdParty/XCef/&lt;平台[/架构]&gt;</span>，并以 NonUFS 散文件形式打包。分发时保留完整游戏输出及其中的运行文件。玩家无需安装 SDK 管理器、共享 SDK，也无需在首次启动时下载运行库。</p>
+<p>Engine 插件和项目插件使用相同流程。重新构建运行文件前，请关闭正在运行的游戏。SDK 路径、版本选择和故障处理见 <a class="el" href="ucefview_update_xcef.html" title="XCef SDK 管理">XCef SDK 管理</a> 。 </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

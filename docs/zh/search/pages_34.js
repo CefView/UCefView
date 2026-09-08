@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['项目设置_0',['2. 项目设置',['../ucefview_getting_started.html#autotoc_md8',1,'']]]
+  ['直接执行_20javascript_0',['直接执行 JavaScript',['../ucefview_interoperability.html#autotoc_md24',1,'']]]
 ];

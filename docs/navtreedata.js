@@ -30,7 +30,7 @@ var NAVTREE =
     [ "Resource Mapping", "ucefview_resource_mapping.html", null ],
     [ "Interoperability", "ucefview_interoperability.html", null ],
     [ "Input Passthrough", "ucefview_input_passthrough.html", null ],
-    [ "Change CEF Version", "ucefview_change_cef_version.html", null ],
+    [ "XCef SDK Management", "ucefview_update_xcef.html", null ],
     [ "Technical Details", "ucefview_technical_details.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

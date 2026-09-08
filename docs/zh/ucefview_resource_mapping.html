@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -219,12 +219,12 @@ $(function(){initNavTree('ucefview_resource_mapping.html','',''); });
 </ul>
 <p>当你需要部署完全自托管的 Web 应用（例如 React、Vue 或 Angular 构建的 SPA）时，**Resource Mapping** 会非常有用。</p>
 <p>资源映射允许你将本地目录或 ZIP 压缩包映射到一个自定义域名（例如 <span class="tt"><a href="https://my-app.local">https://my-app.local</a></span>）。之后在 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 中访问这个 URL，就可以像访问真实线上网站一样访问本地资源。</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 全局映射与实例映射</h2>
 <p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 提供两种资源映射作用域：</p>
 <ul>
 <li><b>全局映射：</b><ul>
-<li>在 <b>Project Settings</b> -&gt; <b>Cef Settings</b> 中配置。</li>
+<li>在 <b>Project Settings</b> -&gt; <b><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Settings</b> 中配置。</li>
 <li>应用启动时加载，并作用于项目中的所有 <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> 和 <span class="tt"><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></span> 实例。</li>
 <li>适合项目中通用的 Web 应用资源。 <img src="resource-mapping-global.png" alt="" class="inline" title="Blueprint Resource Mapping Global"/>    </li>
 </ul>
@@ -238,10 +238,10 @@ $(function(){initNavTree('ucefview_resource_mapping.html','',''); });
 </ul>
 </li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 映射类型</h2>
 <p><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 支持两种本地资源映射：<span class="tt"><a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a></span> 和 <span class="tt"><a class="el" href="struct_f_local_folder_resource_mapping.html" title="Represents a mapping from a local folder to a URL for resource loading in the CEF browser.">FLocalFolderResourceMapping</a></span>。</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 Archive File Mapping</h3>
 <p>将本地 ZIP 文件映射到 URL。适合将 Web 资源打包成单个文件进行分发和管理。</p>
 <p>例如，你有一个结构如下的 <span class="tt">web-app.zip</span>：</p>
@@ -251,7 +251,7 @@ Archive File Mapping</h3>
 <div class="line">                +-- assets/</div>
 <div class="line">                +-- img/</div>
 </div><!-- fragment --><p>可以创建 <span class="tt"><a class="el" href="struct_f_archive_file_resource_mapping.html" title="Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.">FArchiveFileResourceMapping</a></span>，将 <span class="tt"><a href="https://my-app.local">https://my-app.local</a></span> 映射到这个 ZIP 文件。访问 <span class="tt"><a href="https://my-app.local/index.html">https://my-app.local/index.html</a></span> 时，UCefView 会从压缩包中提供内容。</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 Local Folder Mapping</h3>
 <p>将本地文件夹映射到 URL。它非常适合开发阶段使用，可以即时看到 Web 文件修改，无需重新打包。</p>
 <p>例如，Web 应用构建输出位于：</p>
@@ -262,9 +262,9 @@ Local Folder Mapping</h3>
 <div class="line">                +-- img/</div>
 </div><!-- fragment --><p>可以创建 <span class="tt"><a class="el" href="struct_f_local_folder_resource_mapping.html" title="Represents a mapping from a local folder to a URL for resource loading in the CEF browser.">FLocalFolderResourceMapping</a></span>，将 <span class="tt"><a href="https://my-app.local">https://my-app.local</a></span> 映射到 <span class="tt">D:/dev/my-web-app/dist/</span> 目录。</p>
 <dl class="section warning"><dt>警告</dt><dd>请始终为 <span class="tt">Path</span> 属性提供**绝对路径**。Blueprint 中可使用 <span class="tt">Convert to Absolute Path</span> 节点，C++ 中可使用 <span class="tt">FPaths::ConvertRelativePathToFull</span>。</dd></dl>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 如何使用</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 C++ 示例（实例映射）</h3>
 <div class="fragment"><div class="line"><span class="comment">// Get a pointer to your UCefView instance</span></div>
 <div class="line"><a class="code hl_class" href="class_u_cef_view.html">UCefView</a>* MyCefView = ...;</div>
@@ -286,20 +286,20 @@ C++ 示例（实例映射）</h3>
 <div class="ttc" id="aclass_u_cef_view_html"><div class="ttname"><a href="class_u_cef_view.html">UCefView</a></div><div class="ttdoc">UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...</div><div class="ttdef"><b>定义</b> CefView.h:45</div></div>
 <div class="ttc" id="aclass_u_cef_view_html_a11df6274f072ab744678cbfb4370e264"><div class="ttname"><a href="class_u_cef_view.html#a11df6274f072ab744678cbfb4370e264">UCefView::AddLocalFolderResource</a></div><div class="ttdeci">void AddLocalFolderResource(const FString &amp;InFolderPath, const FString &amp;InTargetUrl, int32 InPriority=0)</div><div class="ttdoc">Adds a URL mapping for a local web resource directory, making its contents accessible via a virtual U...</div></div>
 <div class="ttc" id="aclass_u_cef_view_html_a37213ab6931bd43b28fcaaace6bb85cb"><div class="ttname"><a href="class_u_cef_view.html#a37213ab6931bd43b28fcaaace6bb85cb">UCefView::AddArchiveFileResource</a></div><div class="ttdeci">void AddArchiveFileResource(const FString &amp;InArchivePath, const FString &amp;InTargetUrl, const FString &amp;InPassword=&quot;&quot;, int32 InPriority=0)</div><div class="ttdoc">Adds a URL mapping for a local archive (.zip) file, making its contents accessible via a virtual URL....</div></div>
-<div class="ttc" id="astruct_f_archive_file_resource_mapping_html"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a></div><div class="ttdoc">Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:286</div></div>
-<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ac8ee5bda4788f2b5083ff99287b0eeb4"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html#ac8ee5bda4788f2b5083ff99287b0eeb4">FArchiveFileResourceMapping::Path</a></div><div class="ttdeci">FFilePath Path</div><div class="ttdoc">The zip format file containing the resources to be mapped.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:308</div></div>
-<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ae3116f4af3fa7c5dd95eca1d273465bd"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html#ae3116f4af3fa7c5dd95eca1d273465bd">FArchiveFileResourceMapping::Url</a></div><div class="ttdeci">FString Url</div><div class="ttdoc">The target URL to be mapped to.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:297</div></div>
-<div class="ttc" id="astruct_f_local_folder_resource_mapping_html"><div class="ttname"><a href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a></div><div class="ttdoc">Represents a mapping from a local folder to a URL for resource loading in the CEF browser.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:201</div></div>
-<div class="ttc" id="astruct_f_local_folder_resource_mapping_html_a7881c49916faff6178cfe6e9a7e2c651"><div class="ttname"><a href="struct_f_local_folder_resource_mapping.html#a7881c49916faff6178cfe6e9a7e2c651">FLocalFolderResourceMapping::Path</a></div><div class="ttdeci">FDirectoryPath Path</div><div class="ttdoc">The folder containing the resources to be mapped.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:223</div></div>
-<div class="ttc" id="astruct_f_local_folder_resource_mapping_html_af2494bd79692df5810c53798d9fd8fe0"><div class="ttname"><a href="struct_f_local_folder_resource_mapping.html#af2494bd79692df5810c53798d9fd8fe0">FLocalFolderResourceMapping::Url</a></div><div class="ttdeci">FString Url</div><div class="ttdoc">The target URL to be mapped to.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:212</div></div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html">FArchiveFileResourceMapping</a></div><div class="ttdoc">Represents a mapping from an archive file (zip) to a URL for resource loading in the CEF browser.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:257</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ac8ee5bda4788f2b5083ff99287b0eeb4"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html#ac8ee5bda4788f2b5083ff99287b0eeb4">FArchiveFileResourceMapping::Path</a></div><div class="ttdeci">FFilePath Path</div><div class="ttdoc">The zip format file containing the resources to be mapped.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:279</div></div>
+<div class="ttc" id="astruct_f_archive_file_resource_mapping_html_ae3116f4af3fa7c5dd95eca1d273465bd"><div class="ttname"><a href="struct_f_archive_file_resource_mapping.html#ae3116f4af3fa7c5dd95eca1d273465bd">FArchiveFileResourceMapping::Url</a></div><div class="ttdeci">FString Url</div><div class="ttdoc">The target URL to be mapped to.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:268</div></div>
+<div class="ttc" id="astruct_f_local_folder_resource_mapping_html"><div class="ttname"><a href="struct_f_local_folder_resource_mapping.html">FLocalFolderResourceMapping</a></div><div class="ttdoc">Represents a mapping from a local folder to a URL for resource loading in the CEF browser.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:172</div></div>
+<div class="ttc" id="astruct_f_local_folder_resource_mapping_html_a7881c49916faff6178cfe6e9a7e2c651"><div class="ttname"><a href="struct_f_local_folder_resource_mapping.html#a7881c49916faff6178cfe6e9a7e2c651">FLocalFolderResourceMapping::Path</a></div><div class="ttdeci">FDirectoryPath Path</div><div class="ttdoc">The folder containing the resources to be mapped.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:194</div></div>
+<div class="ttc" id="astruct_f_local_folder_resource_mapping_html_af2494bd79692df5810c53798d9fd8fe0"><div class="ttname"><a href="struct_f_local_folder_resource_mapping.html#af2494bd79692df5810c53798d9fd8fe0">FLocalFolderResourceMapping::Url</a></div><div class="ttdeci">FString Url</div><div class="ttdoc">The target URL to be mapped to.</div><div class="ttdef"><b>定义</b> CefViewTypes.h:183</div></div>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 Blueprint 示例（实例映射）</h3>
 <p>也可以在 Blueprint 中为 <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> 动态添加资源映射。</p>
 <div class="image">
 <img src="resource-mapping-instance.png" alt=""/>
 <div class="caption">
 Blueprint Resource Mapping</div></div>
-    <h2 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+    <h2 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
 API 参考</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">

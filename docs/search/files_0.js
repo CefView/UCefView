@@ -6,5 +6,5 @@ var searchData=
   ['03_2dresource_20mapping_2emd_3',['03-Resource Mapping.md',['../03-_resource_01_mapping_8md.html',1,'']]],
   ['04_2dinteroperability_2emd_4',['04-Interoperability.md',['../04-_interoperability_8md.html',1,'']]],
   ['05_2dinput_20passthrough_2emd_5',['05-Input Passthrough.md',['../05-_input_01_passthrough_8md.html',1,'']]],
-  ['06_2dchange_20cef_20version_2emd_6',['06-Change CEF Version.md',['../06-_change_01_c_e_f_01_version_8md.html',1,'']]]
+  ['06_2dupdate_20xcef_2emd_6',['06-Update XCef.md',['../06-_update_01_x_cef_8md.html',1,'']]]
 ];

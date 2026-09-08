@@ -11,13 +11,11 @@ var hierarchy =
     [ "SWidget", null, [
       [ "SCefView", "class_s_cef_view.html", null ]
     ] ],
-    [ "UDeveloperSettings", null, [
-      [ "UCefSettings", "class_u_cef_settings.html", null ]
-    ] ],
     [ "UEngineSubsystem", null, [
       [ "UCefContext", "class_u_cef_context.html", null ]
     ] ],
     [ "UObject", null, [
+      [ "UCefSettings", "class_u_cef_settings.html", null ],
       [ "UCefViewEvent", "class_u_cef_view_event.html", null ],
       [ "UCefViewQuery", "class_u_cef_view_query.html", null ]
     ] ],

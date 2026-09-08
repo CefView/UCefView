@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['如何使用_0',['如何使用',['../ucefview_resource_mapping.html#autotoc_md16',1,'']]]
+  ['分发_0',['分发',['../ucefview_technical_details.html#autotoc_md46',1,'']]]
 ];

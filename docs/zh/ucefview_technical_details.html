@@ -103,7 +103,7 @@
                         <td id="projectlogo"><img alt="Logo" src="logo.png" /></td>
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">
-                                UCefView&#160;<span id="projectnumber">1.0.27</span>
+                                UCefView&#160;<span id="projectnumber">1.0.29</span>
                                 <span>
                                     <a href="https://fab.com/s/ec232806c889" target="_blank">Install On Fab</a>
                                     <img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/favicon/fa542c422510c7748b38c2d0ae41b8d7-v1.png"
@@ -213,15 +213,15 @@ $(function(){initNavTree('ucefview_technical_details.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>本文档概述 <a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> 插件的架构、模块和关键组件。</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md42"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
 架构</h2>
 <p>插件采用分层架构，以便保持模块化和可维护性：</p>
 <ol type="1">
-<li><b>Chromium Embedded Framework (CEF)：</b> 插件核心。CEF 是用于在其他应用中嵌入 Chromium 浏览器的开源框架。</li>
-<li><b>CefViewCore：</b> 独立、轻量的 C++ 库，用于包装复杂的 CEF API。它简化浏览器创建、渲染和 JavaScript 互操作等底层逻辑，并且不依赖 Unreal Engine。</li>
-<li><b><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Plugin：</b> 主要 Unreal Engine 插件模块。它将 <span class="tt">CefViewCore</span> 集成到引擎中，提供 <span class="tt"><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></span>、<span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span>、Blueprint 库和其他引擎侧功能。</li>
+<li><b>Chromium Embedded Framework (CEF)：</b> 由独立 XCefHost 进程承载的浏览器引擎。</li>
+<li><b>XCef：</b> 通过稳定 C ABI 暴露浏览器能力的原生库；CEF 生命周期、渲染和浏览器回调由 XCefHost 负责。</li>
+<li><b><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Plugin：</b> 使用 XCef 的 Unreal Engine 模块，提供 <span class="tt"><a class="el" href="class_s_cef_view.html" title="A Slate widget that embeds a Chromium Embedded Framework (CEF) browser.">SCefView</a></span>、<span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span>、Blueprint 库和引擎渲染集成。</li>
 </ol>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
 模块</h2>
 <p>插件包含两个主要模块：</p>
 <table class="markdownTable">
@@ -230,9 +230,17 @@ $(function(){initNavTree('ucefview_technical_details.html','',''); });
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><b><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></b>  </td><td class="markdownTableBodyNone">主插件模块，包含 Unreal Engine 集成代码，包括 UMG/Slate widget、Blueprint 函数库和资源类型。  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CefViewCore</b>  </td><td class="markdownTableBodyNone">第三方 C++ 库，提供 CEF API 的高层封装，使浏览器核心逻辑与 Unreal Engine 解耦。  </td></tr>
+<td class="markdownTableBodyNone"><b>UCefViewEditor</b>  </td><td class="markdownTableBodyNone">项目设置、SDK 目录/下载/安装、共享 SDK 路径解析和 Editor 错误弹窗；不进入打包游戏。  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md44"></a>
+<p>XCef 是动态加载的原生 SDK，不是 Unreal 模块。插件在 <span class="tt">Source/ThirdParty/XCef/include</span> 中保留一份跨平台头文件，SDK 运行文件另行安装。</p>
+<p>Editor 目标中，UCefView 依赖 UCefViewEditor，通过 <span class="tt">FUCefViewEditorModule::GetXCefSdkDirectory</span> 获取所选运行目录的绝对路径。Editor 模块独立解析项目配置，不依赖设置 UI 或目录加载。UCefViewEditor 不反向依赖 UCefView，通过反射注册 runtime 设置对象。</p>
+<p>两个模块各自实现包标识和必需文件检查。Editor 模块负责 Slate 错误弹窗；runtime 加载只报告错误，不显示 UI。Editor 构建不暂存 SDK 文件，Live Coding 也一样。</p>
+<p>Game 目标不依赖 UCefViewEditor。UBT 将所选 SDK 复制到 <span class="tt">&lt;Project&gt;/Binaries/ThirdParty/XCef/&lt;平台[/架构]&gt;</span>，UAT 再将其作为 NonUFS 文件打包。打包游戏相对游戏项目目录定位这份副本。配置及运行目录详见 <a class="el" href="ucefview_update_xcef.html" title="XCef SDK 管理">XCef SDK 管理</a> 。</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
+分发</h2>
+<p>本地 publish 先执行 BuildPlugin，再生成配置的各 Unreal 版本源码 ZIP。BuildPlugin 输出保留编译后的二进制和预编译构建文件；源码 ZIP 包含 <span class="tt">Source</span>、<span class="tt">Content</span>、<span class="tt">Resources</span>、<span class="tt">Config</span>、<span class="tt">Docs</span> 及选定的分发脚本，不包含 <span class="tt">Binaries</span> 和 <span class="tt">Intermediate</span>。</p>
+<p><span class="tt">PublishPlugin.ps1 -SkipUpload</span> 执行本地流程并跳过上传。为某个 Unreal 版本生成 ZIP 只会调整描述文件；实际编译的是传入构建步骤的引擎。其他引擎和平台需要分别验证。</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
 关键 C++ 类</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -254,10 +262,10 @@ $(function(){initNavTree('ucefview_technical_details.html','',''); });
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><b>CefViewTypes</b>  </td><td class="markdownTableBodyNone"><span class="tt"><a class="el" href="_cef_view_types_8h.html" title="Declares core types and structures used by the UCefView plugin.">CefViewTypes.h</a></span>  </td><td class="markdownTableBodyNone">包含插件中常用枚举和类型定义。  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
 Blueprints</h2>
 <p>插件包含多个预置 Blueprint 资源，位于 <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a> Content</span> 目录。</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md46"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md49"></a>
 Widgets</h3>
 <ul>
 <li>**WBP_CefView**：直接封装 <span class="tt"><a class="el" href="class_u_cef_view.html" title="UCefView is a UMG widget that embeds a Chromium Embedded Framework (CEF) browser view within Unreal E...">UCefView</a></span> 组件的简单 widget。</li>
@@ -265,13 +273,13 @@ Widgets</h3>
 <li>**WBP_CefViewSingleTabBrowserWindow**：完整单标签浏览器窗口示例。</li>
 <li>**WBP_CefViewMultipleTabBrowserWindow**：完整多标签浏览器窗口示例。</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md50"></a>
 Actors</h3>
 <ul>
 <li>**ACefView**：可放置在场景中的 Actor，用于在 static mesh component 上显示 WebView。</li>
 <li>**ACefViewSingleTabBrowser**：演示如何在 3D 世界中使用浏览器 widget 的示例 Actor。</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md48"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md51"></a>
 Materials</h3>
 <ul>
 <li>**sRGBToLinear**：用于将 WebView 纹理从 sRGB 转换到 Linear 色彩空间的材质函数，以便在 Unreal 渲染管线中获得正确颜色。 </li>

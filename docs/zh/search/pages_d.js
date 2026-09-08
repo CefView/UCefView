@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['query_0',['window.cefViewQuery(query)',['../ucefview_interoperability.html#autotoc_md27',1,'']]]
+  ['javascript_0',['JavaScript',['../ucefview_interoperability.html#autotoc_md24',1,'直接执行 JavaScript'],['../ucefview_interoperability.html#autotoc_md23',1,'C++ 到 JavaScript']]],
+  ['javascript_20到_20c_1',['JavaScript 到 C++',['../ucefview_interoperability.html#autotoc_md26',1,'']]]
 ];

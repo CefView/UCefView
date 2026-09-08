@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['触发事件_0',['触发事件',['../ucefview_interoperability.html#autotoc_md24',1,'']]]
+  ['架构_0',['架构',['../ucefview_technical_details.html#autotoc_md44',1,'']]]
 ];

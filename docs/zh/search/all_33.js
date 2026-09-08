@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['概览_0',['概览',['../ucefview_overview.html',1,'']]]
+  ['技术细节_0',['技术细节',['../ucefview_technical_details.html',1,'']]]
 ];

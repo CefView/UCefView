@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['更换_20cef_20版本_0',['更换 CEF 版本',['../ucefview_change_cef_version.html',1,'']]],
-  ['更新脚本配置文件_1',['2. 更新脚本配置文件',['../ucefview_change_cef_version.html#autotoc_md36',1,'']]]
+  ['安装和选择_20sdk_0',['安装和选择 SDK',['../ucefview_update_xcef.html#autotoc_md36',1,'']]],
+  ['安装_1',['1. 安装',['../ucefview_getting_started.html#autotoc_md7',1,'']]]
 ];

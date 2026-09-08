@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['实现说明_0',['实现说明',['../ucefview_input_passthrough.html#autotoc_md33',1,'']]]
+  ['分发_0',['分发',['../ucefview_technical_details.html#autotoc_md46',1,'']]]
 ];

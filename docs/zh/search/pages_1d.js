@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['对象_0',['UCefViewBridge 对象',['../ucefview_interoperability.html#autotoc_md20',1,'']]]
+  ['到_20c_0',['JavaScript 到 C++',['../ucefview_interoperability.html#autotoc_md26',1,'']]],
+  ['到_20javascript_1',['C++ 到 JavaScript',['../ucefview_interoperability.html#autotoc_md23',1,'']]]
 ];

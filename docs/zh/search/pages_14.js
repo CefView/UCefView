@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['全局映射与实例映射_0',['全局映射与实例映射',['../ucefview_resource_mapping.html#autotoc_md12',1,'']]]
+  ['xcef_20api_20版本_0',['更新插件支持的 XCef API 版本',['../ucefview_update_xcef.html#autotoc_md40',1,'']]],
+  ['xcef_20sdk_20管理_1',['XCef SDK 管理',['../ucefview_update_xcef.html',1,'']]]
 ];
